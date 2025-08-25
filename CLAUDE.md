@@ -1,3 +1,7 @@
+The summary is located at DRL_Comprehensive_Summary.md
+
+Guidelines
+
 Always read the slides
 - Read ALL the slides, do NOT skip slides
 - Do not read the pdf, read the .png slides

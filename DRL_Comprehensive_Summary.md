@@ -677,6 +677,7 @@ TRPO repeats two steps:
 
 ---
 
+
 ## 7. AlphaGo and Monte Carlo Tree Search
 
 ### Overview
@@ -827,46 +828,18 @@ AlphaGo uses two deep neural networks:
 - Need different policy representations
 
 
-### Policy Representations for Continuous Actions
+### Policy Network for Continuous Actions
+
+**Architecture**: State → Conv → Dense → Action output
 
 
-**Gaussian Policy**:
+### Deterministic Policy Gradient (DPG)
 
-$$\pi_\theta(a \vert s) = \mathcal{N}(\mu_\theta(s), \sigma_\theta^2(s))$$
+**Goal**: Increasing $q(s, a; \mathbf{w})$ where $a = \pi(s; \boldsymbol{\theta})$
 
-
-where:
-
-- $\mu_\theta(s)$: Mean action (neural network output)
-
-- $\sigma_\theta(s)$: Standard deviation (neural network output or learnable parameter)
-
-
-**Beta Policy** (for bounded actions):
-
-$$\pi_\theta(a \vert s) = \text{Beta}(\alpha_\theta(s), \beta_\theta(s))$$
-
-
-### Deterministic Policy Gradient
-
-
-**Key Insight**: For continuous actions, deterministic policies can be more efficient:
-
-$$\mu_\theta: S \rightarrow A$$
-
-
-**Policy Gradient**:
-
-$$\nabla_\theta J(\theta) = \mathbb{E}_{s \sim \rho}\left[\nabla_\theta \mu_\theta(s) \cdot \nabla_a Q(s,a)\Big\vert_{a=\mu_\theta(s)}\right]$$
-
-
-**Popular Algorithms**:
-
-- **DDPG** (Deep Deterministic Policy Gradient)
-
-- **TD3** (Twin Delayed DDPG)
-
-- **SAC** (Soft Actor-Critic)
+**Dual Networks**: 
+- Policy Network (parameters: $\boldsymbol{\theta}$)
+- Value Network (parameters: $\mathbf{w}$)
 
 
 ---
@@ -875,157 +848,26 @@ $$\nabla_\theta J(\theta) = \mathbb{E}_{s \sim \rho}\left[\nabla_\theta \mu_\the
 ## 9. Multi-Agent Reinforcement Learning
 
 
-### MARL Concepts and Challenges
+### Self-Interested Multi-Agent Settings
 
+**Self-Interested Setting**:
+- Agents are self-interested; rewards may or may not conflict
+- Example: Financial trading scenarios where agents compete
 
-**Multi-Agent Environment**:
+### Centralized Actor-Critic Method
 
-- Multiple agents learning simultaneously
+**Centralized Training**:
+- Controller knows all observations, actions, and rewards
+- Train $\pi(a^i \vert o ; \boldsymbol{\theta}^i)$ using policy gradient
+- Train $q(\mathbf{o}, \mathbf{a} ; \mathbf{w}^i)$ using TD algorithm
 
-- Each agent's environment includes other agents
+**Centralized Execution**:
+- Controller makes decisions for all agents
+- Each agent sends observation $o^i$ to controller
+- Controller knows $\mathbf{o} = [o^1, o^2, \ldots, o^n]$
+- Controller samples actions and sends $a^i$ to each agent
 
-- Non-stationarity: Environment changes as other agents learn
 
-
-**Key Challenges**:
-
-1. **Non-stationarity**: Other agents change their policies
-
-2. **Partial Observability**: Agents may not observe other agents' actions
-
-3. **Credit Assignment**: Which agent contributed to team reward?
-
-4. **Coordination**: How to coordinate between agents?
-
-5. **Communication**: Whether and how agents should communicate
-
-
-### MARL Paradigms
-
-
-**Independent Learning**:
-
-- Each agent treats others as part of environment
-
-- No coordination or communication
-
-- Simple but can be unstable
-
-
-**Centralized Training, Decentralized Execution**:
-
-- Training uses global information
-
-- Execution uses only local information
-
-- Popular approach in cooperative settings
-
-
-**Fully Centralized**:
-
-- Single controller for all agents
-
-- Scalability issues
-
-- Joint action space grows exponentially
-
-
-### Popular MARL Algorithms
-
-
-**MADDPG** (Multi-Agent DDPG):
-
-- Centralized critic, decentralized actors
-
-- Each agent has its own actor-critic
-
-- Critics can access global state during training
-
-
-**QMIX**:
-
-- Value decomposition method
-
-- Individual Q-functions combined into team Q-function
-
-- Monotonicity constraint ensures consistency
-
-
----
-
-
-## Key Equations Summary
-
-
-### Value Functions
-
-- **Return**: $U_t = R_t + \gamma R_{t+1} + \gamma^2 R_{t+2} + \cdots$
-
-- **Action-Value**: $Q_\pi(s, a) = \mathbb{E}[U_t \vert S_t = s, A_t = a]$
-
-- **State-Value**: $V_\pi(s) = \mathbb{E}[U_t \vert S_t = s]$
-
-
-### Learning Updates
-
-- **TD Target**: $y_t = r_t + \gamma Q_\pi(s_{t+1}, a_{t+1})$
-
-- **Q-Learning**: $Q(s,a) \leftarrow Q(s,a) + \alpha[r + \gamma \max_{a'} Q(s',a') - Q(s,a)]$
-
-- **SARSA**: $Q(s,a) \leftarrow Q(s,a) + \alpha[r + \gamma Q(s',a') - Q(s,a)]$
-
-
-### Policy Gradient
-
-- **Basic PG**: $\nabla_\theta J(\theta) = \mathbb{E}\left[\nabla_\theta \ln \pi_\theta(a \vert s) \cdot R\right]$
-
-- **With Baseline**: $\nabla_\theta J(\theta) = \mathbb{E}\left[\nabla_\theta \ln \pi_\theta(a \vert s) \cdot (R - b)\right]$
-
-
-### Continuous Control
-
-- **Gaussian Policy**: $\pi_\theta(a \vert s) = \mathcal{N}(\mu_\theta(s), \sigma_\theta^2(s))$
-
-- **Deterministic PG**: $\nabla_\theta J = \mathbb{E}\left[\nabla_\theta \mu_\theta(s) \cdot \nabla_a Q(s,a)\Big\vert_{a=\mu_\theta(s)}\right]$
-
-
----
-
-
-## Practical Implementation Notes
-
-
-### Common Libraries and Tools
-
-- **OpenAI Gym**: Standard RL environment interface
-
-- **Stable-Baselines3**: High-quality RL algorithm implementations
-
-- **TensorFlow/PyTorch**: Deep learning frameworks
-
-- **Ray RLlib**: Scalable RL library
-
-
-### Hyperparameter Tuning Tips
-
-- **Learning Rate**: Start with 1e-3 to 1e-4
-
-- **Discount Factor**: Usually 0.9 to 0.999
-
-- **Exploration**: ε-greedy with decay for DQN
-
-- **Network Architecture**: Start simple, add complexity if needed
-
-
-### Debugging RL Algorithms
-
-1. **Verify Environment**: Test with random policy
-
-2. **Check Shapes**: Ensure tensor dimensions are correct
-
-3. **Monitor Learning**: Plot learning curves
-
-4. **Ablation Studies**: Remove components to understand contributions
 
 
 # Footnotes
