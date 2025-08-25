@@ -1,3 +1,123 @@
+---
+layout: post
+title: Life Lessons from Reinforcement Learning
+---
+I have watched Shusen Wang's [video](https://www.youtube.com/@ShusenWang/playlists) [lectures](https://github.com/wangshusen/DRL/) on reinforcement learning. I think the video lectures will greatly help me with reading Sutton's [book](http://incompleteideas.net/book/the-book-2nd.html) on reinforcement learning - especially with the notation.
+
+I also write down some life lessons, followed by an AI-generated compilation of Shusen Wang's slides.
+
+
+
+#### **You need to define what you want**
+
+If you do not define your reward, there is no direction on what you are optimizing for.
+
+You need to be clear what you are optimizing for.
+
+Otherwise, you are likely not exactly optimizing what you really want to optimize.
+
+If you want someone to optimize for something, you need to be very careful in defining the rewards.
+
+For example you want someone to write correct and concise code that solve LeetCode problems.
+Without careful definition of what concise refers to, you might end up with unreadable code.
+
+
+
+#### **Your job is to suggest the next move given your current position**
+
+You cannot change your current position. You can only move forward in time.
+
+Similar to a large language model, you are a next token predictor.
+
+Your job is to produce the best move for yourself.
+
+You should be aware what your current position is, what your available moves are, and choose the best move.
+
+There is no point agonizing over past mistakes if it does not help you make a better decision.
+
+
+
+#### **There exists an ideal**
+
+There exists an ideal move for every position.
+
+There exists a correct answer to whether one position is better than another.
+
+There exists a correct answer to whether one move is better than another.
+
+Even if you will never be able to calculate the ideal, it does not mean that the ideal does not exist. Even if you will never be able to calculate the correct answer, it does not mean that the correct answer does not exist.
+
+For brevity, "God" here denotes the ideal.
+
+
+#### **We live with approximations**
+
+For many early game chess positons, you will never know whether one move is better than the other.
+
+For many actions in live, you cannot fully enumerate over all the possible actions.
+
+You can only estimate.
+
+You can only estimate a finite number of times.
+
+Yet, you still need to make the best decision. Yet, you still need to learn.
+You need to be able to under uncertainty.
+You need to implement processes that still work even with approximations.
+
+
+#### **The best action that God takes for himself might not be the best action you could take for yourself**
+
+There are chess moves played by God that you do not understand.
+
+If you do not truly understand why the move is played, it is a bad move for you, even though it is the best move for God.
+
+God is not going to play all the actions for you.
+
+You should figure out the best moves for yourself. The best move for another person might not be the best move for you.
+
+
+
+#### **You might not be taking the best action you could take for yourself**
+
+It is possible that the action you are likely to take is not the best action you could take.
+
+For example, you might know that exercising regularly is the best action for your health, but you choose to skip it for immediate comfort.
+
+
+
+#### **You will over-estimate if you sample the best outcome**
+
+You have 10 coins. You flip each of them 100 times.
+
+It is likely that one of the coins produces more than 50, or even more than 55 heads.
+
+You might wrongly conclude that the best coin is the one that produces the most heads, when in reality, all coins are fair coins.
+
+Similarly, you have 10 possible actions to take, and you sample the results from each of the actions.
+
+There are some lessons from this.
+
+Do not look at the most successful outcome and think that you could have become like that.
+Plenty of luck is involved.
+
+If you look only at the sequence of most successful outcomes, you will overestimate the success of a given set of moves.
+
+
+
+#### **You can learn without playing through the entire game**
+
+There are reinforcement learning methods that learn estimates based on other estimates without waiting for a final outcome.
+
+There are things to be learned even if you do not complete it.
+
+For example, you can build small projects and have a better appreciation of how much it takes to complete the full project without completing the full project.
+
+
+
+
+---
+
+
 # Summary of Shusen Wang's slides
 
 The slides on Deep Reinforcement Learning are available on [Github](https://github.com/wangshusen/DRL/).
@@ -172,7 +292,8 @@ OpenAI Gym is a toolkit for developing and comparing reinforcement learning algo
 
 Architecture:
 
-$$\text{State } s \rightarrow \text{Conv Layer} \rightarrow \text{Dense Layer} \rightarrow \begin{cases}
+$$\text{State } s \rightarrow \text{Conv Layer} \rightarrow \text{Dense Layer} \rightarrow 
+\begin{cases}
 Q(s, \text{"left"}; w) \\
 Q(s, \text{"right"}; w) \\
 Q(s, \text{"up"}; w)
@@ -367,65 +488,133 @@ $$y_t = r_t + \gamma Q_\pi(s_{t+1}, a_{t+1})$$
 ## 6. Policy Gradient Methods
 
 
-### Baseline Methods
+### REINFORCE with Baseline
 
 
-**Problem**: High variance in policy gradient estimates
+#### Policy Gradient with Baseline
+
+**Core Formula**[^baseline]:
+
+$$\frac{\partial V_\pi(s_t)}{\partial \theta} = \mathbb{E}_{A_t \sim \pi}\left[\frac{\partial \ln \pi(A_t  \vert  s_t; \theta)}{\partial \theta} \cdot (Q_\pi(s_t, A_t) - V_\pi(s_t))\right] = \mathbb{E}_{A_t \sim \pi}\left[\frac{\partial \ln \pi(A_t  \vert  s_t; \theta)}{\partial \theta} \cdot Q_\pi(s_t, A_t)\right]$$
+
+**Key Insight**: $g(A_t) = \frac{\partial \ln \pi(a_t \vert s_t;\theta)}{\partial \theta} \cdot (Q_\pi(s_t, a_t) - V_\pi(s_t))$
+
+[^baseline]: I find baselines really interesting.
+
+    This is how I understand why we should use baselines - because what we could sample is finite.
+
+    Assume there are 100 actions,
+    10 of which (preferred) has a true action-value of 1000,
+    and all the other 90 of which (dispreferred) have an action-value of 999.
+    If we do not use baseline and we sample 10 actions,
+    gradient accent will make the dispreferred actions more likely as well - just that the preferred action is made more likely 1000/999 times more.
+    With a baseline, gradient accent will make the dispreferred actions less likely, and the preferred actions more likely.
+
+    I was also thinking - why don't use the average of sampled action values as the baseline,
+    instead of training a value function?
+    I understand that we want to approximate the value function at a certain state with just one trajectory.
+    Approximating the value function with trajectories might be much more expensive than training a value function.
 
 
-**Solution**: Use a baseline $b$ that is independent of action $A$:
+#### Three Approximations
+
+1. **Monte Carlo Approximation**: Approximate expectation using one sample $a_t$
+2. **Return Approximation**: Approximate $Q_\pi(s_t, a_t)$ by $u_t = \sum_{i=t}^n \gamma^{i-t} r_i$
+3. **Value Network Approximation**: Approximate $V_\pi(s)$ by value network $v(s; w)$
 
 
-$$\mathbb{E}_{A \sim \pi}\left[b \cdot \frac{\partial \ln \pi(A  \vert  s;\theta)}{\partial \theta}\right] = b \cdot \mathbb{E}_{A \sim \pi}\left[\frac{\partial \ln \pi(A  \vert  s;\theta)}{\partial \theta}\right]$$
+#### Algorithm
+
+1. **Observe trajectory**: $s_t, a_t, r_t, s_{t+1}, a_{t+1}, r_{t+1}, ..., s_n, a_n, r_n$
+2. **Compute return**: $u_t = \sum_{i=t}^n \gamma^{i-t} r_i$
+3. **Compute error**: $\delta_t = v(s_t; w) - u_t$
+4. **Update policy network**: $\theta \leftarrow \theta - \beta \cdot \delta_t \cdot \frac{\partial \ln \pi(a_t  \vert  s_t;\theta)}{\partial \theta}$
+5. **Update value network**: $w \leftarrow w - \alpha \cdot \delta_t \cdot \frac{\partial v(s_t;w)}{\partial w}$
 
 
-**Key Property**: The baseline doesn't introduce bias but reduces variance.
+#### Network Architecture
+
+- **Policy Network**: State $s$ → Conv → Dense → Softmax → Action probabilities
+- **Value Network**: State $s$ → Conv → Dense → Scalar value $v(s; w)$
+- Networks can share parameters in early layers
 
 
-**Common Baselines**:
-
-- Constant baseline
-
-- State-value function $V(s)$
-
-- Moving average of returns
+### Advantage Actor-Critic (A2C)
 
 
-### Policy Gradient Theorem
+#### Architecture
+
+**Two Neural Networks**:
+- **Policy Network (Actor)**: $\pi(a \vert s; \theta)$ - outputs action probabilities
+- **Value Network (Critic)**: $v(s; w)$ - outputs state value estimate
 
 
-**Objective**: Maximize expected return
+#### Temporal Difference Learning
 
-$$J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta}[R(\tau)]$$
+**TD Target**: $y_t = r_t + \gamma \cdot v(s_{t+1}; w)$
 
+**TD Error**: $\delta_t = v(s_t; w) - y_t$
 
-**Policy Gradient**:
-
-$$\nabla_\theta J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta}\left[\sum_{t=0}^T \nabla_\theta \ln \pi_\theta(a_t  \vert  s_t) \cdot R_t\right]$$
-
-
-**With Baseline**:
-
-$$\nabla_\theta J(\theta) = \mathbb{E}_{\tau \sim \pi_\theta}\left[\sum_{t=0}^T \nabla_\theta \ln \pi_\theta(a_t  \vert  s_t) \cdot (R_t - b(s_t))\right]$$
+**Key Difference from REINFORCE**: Uses bootstrapping with $v(s_{t+1}; w)$ instead of waiting for complete returns
 
 
-### Actor-Critic Methods
+#### Advantage Function
+
+$$\text{Advantage} = Q_\pi(s_t, a_t) - V_\pi(s_t)$$
+
+Approximated as: $Q_\pi(s_t, a_t) \approx r_t + \gamma \cdot V_\pi(s_{t+1})$
 
 
-**Architecture**:
+#### A2C Algorithm
 
-- **Actor**: Policy network $\pi_\theta(a \vert s)$
+1. **Observe transition**: $(s_t, a_t, r_t, s_{t+1})$
+2. **Compute TD target**: $y_t = r_t + \gamma \cdot v(s_{t+1}; w)$
+3. **Compute TD error**: $\delta_t = v(s_t; w) - y_t$
+4. **Update critic**: $w \leftarrow w - \alpha \cdot \delta_t \cdot \frac{\partial v(s_t;w)}{\partial w}$
+5. **Update actor**: $\theta \leftarrow \theta + \beta \cdot \frac{\partial \ln \pi(a_t  \vert  s_t;\theta)}{\partial \theta} \cdot (y_t - v(s_t; w))$
 
-- **Critic**: Value network $V_\phi(s)$ or $Q_\phi(s,a)$
+
+#### Mathematical Foundation
+
+**Theorem 1**: $$Q_\pi(s_t, a_t) = \mathbb{E}_{S_{t+1}}[R_t + \gamma \cdot V_\pi(S_{t+1})]$$
+
+**Theorem 2**: $$V_\pi(s_t) = \mathbb{E}_{A_t,S_{t+1}}[R_t + \gamma \cdot V_\pi(S_{t+1})]$$
 
 
-**Benefits**:
+### REINFORCE versus A2C
 
-- Lower variance than pure policy gradient
 
-- More sample efficient than value-based methods
+#### Key Differences
 
-- Can handle continuous action spaces
+**REINFORCE with Baseline**:
+- Uses Monte Carlo return: $u_t = \sum_{i=t}^n \gamma^{i-t} r_i$
+- Error: $\delta_t = v(s_t; w) - u_t$
+- Updates after complete episodes
+- No bootstrapping - uses actual returns
+- Unbiased but high variance
+
+**A2C**:
+- Uses TD target: $y_t = r_t + \gamma \cdot v(s_{t+1}; w)$
+- TD error: $\delta_t = v(s_t; w) - y_t$
+- Can update after each step
+- Uses bootstrapping from value function
+- Lower variance but introduces bias
+
+
+#### Multi-step A2C
+
+**Multi-step TD target**: $y_t = \sum_{i=0}^{m-1} \gamma^i r_{t+i} + \gamma^m v(s_{t+m}; w)$
+
+This provides a spectrum between one-step TD (m=1) and Monte Carlo (m=∞).
+
+
+#### Trade-offs
+
+- **Variance**: A2C has lower variance due to bootstrapping
+- **Bias**: REINFORCE is unbiased, A2C has bias from value approximation
+- **Sample Efficiency**: A2C is more sample efficient
+- **Update Frequency**: REINFORCE requires complete episodes, A2C can update online
+- **Complexity**: REINFORCE is simpler, A2C requires managing two networks
 
 
 ---
@@ -454,7 +643,9 @@ MCTS consists of four iterative steps:
 - Start from the root node (current state $s_t$)
 - Traverse the tree using a selection policy
 - Balance exploration and exploitation using UCB (Upper Confidence Bound):
+
   $$UCB = Q(s,a) + c \sqrt{\frac{\ln N(s)}{N(s,a)}}$$
+  
   where:
   - $Q(s,a)$: Average value of action $a$ in state $s$
   - $N(s)$: Number of times state $s$ was visited
@@ -465,7 +656,9 @@ MCTS consists of four iterative steps:
 **Question**: What will be the opponent's action?
 - Given player action $a_t$, opponent's action $a_t'$ leads to new state $s_{t+1}$
 - Opponent's action is randomly sampled from policy:
+
   $$a_t' \sim \pi(\cdot \vert s_t'; \theta)$$
+  
   where $s_t'$ is the state observed by the opponent
 
 #### Step 3: Evaluation
@@ -476,13 +669,16 @@ MCTS consists of four iterative steps:
   - Win: $r_T = +1$
   - Lose: $r_T = -1$
 - Evaluate state $s_{t+1}$ using value network:
+
   $$v(s_{t+1}; \mathbf{w})$$
 
 #### Step 4: Backup
 - MCTS repeats simulations many times
 - Each child of $a_t$ has multiple recorded $V(s_{t+1})$ values
 - Update action-value:
+
   $$Q(a_t) = \text{mean}(\text{recorded } V\text{ values})$$
+  
 - The Q values will be used in Step 1 (selection)
 
 ### Decision Making After MCTS
@@ -490,7 +686,9 @@ MCTS consists of four iterative steps:
 After running MCTS simulations:
 - $N(a)$: Number of times action $a$ has been selected
 - Final decision:
+
   $$a_t = \arg\max_a N(a)$$
+  
 - Choose the action that was explored most frequently
 
 **Key Properties**:
@@ -772,7 +970,6 @@ $$\nabla_\theta J(\theta) = \mathbb{E}_{s \sim \rho}\left[\nabla_\theta \mu_\the
 4. **Ablation Studies**: Remove components to understand contributions
 
 
----
+# Footnotes
 
-
-This comprehensive summary covers the key concepts, algorithms, and mathematical foundations of Deep Reinforcement Learning as presented in Shusen Wang's lecture series. Each section builds upon previous concepts, providing a structured learning path from basic probability theory to advanced multi-agent systems.
+These are my footnotes
