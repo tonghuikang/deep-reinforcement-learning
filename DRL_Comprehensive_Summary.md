@@ -487,6 +487,7 @@ $$y_t = r_t + \gamma Q_\pi(s_{t+1}, a_{t+1})$$
 
 ## 6. Policy Gradient Methods
 
+Policy gradient methods directly optimize the policy $\pi_\theta$.
 
 ### REINFORCE with Baseline
 
@@ -615,6 +616,63 @@ This provides a spectrum between one-step TD (m=1) and Monte Carlo (m=∞).
 - **Sample Efficiency**: A2C is more sample efficient
 - **Update Frequency**: REINFORCE requires complete episodes, A2C can update online
 - **Complexity**: REINFORCE is simpler, A2C requires managing two networks
+
+
+### Trust Region Policy Optimization (TRPO)
+
+**TRPO** is a policy optimization algorithm that is more robust and sample efficient than standard policy gradient algorithms.
+
+#### Trust Region Concept
+
+**Trust Region**: A neighborhood $\mathcal{N}(\theta_{old})$ of $\theta_{old}$ where we trust our approximation of the objective function.
+
+Example definition: 
+$$\mathcal{N}(\theta_{old}) = \{\theta : \vert\vert\theta - \theta_{old}\vert\vert_2 \leq \Delta\}$$
+
+#### Objective Function
+
+The objective function for policy optimization:
+$$J(\theta) = \mathbb{E}_{S,A}\left[\frac{\pi(A\vert S;\theta)}{\pi(A\vert S;\theta_{old})} \cdot Q_\pi(S,A)\right]$$
+
+where S is sampled from state transitions and A is sampled from policy $\pi(A\vert S;\theta_{old})$.
+
+#### TRPO Algorithm
+
+TRPO repeats two steps:
+
+1. **Approximation**: Given $\theta_{old}$, construct $L(\theta\vert\theta_{old})$ that approximates $J(\theta)$ in the neighborhood of $\theta_{old}$
+
+2. **Maximization**: In the trust region $\mathcal{N}(\theta_{old})$, find $\theta_{new}$ by:
+   $$\theta_{new} \leftarrow \arg\max_{\theta \in \mathcal{N}(\theta_{old})} L(\theta\vert\theta_{old})$$
+
+#### Implementation Steps
+
+1. **Collect Trajectory**: Controlled by policy $\pi(\cdot\vert s;\theta_{old})$, the agent collects a trajectory:
+   $s_1, a_1, r_1, s_2, a_2, r_2, \ldots, s_n, a_n, r_n$
+
+2. **Compute Returns**: For $i = 1, \ldots, n$, compute discounted returns:
+   $u_i = \sum_{k=i}^{n} \gamma^{k-i} \cdot r_k$
+
+3. **Approximation**: 
+   $$\tilde{L}(\theta\vert\theta_{old}) = \frac{1}{n}\sum_{i=1}^{n} \frac{\pi(a_i\vert s_i;\theta)}{\pi(a_i\vert s_i;\theta_{old})} \cdot u_i$$
+
+4. **Maximization with Constraint**:
+   $$\theta_{new} \leftarrow \arg\max_\theta \tilde{L}(\theta\vert\theta_{old})$$
+   
+   Subject to one of these constraints:
+   - **Option 1**: $\vert\vert\theta - \theta_{old}\vert\vert < \Delta$
+   - **Option 2**: $\frac{1}{n}\sum_{i=1}^{n} \text{KL}[\pi(\cdot\vert s_i;\theta_{old}) \vert\vert \pi(\cdot\vert s_i;\theta)] < \Delta$
+
+#### TRPO vs Policy Gradient
+
+- Both are policy-based reinforcement learning methods with the same objective function: $J(\theta) = \mathbb{E}_S[V_\pi(S)]$
+- **Policy Gradient**: Maximizes $J(\theta)$ by stochastic gradient ascent
+- **TRPO**: Maximizes $J(\theta)$ by trust-region algorithm
+
+#### Why TRPO?
+
+- More robust than policy gradient algorithms
+- More sample efficient than policy gradient algorithms
 
 
 ---
