@@ -210,7 +210,7 @@ The RL paradigm consists of:
 **Definition**: Policy function $\pi: (s, a) \mapsto [0,1]$
 
 
-$$\pi(a  \vert  s) = \mathbb{P}(A = a  \vert  S = s)$$
+$$\pi(a \vert s) = \mathbb{P}(A = a \vert S = s)$$
 
 
 The policy represents the probability of taking action $a$ in state $s$.
@@ -250,7 +250,7 @@ where $\gamma$ is the discount factor ($0 < \gamma \leq 1$).
 **Definition**: Action-value function (Q-function)
 
 
-$$Q_\pi(s_t, a_t) = \mathbb{E}[U_t  \vert  S_t = s_t, A_t = a_t]$$
+$$Q_\pi(s_t, a_t) = \mathbb{E}[U_t \vert S_t = s_t, A_t = a_t]$$
 
 
 This represents the expected discounted return when:
@@ -375,7 +375,7 @@ Q(s, \text{"up"}; w)
 
 1. Observe transition $(s_t, a_t, r_t, s_{t+1})$
 
-2. Sample $a_{t+1} \sim \pi(\cdot  \vert  s_{t+1})$ using current policy
+2. Sample $a_{t+1} \sim \pi(\cdot \vert s_{t+1})$ using current policy
 
 3. Compute TD target: $y_t = r_t + \gamma Q_\pi(s_{t+1}, a_{t+1})$
 
@@ -404,14 +404,14 @@ $$Q(s, a) \leftarrow Q(s, a) + \alpha[r + \gamma Q(s', a') - Q(s, a)]$$
 
 Starting with the Bellman equation:
 
-$$Q_\pi(s_t, a_t) = \mathbb{E}[U_t  \vert  S_t = s_t, A_t = a_t]$$
+$$Q_\pi(s_t, a_t) = \mathbb{E}[U_t \vert S_t = s_t, A_t = a_t]$$
 
 
 Using the recursive property:
 
-$$Q_\pi(s_t, a_t) = \mathbb{E}[R_t + \gamma U_{t+1}  \vert  S_t = s_t, A_t = a_t]$$
+$$Q_\pi(s_t, a_t) = \mathbb{E}[R_t + \gamma U_{t+1} \vert S_t = s_t, A_t = a_t]$$
 
-$$= \mathbb{E}[R_t  \vert  S_t = s_t, A_t = a_t] + \gamma \mathbb{E}[Q_\pi(S_{t+1}, A_{t+1})  \vert  S_t = s_t, A_t = a_t]$$
+$$= \mathbb{E}[R_t \vert S_t = s_t, A_t = a_t] + \gamma \mathbb{E}[Q_\pi(S_{t+1}, A_{t+1}) \vert S_t = s_t, A_t = a_t]$$
 
 
 This leads to the TD target:
@@ -496,7 +496,7 @@ Policy gradient methods directly optimize the policy $\pi_\theta$.
 
 **Core Formula**[^baseline]:
 
-$$\frac{\partial V_\pi(s_t)}{\partial \theta} = \mathbb{E}_{A_t \sim \pi}\left[\frac{\partial \ln \pi(A_t  \vert  s_t; \theta)}{\partial \theta} \cdot (Q_\pi(s_t, A_t) - V_\pi(s_t))\right] = \mathbb{E}_{A_t \sim \pi}\left[\frac{\partial \ln \pi(A_t  \vert  s_t; \theta)}{\partial \theta} \cdot Q_\pi(s_t, A_t)\right]$$
+$$\frac{\partial V_\pi(s_t)}{\partial \theta} = \mathbb{E}_{A_t \sim \pi}\left[\frac{\partial \ln \pi(A_t \vert s_t; \theta)}{\partial \theta} \cdot (Q_\pi(s_t, A_t) - V_\pi(s_t))\right] = \mathbb{E}_{A_t \sim \pi}\left[\frac{\partial \ln \pi(A_t \vert s_t; \theta)}{\partial \theta} \cdot Q_\pi(s_t, A_t)\right]$$
 
 **Key Insight**: $g(A_t) = \frac{\partial \ln \pi(a_t \vert s_t;\theta)}{\partial \theta} \cdot (Q_\pi(s_t, a_t) - V_\pi(s_t))$
 
@@ -529,7 +529,7 @@ $$\frac{\partial V_\pi(s_t)}{\partial \theta} = \mathbb{E}_{A_t \sim \pi}\left[\
 1. **Observe trajectory**: $s_t, a_t, r_t, s_{t+1}, a_{t+1}, r_{t+1}, ..., s_n, a_n, r_n$
 2. **Compute return**: $u_t = \sum_{i=t}^n \gamma^{i-t} r_i$
 3. **Compute error**: $\delta_t = v(s_t; w) - u_t$
-4. **Update policy network**: $\theta \leftarrow \theta - \beta \cdot \delta_t \cdot \frac{\partial \ln \pi(a_t  \vert  s_t;\theta)}{\partial \theta}$
+4. **Update policy network**: $\theta \leftarrow \theta - \beta \cdot \delta_t \cdot \frac{\partial \ln \pi(a_t \vert s_t;\theta)}{\partial \theta}$
 5. **Update value network**: $w \leftarrow w - \alpha \cdot \delta_t \cdot \frac{\partial v(s_t;w)}{\partial w}$
 
 
@@ -572,7 +572,7 @@ Approximated as: $Q_\pi(s_t, a_t) \approx r_t + \gamma \cdot V_\pi(s_{t+1})$
 2. **Compute TD target**: $y_t = r_t + \gamma \cdot v(s_{t+1}; w)$
 3. **Compute TD error**: $\delta_t = v(s_t; w) - y_t$
 4. **Update critic**: $w \leftarrow w - \alpha \cdot \delta_t \cdot \frac{\partial v(s_t;w)}{\partial w}$
-5. **Update actor**: $\theta \leftarrow \theta + \beta \cdot \frac{\partial \ln \pi(a_t  \vert  s_t;\theta)}{\partial \theta} \cdot (y_t - v(s_t; w))$
+5. **Update actor**: $\theta \leftarrow \theta + \beta \cdot \frac{\partial \ln \pi(a_t \vert s_t;\theta)}{\partial \theta} \cdot (y_t - v(s_t; w))$
 
 
 #### Mathematical Foundation
@@ -961,9 +961,9 @@ $$\nabla_\theta J(\theta) = \mathbb{E}_{s \sim \rho}\left[\nabla_\theta \mu_\the
 
 - **Return**: $U_t = R_t + \gamma R_{t+1} + \gamma^2 R_{t+2} + \cdots$
 
-- **Action-Value**: $Q_\pi(s, a) = \mathbb{E}[U_t  \vert  S_t = s, A_t = a]$
+- **Action-Value**: $Q_\pi(s, a) = \mathbb{E}[U_t \vert S_t = s, A_t = a]$
 
-- **State-Value**: $V_\pi(s) = \mathbb{E}[U_t  \vert  S_t = s]$
+- **State-Value**: $V_\pi(s) = \mathbb{E}[U_t \vert S_t = s]$
 
 
 ### Learning Updates
