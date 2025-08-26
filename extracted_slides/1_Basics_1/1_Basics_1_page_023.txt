@@ -1,0 +1,5 @@
+Terminology: policy
+
+Random or deterministic policy?
+
+[Game screenshot showing Mario platformer level with hand gesture images showing rock-paper-scissors]

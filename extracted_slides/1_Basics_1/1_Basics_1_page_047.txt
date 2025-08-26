@@ -1,0 +1,13 @@
+Play game using AI
+
+• (state, action, reward) trajectory:
+
+    $s_1, a_1, r_1, \; s_2, a_2, r_2, \; \cdots \; , \; s_n, a_n, r_n$.
+
+• One episode is from the the beginning to the end (Mario wins or dies).
+
+• What is a good policy?
+
+• A good policy leads to big cumulative reward: $\sum_{t=1}^{n} \gamma^{t-1} \cdot r_t$.
+
+• Use the rewards to guide the learning of policy.

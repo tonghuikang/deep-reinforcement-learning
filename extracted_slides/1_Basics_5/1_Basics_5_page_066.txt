@@ -1,0 +1,6 @@
+AlphaGo Zero v.s. AlphaGo
+
+• AlphaGo Zero is stronger than AlphaGo. (100-0 against AlphaGo.)
+• Differences:
+  • AlphaGo Zero does not use human experience. (No behavior cloning.)
+  • MCTS is used to train the policy network.

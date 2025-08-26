@@ -1,0 +1,5 @@
+Q-Learning (DQN Version)
+
+• Observe a transition $(s_t, a_t, r_t, s_{t+1})$.
+
+• TD target: $y_t = r_t + \gamma \cdot \max_a Q(s_{t+1}, a; \mathbf{w})$.

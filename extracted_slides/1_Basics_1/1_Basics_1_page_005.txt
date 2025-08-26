@@ -1,0 +1,3 @@
+Probability Density Function (PDF)
+
+• PDF provides a relative likelihood that the value of the random variable would equal that sample.

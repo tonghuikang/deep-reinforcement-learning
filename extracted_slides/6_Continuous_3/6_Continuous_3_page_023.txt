@@ -1,0 +1,8 @@
+Auxiliary Network
+
+Auxiliary Network: $f(s, \mathbf{a}; \boldsymbol{\theta}) = \sum_{i=1}^{d} \left[ -\frac{\rho_i}{2} - \frac{(a_i-\mu_i)^2}{2 \cdot \exp(\rho_i)} \right]$.
+
+[Diagram showing:
+state $s$ → Conv → feature → Dense1 → $\mu(s; \boldsymbol{\theta}^{\mu})$
+                          → Dense2 → $\rho(s; \boldsymbol{\theta}^{\rho})$
+                                    Action $\mathbf{a}$]

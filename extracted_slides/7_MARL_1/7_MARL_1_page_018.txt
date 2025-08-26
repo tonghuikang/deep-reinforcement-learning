@@ -1,0 +1,10 @@
+State-Value Function
+
+• State-value of the $i$-th agent:
+
+    $V^i(s_t; \theta^1, \cdots, \theta^n) = \mathbb{E}[U^i_t \vert S_t = s_t]$.
+
+• The expectation is taken w.r.t. all the future actions and states except $S_t$.
+
+• Randomness in actions: $A^j_t \sim \pi(\cdot \vert s_t; \theta^j)$, for all $j = 1, \cdots, n$.
+  (That is why the state-value $V^i$ depends on $\theta^1, \cdots, \theta^n$.)

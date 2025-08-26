@@ -1,0 +1,3 @@
+Updating the value network
+
+• Recall $v(s_t; \boldsymbol{w})$ is an approximation to $V_\pi(s_t) = \mathbb{E}[U_t \vert s_t]$.

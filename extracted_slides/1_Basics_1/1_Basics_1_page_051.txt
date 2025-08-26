@@ -1,0 +1,11 @@
+Return
+
+Definition: Return (aka cumulative future reward).
+
+• $U_t = R_t + R_{t+1} + R_{t+2} + R_{t+3} + \cdots$
+
+Question: At time $t$, are $R_t$ and $R_{t+1}$ equally important?
+
+• Which of the followings do you prefer?
+  • I give you $80 right now.
+  • I will give you $100 one year later.

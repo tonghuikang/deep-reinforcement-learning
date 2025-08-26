@@ -1,0 +1,4 @@
+State-Value Function Approximation
+
+Definition: State-value function.
+• $V_\pi(s) = \sum_a \pi(a\vert s) \cdot Q_\pi(s, a)$.

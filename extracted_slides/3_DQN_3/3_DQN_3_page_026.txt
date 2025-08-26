@@ -1,0 +1,3 @@
+Dueling Network
+
+$Q(s, a; \mathbf{w}) = V(s; \mathbf{w}^V) + A(s, a; \mathbf{w}^A) - \max_a A(s, a; \mathbf{w}^A)$.

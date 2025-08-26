@@ -1,0 +1,9 @@
+Discretization
+
+• Discretize the action space. (Draw a grid.)
+
+• Now, the number of actions is the number of grid points.
+
+180
+
+0                                     360

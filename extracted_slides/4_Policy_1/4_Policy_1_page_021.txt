@@ -1,0 +1,8 @@
+Policy Gradient with Baseline
+
+If $b$ is independent of $A$, then $\mathbb{E}_{A \sim \pi} \left[b \cdot \frac{\partial \ln \pi(A \vert s; \boldsymbol{\theta})}{\partial \boldsymbol{\theta}}\right] = 0$.
+
+• Policy gradient:
+    $\frac{\partial V_\pi(s)}{\partial \boldsymbol{\theta}}$
+    
+    $= \mathbb{E}_{A \sim \pi} \left[\frac{\partial \ln \pi(A \vert s; \boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot Q_\pi(s, A)\right] - \mathbb{E}_{A \sim \pi} \left[\frac{\partial \ln \pi(A \vert s; \boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot b\right]$

@@ -1,0 +1,9 @@
+TD with Experience Replay
+
+• Find $\mathbf{w}$ by minimizing $L(\mathbf{w}) = \frac{1}{T} \sum_{t=1}^T \frac{\delta_t^2}{2}$.
+
+• Stochastic gradient descent (SGD):
+  • Randomly sample a transition, $(s_i, a_i, r_i, s_{i+1})$, from the buffer.
+  • Compute TD error, $\delta_i$.
+  • Stochastic gradient: $\mathbf{g}_i = \frac{\partial \delta_i^2/2}{\partial \mathbf{w}} = \delta_i \cdot \frac{\partial Q(s_i,a_i;\mathbf{w})}{\partial \mathbf{w}}$
+  • SGD: $\mathbf{w} \leftarrow \mathbf{w} - \alpha \cdot \mathbf{g}_i$.

@@ -1,0 +1,9 @@
+Recap
+
+We have built three neural networks:
+
+$\mu(s; \theta^\mu)$, $\rho(s; \theta^\rho)$, and $f(s, a; \theta)$.
+
+• Auxiliary network, $f(s, a; \theta)$, helps with the training.
+
+• We will use $\frac{\partial f}{\partial \theta}$ for computing policy gradient.

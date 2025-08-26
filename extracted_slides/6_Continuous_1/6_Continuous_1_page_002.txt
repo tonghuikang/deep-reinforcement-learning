@@ -1,0 +1,5 @@
+Discrete Action Space
+
+• Action space $\mathcal{A} = \{\text{left}, \text{right}, \text{up}\}$.
+
+• The action space $\mathcal{A}$ is discrete.

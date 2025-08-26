@@ -1,0 +1,12 @@
+Transitions                    Sampling               Learning
+                              Probabilities           Rates
+
+$\vdots$                      $\vdots$               $\vdots$
+
+$(s_t, a_t, r_t, s_{t+1}), \delta_t$        $p_t \propto |\delta_t| + \epsilon$    $\alpha \cdot (n p_t)^{-\beta}$
+
+$(s_{t+1}, a_{t+1}, r_{t+1}, s_{t+2}), \delta_{t+1}$    $p_{t+1} \propto |\delta_{t+1}| + \epsilon$    $\alpha \cdot (n p_{t+1})^{-\beta}$
+
+$(s_{t+2}, a_{t+2}, r_{t+2}, s_{t+3}), \delta_{t+2}$    $p_{t+2} \propto |\delta_{t+2}| + \epsilon$    $\alpha \cdot (n p_{t+2})^{-\beta}$
+
+$\vdots$                      $\vdots$               $\vdots$

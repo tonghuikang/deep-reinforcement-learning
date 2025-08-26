@@ -1,0 +1,8 @@
+Actor and Critic
+
+[THIS IS DIAGRAM: A neural network architecture diagram showing:
+- Input: "state s" (showing a Super Mario game screenshot)
+- A "Conv" (convolutional) layer processing the state into "feature"
+- The feature splits into two paths:
+  - "Dense1" leading to "Softmax" outputting "$\pi(a \vert s; \boldsymbol{\theta})$" 
+  - "Dense2" leading to a single output "$v(s; \mathbf{w})$"]

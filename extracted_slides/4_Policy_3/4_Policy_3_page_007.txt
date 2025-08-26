@@ -1,0 +1,11 @@
+Training of A2C
+
+• Observe a transition $(s_t, a_t, r_t, s_{t+1})$.
+
+• TD target: $y_t = r_t + \gamma \cdot v(s_{t+1}; \mathbf{w})$.
+
+• TD error: $\delta_t = v(s_t; \mathbf{w}) - y_t$.
+
+• Update the policy network (actor) by:
+
+    $\boldsymbol{\theta} \leftarrow \boldsymbol{\theta} - \beta \cdot \delta_t \cdot \frac{\partial \ln \pi(a_t \vert s_t; \boldsymbol{\theta})}{\partial \boldsymbol{\theta}}$.

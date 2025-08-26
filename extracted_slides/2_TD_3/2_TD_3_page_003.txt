@@ -1,0 +1,7 @@
+Sarsa versus Q-Learning
+
+• Sarsa is for training action-value function, $Q_\pi(s, a)$.
+
+• TD target: $y_t = r_t + \gamma \cdot Q_\pi(s_{t+1}, a_{t+1})$.
+
+• Q-learning is for training the optimal action-value function, $Q^*(s, a)$.

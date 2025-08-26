@@ -1,0 +1,5 @@
+Apply DQN to Play Game
+
+$s_t \longrightarrow a_t$
+
+$a_t = \arg\max_a Q(s_t, a; \mathbf{w})$

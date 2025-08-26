@@ -1,0 +1,8 @@
+Play Go using the policy network
+
+• The policy network $\pi$ has been learned.
+• Observing the current state $s_t$, randomly sample action
+  $a_t \sim \pi(\cdot \vert s_t, \boldsymbol{\theta})$.
+
+• The learned policy network $\pi$ is strong, but not strong enough.
+• A small mistake may change the game result.

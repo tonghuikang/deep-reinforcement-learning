@@ -1,0 +1,12 @@
+State-Value Function Approximation
+
+Definition: State-value function.
+• $V_\pi(s) = \sum_a \pi(a\vert s) \cdot Q_\pi(s, a) \approx \sum_a \pi(a\vert s; \boldsymbol{\theta}) \cdot q(s, a; \mathbf{w})$.
+
+Policy network (actor):
+• Use neural net $\pi(a\vert s; \boldsymbol{\theta})$ to approximate $\pi(a\vert s)$.
+• $\boldsymbol{\theta}$ : trainable parameters of the neural net.
+
+Value network (critic):
+• Use neural net $q(s, a; \mathbf{w})$ to approximate $Q_\pi(s, a)$.
+• $\mathbf{w}$ : trainable parameters of the neural net.

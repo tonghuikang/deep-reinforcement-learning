@@ -1,0 +1,13 @@
+REINFORCE with Baseline
+
+• Observing a trajectory from time $t$ to $n$.
+
+• Return: $u_t = \sum_{i=t}^{n} \gamma^{i-t} \cdot r_i$.
+
+• Error: $\delta_t = v(s_t; \mathbf{w}) - u_t$.
+
+• Update the policy network (actor) by:
+$$\boldsymbol{\theta} \leftarrow \boldsymbol{\theta} - \beta \cdot \delta_t \cdot \frac{\partial \ln \pi(a_t \vert s_t;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}}.$$
+
+• Update the value network (critic) by:
+$$\mathbf{w} \leftarrow \mathbf{w} - \alpha \cdot \delta_t \cdot \frac{\partial v(s_t;\mathbf{w})}{\partial \mathbf{w}}.$$

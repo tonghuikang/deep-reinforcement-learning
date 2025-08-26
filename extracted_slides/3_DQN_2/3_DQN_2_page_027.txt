@@ -1,0 +1,5 @@
+Double DQN
+
+Reference:
+
+1. Van Hasselt, Guez, & Silver. Deep reinforcement learning with double Q-learning. In AAAI, 2016.

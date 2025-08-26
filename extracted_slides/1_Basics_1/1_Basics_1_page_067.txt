@@ -1,0 +1,11 @@
+Action-Value Function $Q_\pi(s, a)$
+
+Definition: Discounted return.
+
+• $U_t = R_t + \gamma R_{t+1} + \gamma^2 R_{t+2} + \cdots + \gamma^{n-t} R_n$.
+
+Definition: Action-value function.
+
+• $Q_\pi(s_t, a_t) = \mathbb{E} [ U_t \vert S_t = s_t, A_t = a_t ]$.
+
+Regard $S_{t+1}, \cdots, S_n$ and $A_{t+1}, \cdots, A_n$ as random variables.

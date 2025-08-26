@@ -1,0 +1,7 @@
+Algorithm
+
+Compute $q_t \approx Q_\pi(s_t, a_t)$ (some estimate). How?
+
+Option 2: Approximate $Q_\pi$ using a neural network.
+
+• This leads to the actor-critic method.

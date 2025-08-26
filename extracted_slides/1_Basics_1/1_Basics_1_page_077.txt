@@ -1,0 +1,8 @@
+Understanding the Value Functions
+
+• Action-value function: $Q_\pi(s, a) = \mathbb{E} [U_t \vert S_t = s, A_t = a]$.
+• Given policy $\pi$, $Q_\pi(s, a)$ evaluates how good it is for an agent to pick action $a$ while being in state $s$.
+
+• State-value function: $V_\pi(s) = \mathbb{E}_A [Q_\pi(s, A)]$
+• For fixed policy $\pi$, $V_\pi(s)$ evaluates how good the situation is in state $s$.
+• $\mathbb{E}_S [V_\pi(S)]$ evaluates how good the policy $\pi$ is.

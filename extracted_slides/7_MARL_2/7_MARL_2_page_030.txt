@@ -1,0 +1,6 @@
+Fully Decentralized
+
+• The agents are independent.
+• One agent is unaware of the other agents' observations and actions.
+• Train every agent in the same way as single-agent RL.
+• This does not work well.

@@ -1,0 +1,14 @@
+Reason 1: Maximization
+
+• Let $x_1, x_2, \cdots, x_n$ be observed real numbers.
+
+• Add zero-mean random noise to $x_1, \cdots, x_n$ and obtain $Q_1, \cdots, Q_n$.
+
+• The zero-mean noise does not affect the mean:
+                    $\mathbb{E}[\text{mean}_i(Q_i)] = \text{mean}_i(x_i)$.
+
+• The zero-mean noise increases the maximum:
+                    $\mathbb{E}[\max_i(Q_i)] \geq \max_i(x_i)$.
+
+• The zero-mean noise decreases the minimum:
+                    $\mathbb{E}[\min_i(Q_i)] \leq \min_i(x_i)$.

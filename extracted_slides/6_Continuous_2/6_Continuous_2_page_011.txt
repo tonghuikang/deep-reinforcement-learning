@@ -1,0 +1,9 @@
+Updating Value Network by TD
+
+• Transition: $(s_t, a_t, r_t, s_{t+1})$.
+• Value network makes prediction for time $t$:
+    $q_t = q(s_t, a_t; \mathbf{w})$.
+• Value network makes prediction for time $t + 1$:
+    $q_{t+1} = q(s_{t+1}, a'_{t+1}; \mathbf{w})$, where $a'_{t+1} = \pi(s_{t+1}; \boldsymbol{\theta})$.
+• TD error: $\delta_t = q_t - (r_t + \gamma \cdot q_{t+1})$.
+    $\underbrace{r_t + \gamma \cdot q_{t+1}}_{\text{TD Target}}$

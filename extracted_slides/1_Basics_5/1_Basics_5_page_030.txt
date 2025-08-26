@@ -1,0 +1,8 @@
+Policy Gradient
+
+Policy gradient: Derivative of state-value function $V(s; \boldsymbol{\theta})$ w.r.t. $\boldsymbol{\theta}$.
+
+• Recall that $\frac{\partial \log \pi(a_t \vert s_t, \boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot Q_\pi(s_t, a_t)$ is approximate policy gradient.
+• By definition, the action value is $Q_\pi(s_t, a_t) = \mathbb{E}[U_t \vert s_t, a_t]$.
+• Thus, we can replace $Q_\pi(s_t, a_t)$ by the observed return $u_t$.
+• Approximate policy gradient: $\frac{\partial \log \pi(a_t \vert s_t, \boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot u_t$.

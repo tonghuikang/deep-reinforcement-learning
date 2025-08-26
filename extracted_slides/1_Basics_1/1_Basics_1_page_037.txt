@@ -1,0 +1,9 @@
+Randomness in States
+
+• State transition can be random.
+
+• The environment generates the new state S' by
+
+    S' ~ p(· | s, a).
+
+[Diagram showing state S connected via action a to two possible next states with probabilities 0.8 and 0.2]

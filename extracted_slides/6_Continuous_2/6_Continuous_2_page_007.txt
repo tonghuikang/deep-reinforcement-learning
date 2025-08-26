@@ -1,0 +1,7 @@
+Deterministic Actor-Critic
+
+• Use a deterministic policy network (actor): $a = \pi(s; \boldsymbol{\theta})$.
+• Use a value network (critic): $q(s, a; \mathbf{w})$.
+• The critic outputs a scalar that evaluates how good the action $a$ is.
+
+state s → Policy Network (Parameter: θ) → action a = π(s; θ) → Value Network (Parameter: w) → value q(s,a; w)

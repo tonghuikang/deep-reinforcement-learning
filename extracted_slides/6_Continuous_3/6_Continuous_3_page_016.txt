@@ -1,0 +1,5 @@
+Policy Network
+
+• The policy network is:
+
+    $\pi(\mathbf{a} \vert s; \boldsymbol{\theta}^{\mu}, \boldsymbol{\theta}^{\rho}) = \prod_{i=1}^{d} \frac{1}{\sqrt{6.28} \sigma_i} \cdot \exp \left( -\frac{(a_i-\mu_i)^2}{2\sigma_i^2} \right)$.

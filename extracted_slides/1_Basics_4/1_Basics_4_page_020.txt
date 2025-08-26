@@ -1,0 +1,5 @@
+Actor-Critic Method
+
+policy network (actor)                    value network (critic)
+
+[Image shows two photographs: Left shows a gymnast performing on balance beam, Right shows a gymnastics judge holding up score cards showing "7.6"]

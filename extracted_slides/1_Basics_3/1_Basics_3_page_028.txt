@@ -1,0 +1,15 @@
+Policy Gradient
+
+Definition: Approximate state-value function.
+
+• $V(s; \boldsymbol{\theta}) = \sum_a \pi(a \vert s; \boldsymbol{\theta}) \cdot Q_\pi(s, a)$.
+
+Policy gradient: Derivative of $V(s; \boldsymbol{\theta})$ w.r.t. $\boldsymbol{\theta}$.
+
+• $\frac{\partial V(s;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}} = \sum_a \frac{\partial\pi(a \vert s;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot Q_\pi(s, a)$
+
+$= \sum_a \pi(a \vert s; \boldsymbol{\theta}) \cdot \frac{\partial \log \pi(a \vert s;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot Q_\pi(s, a)$
+
+• Chain rule: $\frac{\partial \log[\pi(\boldsymbol{\theta})]}{\partial\boldsymbol{\theta}} = \frac{1}{\pi(\boldsymbol{\theta})} \cdot \frac{\partial \pi(\boldsymbol{\theta})}{\partial \boldsymbol{\theta}}$.
+
+• $\Rightarrow$ $\pi(\boldsymbol{\theta}) \cdot \frac{\partial \log[\pi(\boldsymbol{\theta})]}{\partial\boldsymbol{\theta}} = \pi(\boldsymbol{\theta}) \cdot \frac{1}{\pi(\boldsymbol{\theta})} \cdot \frac{\partial \pi(\boldsymbol{\theta})}{\partial \boldsymbol{\theta}}$

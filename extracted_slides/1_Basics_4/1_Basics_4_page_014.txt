@@ -1,0 +1,14 @@
+Train the networks
+
+Definition: State-value function approximated using neural networks.
+• $V(s; \boldsymbol{\theta}, \mathbf{w}) = \sum_a \pi(a\vert s; \boldsymbol{\theta}) \cdot q(s, a; \mathbf{w})$.
+
+Training: Update the parameters $\boldsymbol{\theta}$ and $\mathbf{w}$.
+
+• Update policy network $\pi(a\vert s; \boldsymbol{\theta})$ to increase the state-value $V(s; \boldsymbol{\theta}, \mathbf{w})$.
+  • Actor gradually performs better.
+  • Supervision is purely from the value network (critic).
+
+• Update value network $q(s, a; \mathbf{w})$ to better estimate the return.
+  • Critic's judgement becomes more accurate.
+  • Supervision is purely from the rewards.

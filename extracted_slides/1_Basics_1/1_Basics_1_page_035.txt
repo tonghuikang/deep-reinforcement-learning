@@ -1,0 +1,9 @@
+Randomness in Actions
+
+[Diagram showing a state S with three arrows pointing to action options: left (0.2), right (0.1), up (0.7), and notation A ~ π(· | s)]
+
+Given state s, the action can be random, e.g.,
+
+• π("left" | s) = 0.2,
+• π("right" | s) = 0.1,
+• π("up" | s) = 0.7.

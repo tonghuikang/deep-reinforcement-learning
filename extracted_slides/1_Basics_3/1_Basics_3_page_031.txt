@@ -1,0 +1,15 @@
+Policy Gradient
+
+Definition: Approximate state-value function.
+
+• $V(s; \boldsymbol{\theta}) = \sum_a \pi(a \vert s; \boldsymbol{\theta}) \cdot Q_\pi(s, a)$.
+
+Policy gradient: Derivative of $V(s; \boldsymbol{\theta})$ w.r.t. $\boldsymbol{\theta}$.
+
+• $\frac{\partial V(s;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}} = \sum_a \frac{\partial\pi(a \vert s;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot Q_\pi(s, a)$
+
+$= \sum_a \pi(a \vert s; \boldsymbol{\theta}) \cdot \frac{\partial \log \pi(a \vert s;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot Q_\pi(s, a)$
+
+$= \mathbb{E}_A \left[\frac{\partial \log \pi(A \vert s;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot Q_\pi(s, A)\right]$.
+
+The expectation is taken w.r.t. the random variable $A \sim \pi(\cdot \vert s; \boldsymbol{\theta})$.

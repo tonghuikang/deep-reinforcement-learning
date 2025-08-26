@@ -1,0 +1,11 @@
+One-Step VS Multi-Step Target
+
+• Observing a transition $(s_t, a_t, r_t, s_{t+1})$
+
+• One-step TD target:
+$$y_t = r_t + \gamma \cdot v(s_{t+1}; \mathbf{w}).$$
+
+• Observing $m$ transitions: $\{(s_{t+i}, a_{t+i}, r_{t+i}, s_{t+i+1})\}_{i=0}^{m-1}$.
+
+• $m$-step TD target:
+$$y_t = \sum_{i=0}^{m-1} \gamma^i \cdot r_{t+i} + \gamma^m \cdot v(s_{t+m}; \mathbf{w}).$$

@@ -1,0 +1,13 @@
+Train the value network
+
+After finishing training the policy network, train the value network.
+
+Repeat the followings:
+
+1. Play a game to the end.
+   • If win, let $u_1 = u_2 = \cdots = u_T = +1$.
+   • If lose, let $u_1 = u_2 = \cdots = u_T = -1$.
+
+2. Loss: $L = \sum_{t=1}^{T} \frac{1}{2} [v(s_t; \mathbf{w}) - u_t]^2$.
+
+3. Update: $\mathbf{w} \leftarrow \mathbf{w} - \alpha \cdot \frac{\partial L}{\partial \mathbf{w}}$.

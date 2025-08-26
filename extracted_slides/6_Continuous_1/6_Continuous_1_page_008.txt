@@ -1,0 +1,11 @@
+Discretization
+
+• Discretize the action space. (Draw a grid.)
+
+• Now, the number of actions is the number of grid points.
+
+• Problem: curse of dimensionality.
+
+  • Let $d$ be the degree of freedom.
+
+  • The number of actions grows exponentially with $d$.

@@ -1,0 +1,6 @@
+TD Error & Gradient
+
+• TD target: $y_t = r_t + \gamma \cdot q(s_{t+1}, a_{t+1}; \mathbf{w})$.
+• TD error: $\delta_t = q(s_t, a_t; \mathbf{w}) - y_t$.
+• Loss: $\delta_t^2/2$.
+• Gradient: $\frac{\partial \delta_t^2/2}{\partial \mathbf{w}} = \delta_t \cdot \frac{\partial q(s_t,a_t;\mathbf{w})}{\partial \mathbf{w}}$.

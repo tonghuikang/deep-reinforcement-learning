@@ -1,0 +1,9 @@
+Value Network (Critic): $q(s, a; \mathbf{w})$
+
+• Inputs: state $s$.
+• Output: action-values of all the actions.
+
+[Image shows a Super Mario game screenshot labeled "state s" going through Conv → Dense layers to produce a "feature" vector, which then outputs:
+$q(s, "left"; \mathbf{w}) = 2000$
+$q(s, "right"; \mathbf{w}) = 1000$
+$q(s, "up"; \mathbf{w}) = 3000$]

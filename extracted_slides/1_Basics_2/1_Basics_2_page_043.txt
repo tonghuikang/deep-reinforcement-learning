@@ -1,0 +1,6 @@
+Train DQN using TD learning
+
+• Prediction: $Q(s_t, a_t; \mathbf{w}_t)$.
+
+• TD target:
+    $y_t = r_t + \gamma \cdot Q(s_{t+1}, a_{t+1}; \mathbf{w}_t)$

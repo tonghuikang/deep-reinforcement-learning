@@ -1,0 +1,5 @@
+Roles of Actor and Critic
+
+During training
+• Agent is controlled by policy network (actor): $a_t \sim \pi(\cdot \vert s_t; \boldsymbol{\theta})$.
+• Value network $q$ (critic) provides the actor with supervision.

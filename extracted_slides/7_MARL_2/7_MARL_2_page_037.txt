@@ -1,0 +1,11 @@
+Recommended Survey Papers
+
+1. Zhang, Yang, & Başar. Multi-agent reinforcement learning: a selective overview of theories and algorithms. arXiv, 2019.
+
+2. François-Lavet et al. An Introduction to Deep Reinforcement Learning. Foundations and Trends in Machine Learning, 2018.
+
+3. Hernandez-Leal et al. A survey of learning in multiagent environments: dealing with non-stationarity. arXiv, 2017.
+
+4. Nguyen, Nguyen, & Nahavandi. Deep reinforcement learning for multiagent systems: A review of challenges, solutions, and applications. IEEE Transactions on Cybernetics, 2020.
+
+5. Li. Deep reinforcement learning. arXiv, 2018.

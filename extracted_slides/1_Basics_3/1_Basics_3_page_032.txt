@@ -1,0 +1,3 @@
+Policy gradient:
+
+$\frac{\partial V(s;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}} = \mathbb{E}_{A \sim \pi(\cdot \vert s;\boldsymbol{\theta})} \left[\frac{\partial \log \pi(A \vert s,\boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot Q_\pi(s, A)\right]$.

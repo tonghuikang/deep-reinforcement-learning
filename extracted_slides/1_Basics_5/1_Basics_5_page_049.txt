@@ -1,0 +1,7 @@
+Step 2: Expansion
+
+[Diagram shows tree with root node $s_t$, with one selected red node labeled $a_t$ connecting to two green child nodes]
+
+Question: What will be the opponent's action?
+
+• Given $a_t$, the opponent's action $a_t'$ will lead to the new state $s_{t+1}$.

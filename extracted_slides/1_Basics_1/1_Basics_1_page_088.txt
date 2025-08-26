@@ -1,0 +1,11 @@
+Summary
+
+Terminologies
+
+• Agent [Mario character icon]
+• Environment
+• State $s$
+• Action $a$
+• Reward $r$
+• Policy $\pi(a \vert s)$
+• State transition $p(s' \vert s, a)$

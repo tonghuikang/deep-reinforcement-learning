@@ -1,0 +1,7 @@
+Stationary VS Non-stationary
+
+• Consider **single-agent** setting.
+• **Stationary environment** requires state transition be fixed throughout.
+  • State transition: $p(s' \vert s, a)$.
+  • Given $s$ and $a$, the probability distribution of the next state $s'$ is always the same.
+• All the single-agent RL methods we have learned so far require stationary environment.

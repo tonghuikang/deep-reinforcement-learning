@@ -1,0 +1,7 @@
+Architectures
+
+• Fully decentralized: Every agent uses its own observations and rewards to learn its policy. Agents do not communicate.
+
+• Fully centralized: The agents send everything to the central controller. The controller makes decisions for all the agents.
+
+• Centralized training with decentralized execution: A central controller is used during training. The controller is disabled after training.

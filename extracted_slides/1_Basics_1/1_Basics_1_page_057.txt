@@ -1,0 +1,15 @@
+Randomness in Returns
+
+Definition: Discounted return (at time $t$).
+
+• $U_t = R_t + \gamma R_{t+1} + \gamma^2 R_{t+2} + \cdots + \gamma^{n-t} R_n$.
+
+At time $t$, the rewards, $R_t, \cdots, R_n$, are random, so the return $U_t$ is random.
+
+• Reward $R_i$ depends on $S_i$ and $A_i$.
+
+• States can be random: $S_i \sim p( \cdot \vert s_{i-1}, a_{i-1} )$.
+
+• Actions can be random: $A_i \sim \pi( \cdot \vert s_i )$.
+
+• If either $S_i$ or $A_i$ is random, then $R_i$ is random.

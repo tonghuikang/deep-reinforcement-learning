@@ -1,0 +1,13 @@
+Uncertainty in the Return
+
+• The reward $R^i_t$ depends on $S_t$ and $A^1_t, A^2_t, \cdots, A^n_t$.
+
+• Uncertainty in $S_t$ is from the state transition, $p$.
+
+• Uncertainty in $A^i_t$ is from the policy network, $\pi(\cdot \vert s_t; \theta^i)$.
+
+• The return, $U^i_t = \sum_{k=0}^{\infty} \gamma^k \cdot R^i_{t+k}$, depends on:
+
+  • all the future states: $\{S_t, S_{t+1}, S_{t+2}, \cdots\}$;
+
+  • all the future actions: $\{A^i_t, A^i_{t+1}, A^i_{t+2}, \cdots\}$, for all $i = 1, \cdots, n$.

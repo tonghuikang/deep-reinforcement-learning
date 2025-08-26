@@ -1,0 +1,11 @@
+Returns
+
+• Let $R^i_t$ be the reward received by the $i$-th agent at time $t$.
+
+• Return (of the $i$-th agent):
+    $U^i_t = R^i_t + R^i_{t+1} + R^i_{t+2} + R^i_{t+3} + \cdots$
+
+• Discounted return (of the $i$-th agent):
+    $U^i_t = R^i_t + \gamma \cdot R^i_{t+1} + \gamma^2 \cdot R^i_{t+2} + \gamma^3 \cdot R^i_{t+3} + \cdots$
+    
+    Here, $\gamma \in [0, 1]$ is the discount rate.

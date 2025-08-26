@@ -1,0 +1,6 @@
+Policy Network (of AlphaGo)
+
+[The image shows a neural network diagram with:
+- Input: Go board state ($19 \times 19 \times 48$ tensor)
+- Conv layer
+- Output: Probability distribution over the 361 actions, showing $\pi(1\vert s, \boldsymbol{\theta})$, $\pi(2\vert s, \boldsymbol{\theta})$, $\pi(3\vert s, \boldsymbol{\theta})$, ..., $\pi(359\vert s, \boldsymbol{\theta})$, $\pi(360\vert s, \boldsymbol{\theta})$, $\pi(361\vert s, \boldsymbol{\theta})$]

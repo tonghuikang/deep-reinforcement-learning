@@ -1,0 +1,7 @@
+Random Variable
+
+• Random variable: unknown; its values depend on outcomes of random events.
+
+Random Variable    Possible Values    Random Events    Probabilities
+X = {  0  ← [coin image]    $\mathbb{P}(X = 0) = 0.5$
+      1  ← [coin image]    $\mathbb{P}(X = 1) = 0.5$

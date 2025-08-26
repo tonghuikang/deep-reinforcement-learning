@@ -1,0 +1,9 @@
+How to apply TD learning to DQN?
+
+• In the "driving time" example, we have the equation:
+    $T_{\text{NYC}\to\text{ATL}} \approx T_{\text{NYC}\to\text{DC}} + T_{\text{DC}\to\text{ATL}}$.
+
+    Model's estimate    Actual time    Model's estimate
+
+• In deep reinforcement learning:
+    $Q(s_t, a_t; \mathbf{w}) \approx r_t + \gamma \cdot Q(s_{t+1}, a_{t+1}; \mathbf{w})$.

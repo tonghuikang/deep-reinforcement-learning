@@ -1,0 +1,12 @@
+Why does overestimation happen?
+
+                                    Maximization leads to
+                                        overestimation
+
+        DQN                                                        TD target is
+    overestimates                                                      an
+    action-value                                                 overestimation
+
+
+                                Bootstrapping propagates the
+                                overestimation back to DQN

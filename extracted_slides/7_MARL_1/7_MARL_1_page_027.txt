@@ -1,0 +1,8 @@
+Single-Agent Policy Gradient for MARL
+
+What is wrong?
+
+• The $i$-th agent found $\boldsymbol{\theta}_*^i = \text{argmax}_{\boldsymbol{\theta}^i} J^i(\boldsymbol{\theta}^1, \ldots, \boldsymbol{\theta}^n)$.
+• Now, another agent changes its policy.
+• So $\boldsymbol{\theta}_*^i$ is no longer the best policy of the $i$-th agent. The $i$-th agent has to find a new $\boldsymbol{\theta}^i$.
+• The other agents' objective functions will change, and therefore they will change their policies...

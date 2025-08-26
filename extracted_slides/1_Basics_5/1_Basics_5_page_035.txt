@@ -1,0 +1,8 @@
+State-Value Function
+
+Definition: State-value function.
+
+• $V_\pi(s) = \mathbb{E}[U_t \vert S_t = s]$, where $U_t = +1$ (if win) and $-1$ (if lose).
+• The expectation is taken with respect to
+  • The future actions $A_t, A_{t+1}, \cdots, A_T$.
+  • The future states $S_{t+1}, S_{t+2}, \cdots, S_T$

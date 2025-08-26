@@ -1,0 +1,3 @@
+Approximations to Action-Value
+
+Stochastic policy gradient: $g(a) = \frac{\partial f(s,a;\theta)}{\partial \theta} \cdot Q_\pi(s, a)$

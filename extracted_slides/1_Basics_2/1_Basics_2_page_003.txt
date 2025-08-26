@@ -1,0 +1,11 @@
+Discounted Return
+
+Definition: Discounted return (aka cumulative discounted future reward).
+
+• $U_t = R_t + \gamma R_{t+1} + \gamma^2 R_{t+2} + \gamma^3 R_{t+3} + \cdots$
+
+• The return depends on actions $A_t, A_{t+1}, A_{t+2}, \cdots$ and states $S_t, S_{t+1}, S_{t+2}, \cdots$
+
+• Actions are random: $\mathbb{P}[A = a \vert S = s] = \pi(a \vert s)$. (Policy function.)
+
+• States are random: $\mathbb{P}[S' = s' \vert S = s, A = a] = p(s' \vert s, a)$. (State transition.)

@@ -1,0 +1,3 @@
+Dueling Network: Formulation
+
+Theorem 2: $Q^*(s, a) = V^*(s) + A^*(s, a) - \max_a A^*(s, a)$.

@@ -1,0 +1,12 @@
+Reason 1: Maximization
+
+• True action-values: $x(a_1), \cdots, x(a_n)$.
+
+• Noisy estimations made by DQN: $Q(s, a_1; \mathbf{w}), \cdots, Q(s, a_n; \mathbf{w})$.
+
+• Suppose the estimation is unbiased:
+                    $\text{mean}_a(x(a)) = \text{mean}_a(Q(s, a; \mathbf{w}))$.
+
+• $q = \max_a Q(s, a; \mathbf{w})$ is typically an overestimation:
+
+                    $q \geq \max_a(x(a))$.

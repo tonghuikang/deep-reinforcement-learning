@@ -1,0 +1,7 @@
+Parameter Sharing
+
+[THIS IS FIGURE: A neural network architecture diagram showing:
+- Input: Mario game scene as "state s"
+- Conv layer processing the state into "feature"
+- Two branches from the feature: Dense1 leading to Softmax for π(a|s; θ) and Dense2 leading to v(s; w)
+The diagram illustrates parameter sharing between policy and value networks through the shared Conv and feature extraction layers.]

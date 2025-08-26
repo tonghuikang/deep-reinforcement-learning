@@ -1,0 +1,13 @@
+Centralized Training
+
+Critic 1        Central Controller        Critic n
+                    {a^i, o^i, r^i}_{i=1}^n
+    ↓                                         ↓
+    
+q^1                                         q^n
+    ↓                                         ↓
+
+Actor 1              ...                   Actor n
+
+• Each agent locally trains the actor, π(a^i\vert o^i; θ^i), using policy gradient.
+• To update θ^i, the policy gradient algorithm takes as input (a^i, o^i, q^i).

@@ -1,0 +1,13 @@
+Double DQN
+
+• Selection using DQN:
+                    $a^* = \text{argmax}_a Q(s_{t+1}, a; \mathbf{w})$.
+
+• Evaluation using target network:
+                    $y_t = r_t + \gamma \cdot Q(s_{t+1}, a^*; \mathbf{w}^-)$.
+
+• It is the best among the three; but overestimation still happens.
+
+Reference:
+
+1. Van Hasselt, Guez, & Silver. Deep reinforcement learning with double Q-learning. In AAAI, 2016.

@@ -1,0 +1,5 @@
+Return
+
+Definition: Discounted return.
+
+• $U_t = R_t + \gamma \cdot R_{t+1} + \gamma^2 \cdot R_{t+2} + \gamma^3 \cdot R_{t+3} + \cdots$

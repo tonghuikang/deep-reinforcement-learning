@@ -1,0 +1,10 @@
+Step 2: Expansion
+
+[Diagram shows tree with root node $s_t$, with one selected red node labeled $a_t$ connecting to two green child nodes, with probabilities "Prob = 0.4" and "Prob = 0.6"]
+
+Question: What will be the opponent's action?
+
+• Given $a_t$, the opponent's action $a_t'$ will lead to the new state $s_{t+1}$.
+• The opponent's action is randomly sampled from
+    $$a_t' \sim \pi(\cdot \vert s_t'; \boldsymbol{\theta}).$$
+    Here, $s_t'$ is the state observed by the opponent.

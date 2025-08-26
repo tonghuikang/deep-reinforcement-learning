@@ -1,0 +1,7 @@
+Q-Learning (tabular version)
+
+• Observe a transition $(s_t, a_t, r_t, s_{t+1})$.
+
+• TD target: $y_t = r_t + \gamma \cdot \max_a Q^*(s_{t+1}, a)$.
+
+• TD error: $\delta_t = Q^*(s_t, a_t) - y_t$.

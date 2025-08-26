@@ -1,0 +1,5 @@
+Function Approximation
+
+[Diagram showing:
+state $s$ → Conv → feature → Dense1 → $\mu(s; \boldsymbol{\theta}^{\mu})$
+                          → Dense2 → $\rho(s; \boldsymbol{\theta}^{\rho})$]

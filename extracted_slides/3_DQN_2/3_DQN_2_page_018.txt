@@ -1,0 +1,13 @@
+Why is overestimation harmful?
+
+The agent is controlled by the DQN: $a_t = \text{argmax}_a Q(s_t, a; \mathbf{w})$.
+
+Uniform overestimation is not a problem.
+
+Non-uniform overestimation is problematic.
+
+• $Q^*(s, a^1) = 200$, $Q^*(s, a^2) = 100$, and $Q^*(s, a^3) = 230$.
+
+• $Q(s, a^1; \mathbf{w}) = 280$, $Q(s, a^2; \mathbf{w}) = 300$, and $Q(s, a^3; \mathbf{w}) = 240$.
+
+• Then $a^2$ (which is bad) will be selected.

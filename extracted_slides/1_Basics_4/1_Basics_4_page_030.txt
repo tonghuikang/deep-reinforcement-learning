@@ -1,0 +1,8 @@
+Policy Network and Value Network
+
+Definition: State-value function.
+• $V_\pi(s) = \sum_a \pi(a\vert s) \cdot Q_\pi(s, a)$.
+
+Definition: function approximation using neural networks.
+• Approximate policy function $\pi(a\vert s)$ by $\pi(a\vert s; \boldsymbol{\theta})$ (actor).
+• Approximate value function $Q_\pi(s, a)$ by $q(s, a; \mathbf{w})$ (critic).

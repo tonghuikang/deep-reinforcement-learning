@@ -1,0 +1,9 @@
+Summary of Approximations
+
+Approximate policy gradient:
+$$\frac{\partial V_\pi(s_t)}{\partial \boldsymbol{\theta}} \approx \boldsymbol{g}(a_t) \approx \frac{\partial \ln \pi(a_t \vert s_t; \boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot \left(u_t - v(s_t; \boldsymbol{w})\right).$$
+
+• Three approximations:
+    1. Approximate expectation using one sample, $a_t$. (Monte Carlo.)
+    2. Approximate $Q_\pi(s_t, a_t)$ by $u_t$. (Another Monte Carlo.)
+    3. Approximate $V_\pi(s)$ by the value network, $v(s; \boldsymbol{w})$.

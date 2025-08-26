@@ -1,0 +1,6 @@
+Train the networks
+
+Definition: State-value function approximated using neural networks.
+• $V(s; \boldsymbol{\theta}, \mathbf{w}) = \sum_a \pi(a\vert s; \boldsymbol{\theta}) \cdot q(s, a; \mathbf{w})$.
+
+Training: Update the parameters $\boldsymbol{\theta}$ and $\mathbf{w}$.

@@ -1,0 +1,3 @@
+Self-Interested Setting
+
+Agents are self-interested. Their rewards may or may not conflict.

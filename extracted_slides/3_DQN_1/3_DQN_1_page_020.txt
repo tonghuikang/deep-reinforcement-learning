@@ -1,0 +1,7 @@
+Basic Idea
+
+• How do we know which transition is important?
+
+• If a transition has high TD error $|\delta_t|$, it will be given high priority.
+
+[Two game screenshots showing different scenarios - left shows a simple Mario level, right shows a more complex castle scene with enemies]

@@ -1,0 +1,19 @@
+Q-Learning (tabular version)
+
+• Observe a transition $(s_t, a_t, r_t, s_{t+1})$.
+
+• TD target: $y_t = r_t + \gamma \cdot \max_a Q^*(s_{t+1}, a)$.
+
+\begin{array}{|c|c|c|c|c|c|}
+\hline
+ & \text{Action } a_1 & \text{Action } a_2 & \text{Action } a_3 & \text{Action } a_4 & \cdots \\
+\hline
+\text{State } s_1 & & & & & \\
+\hline
+\text{State } s_2 & & & & & \\
+\hline
+\text{State } s_3 & & & & & \\
+\hline
+\vdots & & & & & \\
+\hline
+\end{array}

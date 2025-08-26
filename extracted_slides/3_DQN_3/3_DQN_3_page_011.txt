@@ -1,0 +1,9 @@
+Properties of Advantage Function
+
+Theorem 1: $V^*(s) = \max_a Q^*(s, a)$.
+
+• Recall the definition of the optimal advantage function:
+    $A^*(s, a) = Q^*(s, a) - V^*(s)$.
+
+• It follows that
+    $\max_a A^*(s, a) = \max_a Q^*(s, a) - V^*(s) = 0$

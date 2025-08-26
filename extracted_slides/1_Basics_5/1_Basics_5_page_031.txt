@@ -1,0 +1,10 @@
+Train policy network using policy gradient
+
+Repeat the followings:
+
+• Two policy networks play a game to the end. (Player v.s. Opponent.)
+• Get a trajectory: $s_1, a_1, s_2, a_2, \cdots, s_T, a_T$.
+• After the game ends, update the player's policy network.
+  • The player's returns: $u_1 = u_2 = \cdots = u_T$. (Either $+1$ or $-1$.)
+  • Sum of approximate policy gradients: $\mathbf{g}_\boldsymbol{\theta} = \sum_{t=1}^T \frac{\partial \log \pi(a_t \vert s_t, \boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot u_t$.
+  • Update policy network: $\boldsymbol{\theta} \leftarrow \boldsymbol{\theta} + \beta \cdot \mathbf{g}_\boldsymbol{\theta}$.

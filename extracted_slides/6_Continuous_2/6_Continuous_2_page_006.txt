@@ -1,0 +1,6 @@
+Deterministic Actor-Critic
+
+• Use a deterministic policy network (actor): $a = \pi(s; \boldsymbol{\theta})$.
+• Use a value network (critic): $q(s, a; \mathbf{w})$.
+
+state s → Policy Network (Parameter: θ) → action a = π(s; θ) → Value Network (Parameter: w) → value

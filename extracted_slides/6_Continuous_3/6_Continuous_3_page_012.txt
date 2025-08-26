@@ -1,0 +1,7 @@
+Continuous Control
+
+• Observe state $s$.
+
+• Compute mean and log variance using the neural network:
+
+    $\hat{\boldsymbol{\mu}} = \boldsymbol{\mu}(s; \boldsymbol{\theta}^{\mu})$ and $\hat{\boldsymbol{\rho}} = \boldsymbol{\rho}(s; \boldsymbol{\theta}^{\rho})$.

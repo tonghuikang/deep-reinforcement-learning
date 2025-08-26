@@ -1,0 +1,7 @@
+Temporal Difference (TD) Learning
+
+• Model's estimate: $Q(\mathbf{w}) = 1000$ minutes.
+• Updated estimate: $300 + 600 = 900$ minutes.
+                    TD target.
+
+[The image shows the same diagram with the updated calculations and "TD target." labeled]

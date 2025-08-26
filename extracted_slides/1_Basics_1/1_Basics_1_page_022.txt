@@ -1,0 +1,12 @@
+Terminology: policy
+
+                                  policy π
+
+[Game screenshot showing Mario platformer level with labeled actions: up arrow, left arrow, right arrow indicating possible actions]
+
+• π(a | s) is the probability of taking action A = a given state s, e.g.,
+  • π(left | s) = 0.2,
+  • π(right| s) = 0.1,
+  • π(up | s) = 0.7.
+
+• Upon observing state S = s, the agent's action A can be random.

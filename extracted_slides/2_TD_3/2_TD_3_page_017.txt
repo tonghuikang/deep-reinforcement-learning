@@ -1,0 +1,9 @@
+Multi-Step TD Targets
+
+Identity: $U_t = \sum_{i=0}^{m-1} \gamma^i \cdot R_{t+i} + \gamma^m \cdot U_{t+m}$.
+
+• $m$-step TD target for Sarsa:
+  $y_t = \sum_{i=0}^{m-1} \gamma^i \cdot r_{t+i} + \gamma^m \cdot Q_\pi(s_{t+m}, a_{t+m})$.
+
+• One-step TD target for Sarsa:
+  $y_t = r_t + \gamma \cdot Q_\pi(s_{t+1}, a_{t+1})$.

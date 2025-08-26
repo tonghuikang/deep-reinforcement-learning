@@ -1,0 +1,9 @@
+Policy-Based Reinforcement Learning
+
+Definition: State-value function.
+
+• $V_\pi(s_t) = \mathbb{E}_A[Q_\pi(s_t, A)] = \sum_a \pi(a \vert s_t) \cdot Q_\pi(s_t, a)$.
+
+Approximate state-value function.
+
+• Approximate policy function $\pi(a \vert s_t)$ by policy network $\pi(a \vert s_t; \boldsymbol{\theta})$.

@@ -1,0 +1,7 @@
+Actor and Critic
+
+• Policy network (actor): $\pi(a \vert s; \boldsymbol{\theta})$.
+
+  • It is an approximation to the policy function, $\pi(a \vert s)$.
+
+  • It controls the agent.

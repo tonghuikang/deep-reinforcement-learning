@@ -1,0 +1,11 @@
+Summary
+
+Terminologies                          Return and Value
+
+• Agent [Mario character icon]          • Return:
+• Environment                            $U_t = R_t + \gamma R_{t+1} + \gamma^2 R_{t+2} + \cdots$
+• State $s$
+• Action $a$
+• Reward $r$
+• Policy $\pi(a \vert s)$
+• State transition $p(s' \vert s, a)$

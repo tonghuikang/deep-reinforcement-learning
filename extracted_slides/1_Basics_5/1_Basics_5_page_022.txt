@@ -1,0 +1,4 @@
+After behavior cloning...
+
+• Suppose the current state $s_t$ has appeared in training data.
+• The policy network imitates expert's action $a_t$. (Which is a good action!)

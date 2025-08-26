@@ -1,0 +1,6 @@
+Network Structure
+
+state $s$ → Conv → feature → Dense1 → $\mu(s; \theta^\mu)$ → $f(s, a \vert \theta)$
+                           ↘ Dense2 → $\rho(s; \theta^\rho)$ ↗
+                                                          ↗
+                                                    Action $a$

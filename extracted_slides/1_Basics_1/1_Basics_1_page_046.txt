@@ -1,0 +1,11 @@
+Play game using AI
+
+• (state, action, reward) trajectory:
+
+    $s_1, a_1, r_1, \; s_2, a_2, r_2, \; \cdots \; , \; s_n, a_n, r_n$.
+
+• One episode is from the the beginning to the end (Mario wins or dies).
+
+[Diagram showing extended sequence:]
+$s_1 \longrightarrow a_1 \longrightarrow s_2 \longrightarrow a_2 \longrightarrow s_3 \longrightarrow a_3 \longrightarrow s_4 \longrightarrow \cdots$
+              $\searrow r_1$         $\searrow r_2$         $\searrow r_3$

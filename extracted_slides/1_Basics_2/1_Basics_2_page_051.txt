@@ -1,0 +1,10 @@
+Temporal Difference (TD) Learning
+
+Algorithm: One iteration of TD learning.
+
+1. Observe state $S_t = s_t$ and perform action $A_t = a_t$.
+2. Predict the value: $q_t = Q(s_t, a_t; \mathbf{w}_t)$.
+3. Differentiate the value network: $\mathbf{d}_t = \frac{\partial Q(s_t,a_t;\mathbf{w})}{\partial \mathbf{w}} \big\vert_{\mathbf{w}=\mathbf{w}_t}$.
+4. Environment provides new state $s_{t+1}$ and reward $r_t$.
+5. Compute TD target: $y_t = r_t + \gamma \cdot \max_a Q(s_{t+1}, a; \mathbf{w}_t)$.
+6. Gradient descent: $\mathbf{w}_{t+1} = \mathbf{w}_t - \alpha \cdot (q_t - y_t) \cdot \mathbf{d}_t$.

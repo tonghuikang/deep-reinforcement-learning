@@ -1,0 +1,7 @@
+Temporal Difference (TD) Learning
+
+• Observe state $s_t$ and perform action $a_t$.
+
+• Environment provides new state $s_{t+1}$ and reward $r_t$.
+
+• TD target: $y_t = r_t + \gamma \cdot \max_a Q(s_{t+1}, a; \mathbf{w})$.

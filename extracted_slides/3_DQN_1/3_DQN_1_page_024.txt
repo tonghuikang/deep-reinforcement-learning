@@ -1,0 +1,9 @@
+Scaling Learning Rate
+
+• Scale the learning rate by $(n p_t)^{-\beta}$, where $\beta \in (0,1)$.
+
+• If $p_1 = \cdots = p_n = \frac{1}{n}$ (uniform sampling), the scaling factor is equal to 1.
+
+• High-importance transitions (with high $p_t$) have low learning rates.
+
+• In the beginning, set $\beta$ small; increase $\beta$ to 1 over time.

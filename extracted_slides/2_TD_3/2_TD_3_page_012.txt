@@ -1,0 +1,6 @@
+Multi-Step Return
+
+Identity: $U_t = R_t + \gamma \cdot U_{t+1}$.
+         $= R_{t+1} + \gamma \cdot U_{t+2}$
+
+Identity: $U_t = R_t + \gamma \cdot (R_{t+1} + \gamma \cdot U_{t+2})$.

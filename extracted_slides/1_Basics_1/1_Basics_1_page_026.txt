@@ -1,0 +1,9 @@
+Terminology: reward
+
+                                  reward R
+
+[Game screenshot showing Mario platformer level with red circle highlighting a Goomba enemy]
+
+• Collect a coin:    R = +1
+• Win the game:     R = +10000
+• Touch a Goomba: R = -10000 (game over).

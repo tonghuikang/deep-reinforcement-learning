@@ -1,0 +1,11 @@
+Function Approximation
+
+• Approximate the mean, $\boldsymbol{\mu}(s)$, by the neural network, $\boldsymbol{\mu}(s; \boldsymbol{\theta}^{\mu})$.
+
+• ~~Approximate the std, $\boldsymbol{\sigma}(s)$, by the neural network, $\boldsymbol{\sigma}(s; \boldsymbol{\theta}^{\sigma})$~~.
+
+• A better practice is to approximate the log variance:
+
+    $\rho_i = \ln \sigma_i^2$, for $i = 1, \cdots, d$.
+
+• Approximate $\boldsymbol{\rho}$ by the neural network, $\boldsymbol{\rho}(s; \boldsymbol{\theta}^{\rho})$.

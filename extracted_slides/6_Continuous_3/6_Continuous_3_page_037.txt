@@ -1,0 +1,5 @@
+Policy Gradient
+
+Policy gradient: $\frac{\partial V_\pi(s)}{\partial \theta} = \mathbb{E}_A \left[\frac{\partial f(s,A;\theta)}{\partial \theta} \cdot Q_\pi(s, A)\right]$.
+
+• Given $s$ and $a$, we can differentiate the auxiliary network $f$ to obtain $\frac{\partial f(s,a;\theta)}{\partial \theta}$.

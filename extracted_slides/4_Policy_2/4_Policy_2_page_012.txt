@@ -1,0 +1,8 @@
+Approximations
+
+Stochastic policy gradient:
+$$\boldsymbol{g}(a_t) = \frac{\partial \ln \pi(a_t \vert s_t; \boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot \left(Q_\pi(s_t, a_t) - V_\pi(s_t)\right).$$
+
+• Recall that $Q_\pi(s_t, a_t) = \mathbb{E}[U_t \vert s_t, a_t]$.
+
+• Monte Carlo approximation to $Q_\pi(s_t, a_t) \approx u_t$ (REINFORCE):

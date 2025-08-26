@@ -1,0 +1,12 @@
+Reinforcement learning of policy network
+
+Reinforcement learning is guided by rewards.
+
+• Suppose a game ends at step $T$.
+• Rewards:
+  • $r_1 = r_2 = r_3 = \cdots = r_{T-1} = 0$. (When the game has not ended.)
+  • $r_T = +1$ (winner).
+  • $r_T = -1$ (loser).
+• Recall that return is defined by $u_t = \sum_{i=t}^T r_i$. (No discount here.)
+• Winner's returns: $u_1 = u_2 = \cdots = u_T = +1$.
+• Loser's returns: $u_1 = u_2 = \cdots = u_T = -1$.

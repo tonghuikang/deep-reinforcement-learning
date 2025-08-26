@@ -1,0 +1,11 @@
+Probability Density Function (PDF)
+
+• PDF provides a relative likelihood that the value of the random variable would equal that sample.
+
+Example: Gaussian distribution
+
+• It is a continuous distribution.
+• PDF:
+    $p(x) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right)$.
+
+[Diagram shows a bell curve with Probability Density on y-axis and x on x-axis, with mean $\mu$ marked at the center]

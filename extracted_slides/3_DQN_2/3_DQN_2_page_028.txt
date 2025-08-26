@@ -1,0 +1,7 @@
+Naïve Update
+
+TD Target: $y_t = r_t + \gamma \cdot \max_a Q(s_{t+1}, a; \mathbf{w})$.
+
+Reference:
+
+1. Mnih et al. Playing Atari with deep reinforcement learning. In NIPS Workshop, 2013.

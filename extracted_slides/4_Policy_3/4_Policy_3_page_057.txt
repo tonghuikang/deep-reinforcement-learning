@@ -1,0 +1,7 @@
+Advantage Actor-Critic (A2C)
+
+Action a
+
+Policy Network (Actor) ← Advantage → Value Network (Critic) ← Reward r → Environment
+
+State s                                        State s

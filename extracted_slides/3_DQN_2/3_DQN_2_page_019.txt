@@ -1,0 +1,11 @@
+Why is overestimation harmful?
+
+Unfortunately, the overestimation is non-uniform.
+
+• Use a transition, $(s_t, a_t, r_t, s_{t+1})$, to update $\mathbf{w}$.
+
+• The TD target, $y_t$, overestimates $Q^*(s_t, a_t)$.
+
+• TD algorithm pushes $Q(s_t, a_t; \mathbf{w})$ towards $y_t$.
+
+• Thus, $Q(s_t, a_t; \mathbf{w})$ overestimates $Q^*(s_t, a_t)$.

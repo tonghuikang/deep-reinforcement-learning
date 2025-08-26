@@ -1,0 +1,10 @@
+Centralized Training
+
+Critic 1        Central Controller        Critic n
+                    {a^i, o^i, r^i}_{i=1}^n
+
+• The central controller trains the critics, q(o, a; w^i), for all i.
+• To update w^i, TD algorithm takes as inputs:
+  • All the actions: a = [a^1, a^2, \cdots, a^n].
+  • All the observations: o = [o^1, o^2, \cdots, o^n].
+  • The i-th reward: r^i.

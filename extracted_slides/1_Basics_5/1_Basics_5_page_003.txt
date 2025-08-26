@@ -1,0 +1,10 @@
+Go Game
+
+• The standard Go board has a $19\times 19$ grid of lines, containing $361$ points.
+• State: arrangement of black, white, and space.
+  • State $s$ can be a $19\times 19\times 2$ tensor of $0$ or $1$.
+  • (AlphaGo actually uses a $19\times 19\times 48$ tensor to store other information.)
+• Action: place a stone on a vacant point.
+  • Action space: $\mathcal{A} \subset \{1, 2, 3, \cdots, 361\}$.
+• Go is very complex.
+  • Number of possible sequence of actions is $10^{170}$.

@@ -1,0 +1,11 @@
+Example
+
+• I want to drive from NYC to Atlanta.
+• Model $Q(\mathbf{w})$ estimates the time cost, e.g., 1000 minutes.
+
+Question: How do I update the model?
+
+• Make a prediction: $q = Q(\mathbf{w})$, e.g., $q = 1000$.
+• Finish the trip and get the target $y$, e.g., $y = 860$.
+
+[The image shows the same diagram with NYC at the top connected to Atlanta at the bottom, now showing both "1000 minutes (estimate)." and "860 minutes (actual)."]

@@ -1,0 +1,11 @@
+Centralized Actor-Critic Method
+
+• Centralized Training: Training is performed by the controller.
+  • The controller knows all the observations, actions, and rewards.
+  • Train $\pi(a^i \vert \mathbf{o}; \boldsymbol{\theta}^i)$ using policy gradient.
+  • Train $q(\mathbf{o}, \mathbf{a}; \mathbf{w}^i)$ using TD algorithm.
+
+• Centralized Execution: Decisions are made by the controller.
+  • For all $i$, the $i$-th agent sends its observation, $o^i$, to the controller.
+  • The controller knows $\mathbf{o} = [o^1, o^2, \ldots, o^n]$.
+  • For all $i$, the controller samples action by $a^i \sim \pi(\cdot \vert \mathbf{o}; \boldsymbol{\theta}^i)$ and sends $a^i$ to the $i$-th agent.

@@ -1,0 +1,7 @@
+Multi-Agent Policy Learning
+
+Nash Equilibrium
+
+• While all the other agents' policy remain the same, the $i$-th agent cannot get better expected return by changing its own policy.
+• Every agent is playing a best-response to the other agents' policies.
+• Nash equilibrium indicates convergence because no one has any incentive to deviate.

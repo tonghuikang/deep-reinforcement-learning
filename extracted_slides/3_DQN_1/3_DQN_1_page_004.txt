@@ -1,0 +1,7 @@
+Deep Q Network (DQN)
+
+Approximate the optimal action-value function, $Q^*(s, a)$, by $Q(s, a; \mathbf{w})$.
+
+state $s$ → DQN (parameterized by $\mathbf{w}$) → $Q(s, \text{"left"}; \mathbf{w})$
+                                              $Q(s, \text{"right"}; \mathbf{w})$
+                                              $Q(s, \text{"up"}; \mathbf{w})$

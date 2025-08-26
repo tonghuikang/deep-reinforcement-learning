@@ -1,0 +1,5 @@
+Function Approximation
+
+• Approximate the mean, $\boldsymbol{\mu}(s)$, by the neural network, $\boldsymbol{\mu}(s; \boldsymbol{\theta}^{\mu})$.
+
+• ~~Approximate the std, $\boldsymbol{\sigma}(s)$, by the neural network, $\boldsymbol{\sigma}(s; \boldsymbol{\theta}^{\sigma})$~~.

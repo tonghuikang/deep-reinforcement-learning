@@ -1,0 +1,4 @@
+Function Approximation
+
+[Diagram showing:
+state $s$ → Conv → feature]

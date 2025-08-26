@@ -1,0 +1,9 @@
+Update TD Error
+
+• Associate each transition, $(s_t, a_t, r_t, s_{t+1})$, with a TD error, $\delta_t$.
+
+• If a transition is newly collected, we do not know its $\delta_t$.
+  • Simply set its $\delta_t$ to the maximum.
+  • It has the highest priority.
+
+• Each time $(s_t, a_t, r_t, s_{t+1})$ is selected from the buffer, we update its $\delta_t$.

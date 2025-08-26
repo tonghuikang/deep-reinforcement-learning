@@ -1,0 +1,5 @@
+Parameter Sharing?
+
+Share parameters if the agents are exchangeable.
+
+[Image shows autonomous vehicles on a highway with connected communication circles between cars]

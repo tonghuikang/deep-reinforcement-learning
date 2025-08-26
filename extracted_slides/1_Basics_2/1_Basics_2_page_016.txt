@@ -1,0 +1,12 @@
+Apply DQN to Play Game
+
+$s_{t+1} \sim p(\cdot \vert s_t, a_t)$ $\qquad$ $s_{t+2} \sim p(\cdot \vert s_{t+1}, a_{t+1})$
+
+$s_t \longrightarrow a_t \longrightarrow s_{t+1} \longrightarrow a_{t+1} \longrightarrow s_{t+2} \longrightarrow a_{t+2}$
+$\qquad \qquad \searrow r_t$ $\qquad \qquad \qquad \searrow r_{t+1}$
+
+$a_t = \arg\max_a Q(s_t, a; \mathbf{w})$
+
+$a_{t+1} = \arg\max_a Q(s_{t+1}, a; \mathbf{w})$
+
+$a_{t+2} = \arg\max_a Q(s_{t+2}, a; \mathbf{w})$

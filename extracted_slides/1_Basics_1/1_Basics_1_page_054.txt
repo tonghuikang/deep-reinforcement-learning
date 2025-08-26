@@ -1,0 +1,5 @@
+Discounted Returns
+
+Definition: Discounted return (at time $t$).
+
+• $U_t = R_t + \gamma R_{t+1} + \gamma^2 R_{t+2} + \cdots + \gamma^{n-t} R_n$.

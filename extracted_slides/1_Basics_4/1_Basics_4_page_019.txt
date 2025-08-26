@@ -1,0 +1,12 @@
+Update policy network $\pi$ using policy gradient
+
+Definition: State-value function approximated using neural networks.
+• $V(s; \boldsymbol{\theta}, \mathbf{w}) = \sum_a \pi(a\vert s; \boldsymbol{\theta}) \cdot q(s, a; \mathbf{w})$.
+
+Policy gradient: Derivative of $V(s_t; \boldsymbol{\theta}, \mathbf{w})$ w.r.t. $\boldsymbol{\theta}$.
+• Let $\mathbf{g}(a, \boldsymbol{\theta}) = \frac{\partial \log \pi(a\vert s, \boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot q(s_t, a; \mathbf{w})$.
+• $\frac{\partial V(s; \boldsymbol{\theta}, \mathbf{w}_t)}{\partial \boldsymbol{\theta}} = \mathbb{E}_A [\mathbf{g}(A, \boldsymbol{\theta})]$.
+
+Algorithm: Update policy network using stochastic policy gradient.
+• Random sampling: $a \sim \pi(\cdot \vert s_t; \boldsymbol{\theta}_t)$. (Thus $\mathbf{g}(a, \boldsymbol{\theta})$ is unbiased.)
+• Stochastic gradient ascent: $\boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t + \beta \cdot \mathbf{g}(a, \boldsymbol{\theta}_t)$.

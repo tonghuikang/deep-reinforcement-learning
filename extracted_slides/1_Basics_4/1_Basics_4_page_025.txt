@@ -1,0 +1,5 @@
+Summary of Algorithm
+
+1. Observe state $s_t$ and randomly sample $a_t \sim \pi(\cdot \vert s_t; \boldsymbol{\theta}_t)$.
+2. Perform $a_t$; then environment gives new state $s_{t+1}$ and reward $r_t$.
+3. Randomly sample $\tilde{a}_{t+1} \sim \pi(\cdot \vert s_{t+1}; \boldsymbol{\theta}_t)$. (Do not perform $\tilde{a}_{t+1}$!)

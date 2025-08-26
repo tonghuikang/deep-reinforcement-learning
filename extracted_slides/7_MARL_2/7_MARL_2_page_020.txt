@@ -1,0 +1,4 @@
+Centralized Training
+
+Critic 1        Central Controller        Critic n
+                    {a^i, o^i, r^i}_{i=1}^n

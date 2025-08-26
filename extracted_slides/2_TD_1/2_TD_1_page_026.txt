@@ -1,0 +1,5 @@
+Value Network Version
+
+• Approximate $Q_\pi(s, a)$ by the value network, $q(s, a; \mathbf{w})$.
+• $q$ is used as the critic who evaluates the actor. (Actor-Critic Method.)
+• We want to learn the parameter, $\mathbf{w}$.

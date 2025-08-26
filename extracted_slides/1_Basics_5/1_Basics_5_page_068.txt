@@ -1,0 +1,8 @@
+Training of policy network
+
+AlphaGo Zero uses MCTS in training. (AlphaGo does not.)
+
+1. Observe state $s_t$.
+
+2. Predictions made by policy network:
+   $\mathbf{p} = [\pi(a = 1\vert s_t; \boldsymbol{\theta}), \cdots, \pi(a = 361\vert s_t; \boldsymbol{\theta})] \in \mathbb{R}^{361}$.

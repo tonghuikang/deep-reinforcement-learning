@@ -1,0 +1,6 @@
+Temporal Difference (TD) Learning
+
+• Model's estimate:
+    NYC to Atlanta: 1000 minutes (estimate).
+
+[The image shows a diagram with NYC at the top connected by an arrow to Atlanta at the bottom, with "1000 minutes (estimate)." labeled on the arrow]

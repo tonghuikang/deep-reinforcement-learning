@@ -1,0 +1,12 @@
+Step 1: Selection
+
+[Diagram shows tree with root node $s_t$ and three red child nodes with values 0.6, 0.3, 0.8 labeled "valid actions"]
+
+Question: Observing $s_t$, which action shall we explore?
+
+First, for all the valid actions $a$, calculate the score:
+$$\text{score}(a) = Q(a) + \eta \cdot \frac{\pi(a \vert s_t; \boldsymbol{\theta})}{1+N(a)}.$$
+
+• $Q(a)$: Action-value computed by MCTS. (To be defined.)
+• $\pi(a \vert s_t; \boldsymbol{\theta})$: The learned policy network.
+• $N(a)$: Given $s_t$, how many times we have selected $a$ so far.

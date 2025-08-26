@@ -1,0 +1,5 @@
+Approximate the Q Function
+
+Goal: Win the game ($\approx$ maximize the total reward.)
+
+Question: If we know $Q^*(s, a)$, what is the best action?

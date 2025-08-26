@@ -1,0 +1,3 @@
+Policy Gradient
+
+• Use policy network, $\pi(a \vert s; \boldsymbol{\theta})$, for controlling the agent.

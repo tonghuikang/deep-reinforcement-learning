@@ -1,0 +1,13 @@
+Terminology: state transition
+
+                                  state transition
+
+[Game screenshot showing Mario platformer level with probability values w.p. 0.8 and w.p. 0.2 shown under different platform positions]
+
+old state ————action————→ new state
+
+• E.g., "up" action leads to a new state.
+
+• State transition can be random.
+• Randomness is from the environment.
+• p(s' | s, a) = $\mathbb{P}(S' = s' | S = s, A = a)$.

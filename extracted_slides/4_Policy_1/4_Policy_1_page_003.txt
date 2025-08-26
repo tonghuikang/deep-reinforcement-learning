@@ -1,0 +1,7 @@
+Policy Gradient
+
+• Use policy network, $\pi(a \vert s; \boldsymbol{\theta})$, for controlling the agent.
+• State-value function:
+    $V_\pi(s) = \mathbb{E}_{A \sim \pi} [Q_\pi(s, A)]$
+    
+    $= \sum_a \pi(a \vert s; \boldsymbol{\theta}) \cdot Q_\pi(s, a)$.

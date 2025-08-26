@@ -1,0 +1,17 @@
+Policy Value Networks (AlphaGo Zero)
+
+[Left side shows a Go board game state - 19×19 grid with black and white stones placed]
+state
+19×19×17 tensor
+
+[Arrow pointing right from game board to:]
+Conv
+feature
+
+[Two arrows from feature pointing to:]
+
+Policy Head → π(1\vert s, θ)
+           ⋮
+           π(361\vert s, θ)
+
+Value Head → State value (scalar)

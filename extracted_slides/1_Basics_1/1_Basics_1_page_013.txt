@@ -1,0 +1,3 @@
+Random Sampling
+
+• Sample red ball w.p. 0.2, green ball w.p. 0.5, and blue ball w.p. 0.3.

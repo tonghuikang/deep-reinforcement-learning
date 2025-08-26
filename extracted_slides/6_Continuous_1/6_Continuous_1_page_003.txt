@@ -1,0 +1,11 @@
+Continuous Action Space
+
+$a_1 \in [0°, 360°]$
+
+$a_2 \in [0°, 180°]$
+
+• The action space $\mathcal{A}$ is continuous:
+
+$\mathcal{A} = [0°, 360°] \times [0°, 180°]$.
+
+• Actions are 2-dim vectors.

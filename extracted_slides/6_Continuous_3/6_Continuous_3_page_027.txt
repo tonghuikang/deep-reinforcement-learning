@@ -1,0 +1,7 @@
+Recap
+
+We have built three neural networks:
+
+$\mu(s; \theta^\mu)$, $\rho(s; \theta^\rho)$, and $f(s, a; \theta)$.
+
+$\theta = (\theta^\mu, \theta^\rho)$

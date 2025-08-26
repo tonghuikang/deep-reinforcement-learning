@@ -1,0 +1,13 @@
+Stochastic                    Deterministic
+Policy                        Policy
+
+Policy:        $\pi(a \vert s; \boldsymbol{\theta})$        $\pi(s; \boldsymbol{\theta})$
+
+Output:        Probability distribution        Action $a$
+               over the action space
+
+Control:       Randomly sample an action       Directly use
+               from the distribution           the output, $a$
+
+Application:   Mostly discrete                 Continuous
+               control                         control

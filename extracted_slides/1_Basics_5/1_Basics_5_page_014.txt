@@ -1,0 +1,6 @@
+Learning from human's record
+
+[The image shows a Go board with numbered moves and stones]
+
+• Initially, the network's parameters are random.
+• Human' sequences of actions have been recorded. (KGS dataset has 160K games' records.)

@@ -1,0 +1,11 @@
+Training
+
+• Build auxiliary network, $f(s, a; \theta)$, for computing policy gradient.
+
+• Policy gradient algorithms: actor-critic and REINFORCE.
+
+• Improvement: Policy gradient with baseline.
+
+  • Actor-critic ==> A2C.
+  
+  • REINFORCE ==> REINFORCE with baseline.

@@ -1,0 +1,8 @@
+Fully Decentralized Training
+
+Agent 1          Agent 2     ...     Agent n
+
+  $a^1$   $o^1, r^1$    $a^2$   $o^2, r^2$        $a^n$   $o^n, r^n$
+    ↓         ↑           ↓         ↑                ↓         ↑
+
+                        Environment

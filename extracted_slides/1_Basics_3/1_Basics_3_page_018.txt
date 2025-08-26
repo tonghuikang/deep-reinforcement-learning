@@ -1,0 +1,15 @@
+Policy-Based Reinforcement Learning
+
+Definition: Approximate state-value function.
+
+• $V(s; \boldsymbol{\theta}) = \sum_a \pi(a \vert s; \boldsymbol{\theta}) \cdot Q_\pi(s, a)$.
+
+Policy-based learning: Learn $\boldsymbol{\theta}$ that maximizes $J(\boldsymbol{\theta}) = \mathbb{E}_S[V(S; \boldsymbol{\theta})]$.
+
+How to improve $\boldsymbol{\theta}$? Policy gradient ascent!
+
+• Observe state $s$.
+
+• Update policy by: $\boldsymbol{\theta} \leftarrow \boldsymbol{\theta} + \beta \frac{\partial V(s;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}}$
+
+Policy gradient

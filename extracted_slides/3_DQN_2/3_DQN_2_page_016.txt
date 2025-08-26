@@ -1,0 +1,9 @@
+Why is overestimation harmful?
+
+The agent is controlled by the DQN: $a_t = \text{argmax}_a Q(s_t, a; \mathbf{w})$.
+
+Uniform overestimation is not a problem.
+
+state $s_t$ ——————> DQN ——————> $Q(s_t, \text{"left"}; \mathbf{w})$
+              (parameterized by $\mathbf{w}$)    $Q(s_t, \text{"right"}; \mathbf{w})$
+                                                 $Q(s_t, \text{"up"}; \mathbf{w})$

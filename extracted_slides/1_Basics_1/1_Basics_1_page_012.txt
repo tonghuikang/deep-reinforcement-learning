@@ -1,0 +1,5 @@
+Random Sampling
+
+• There are 10 balls in the bin: 2 are red, 5 are green, and 3 are blue.
+
+[Diagram showing a bin with 10 colored balls: 2 red, 5 green, 3 blue arranged in two rows, with an arrow labeled "Random Sampling" pointing to a single gray ball with text "What is the color?"]

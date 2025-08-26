@@ -1,0 +1,3 @@
+Properties of Advantage Function
+
+Theorem 1: $V^*(s) = \max_a Q^*(s, a)$.

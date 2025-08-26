@@ -1,0 +1,14 @@
+Example
+
+• I want to drive from NYC to Atlanta.
+• Model $Q(\mathbf{w})$ estimates the time cost, e.g., 1000 minutes.
+
+Question: How do I update the model?
+
+• Make a prediction: $q = Q(\mathbf{w})$, e.g., $q = 1000$.
+• Finish the trip and get the target $y$, e.g., $y = 860$.
+• Loss: $L = \frac{1}{2}(q - y)^2$.
+• Gradient: $\frac{\partial L}{\partial \mathbf{w}} = \frac{\partial q}{\partial \mathbf{w}} \cdot \frac{\partial L}{\partial q} = (q - y) \cdot \frac{\partial Q(\mathbf{w})}{\partial \mathbf{w}}$.
+• Gradient descent: $\mathbf{w}_{t+1} = \mathbf{w}_t - \alpha \cdot \frac{\partial L}{\partial \mathbf{w}} \big\vert_{\mathbf{w}=\mathbf{w}_t}$.
+
+[The image shows the same diagram with both estimate and actual times]

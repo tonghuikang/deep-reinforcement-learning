@@ -1,0 +1,8 @@
+Temporal Difference (TD) Learning
+
+• Model's estimate:
+    NYC to Atlanta: 1000 minutes (estimate).
+• I arrived at DC; actual time cost:
+    NYC to DC: 300 minutes (actual).
+
+[The image shows a diagram with NYC at the top, DC in the middle, and Atlanta at the bottom. There's an arrow from NYC to DC labeled "300 minutes (actual)." and another arrow from NYC to Atlanta labeled "1000 minutes (estimate)."]

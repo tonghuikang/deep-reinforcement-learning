@@ -1,0 +1,11 @@
+Importance Sampling
+
+• Use importance sampling instead of uniform sampling.
+
+• Option 1: Sampling probability $p_t \propto |\delta_t| + \epsilon$.
+
+• Option 2: Sampling probability $p_t \propto \frac{1}{\text{rank}(t)}$.
+  • The transitions are sorted so that $|\delta_t|$ is in the descending order.
+  • $\text{rank}(t)$ is the rank of the $t$-th transition.
+
+• In sum, big $|\delta_t|$ shall be given high priority.

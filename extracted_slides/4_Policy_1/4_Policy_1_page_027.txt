@@ -1,0 +1,8 @@
+Monte Carlo Approximation
+
+**Policy gradient:**
+$\frac{\partial V_\pi(s_t)}{\partial \boldsymbol{\theta}} = \mathbb{E}_{A_t \sim \pi} \left[\frac{\partial \ln \pi(A_t \vert s_t; \boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot (Q_\pi(s_t, A_t) - b)\right]$.
+
+• Randomly sample $a_t \sim \pi(\cdot \vert s_t; \boldsymbol{\theta})$ and compute $\mathbf{g}(a_t)$.
+• $\mathbf{g}(a_t)$ is an unbiased estimate of the policy gradient:
+    $\mathbb{E}_{A_t \sim \pi}[\mathbf{g}(A_t)] = \frac{\partial V_\pi(s_t)}{\partial \boldsymbol{\theta}}$.

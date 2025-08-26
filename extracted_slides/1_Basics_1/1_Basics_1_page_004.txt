@@ -1,0 +1,10 @@
+Random Variable
+
+• Random variable: unknown; its values depend on outcomes of random events.
+• Uppercase letter $X$ for a random variable.
+• Lowercase letter $x$ for an observed value.
+• For example, I flipped a coin 4 times and observed:
+  • $x_1 = 1$,
+  • $x_2 = 1$,
+  • $x_3 = 0$,
+  • $x_4 = 1$.

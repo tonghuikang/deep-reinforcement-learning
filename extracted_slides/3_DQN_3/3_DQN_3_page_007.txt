@@ -1,0 +1,7 @@
+Optimal Value Functions
+
+Definition: Optimal action-value function.
+• $Q^*(s, a) = \max_\pi Q_\pi(s, a)$.
+
+Definition: Optimal state-value function.
+• $V^*(s) = \max_\pi V_\pi(s)$.

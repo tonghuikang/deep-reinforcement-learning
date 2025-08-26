@@ -1,0 +1,7 @@
+Stationary VS Non-stationary
+
+• Consider multi-agent setting.
+• **Stationary environment** requires state transition be fixed throughout.
+• The environment is typically stationary.
+• However, from any single agent's perspective, the environment is non-stationary.
+• Thus, the single-agent RL method we have learned are not applicable.

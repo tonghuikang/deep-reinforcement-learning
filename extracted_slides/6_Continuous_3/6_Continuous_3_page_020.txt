@@ -1,0 +1,5 @@
+Auxiliary Network
+
+Identity: $\ln \pi(\mathbf{a} \vert s; \boldsymbol{\theta}) = \text{const} + \sum_{i=1}^{d} \left[ -\frac{\rho_i}{2} - \frac{(a_i-\mu_i)^2}{2 \cdot \exp(\rho_i)} \right]$.
+
+$= f(s, \mathbf{a}; \boldsymbol{\theta})$ (Auxiliary Network)

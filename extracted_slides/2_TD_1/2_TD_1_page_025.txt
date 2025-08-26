@@ -1,0 +1,8 @@
+Value Network Version
+
+• Approximate $Q_\pi(s, a)$ by the value network, $q(s, a; \mathbf{w})$.
+
+[THIS IS FIGURE: A diagram showing the flow from a Mario Bros game state image through a neural network to output Q-values for three actions: "left", "right", and "up". The image shows:
+- state s (Mario Bros game screenshot)
+- Value Network (neural network diagram with interconnected nodes, parameterized by w)
+- Three outputs: q(s, "left"; w), q(s, "right"; w), q(s, "up"; w)]

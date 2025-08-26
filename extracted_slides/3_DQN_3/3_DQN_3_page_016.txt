@@ -1,0 +1,4 @@
+Dueling Network
+
+Reference:
+1. Wang et al. Dueling network architectures for deep reinforcement learning. In ICML, 2016.

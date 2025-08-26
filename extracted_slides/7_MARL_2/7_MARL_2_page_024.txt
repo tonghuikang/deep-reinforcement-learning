@@ -1,0 +1,9 @@
+Decentralized Execution
+
+a^1 ~ π(\cdot \vert o^1; θ^1)                        a^n ~ π(\cdot \vert o^n; θ^n)
+
+Actor 1              ...                   Actor n
+    ↓                                         ↓
+    a^1 ↓              o^1                    a^n ↓ o^n
+    
+Environment

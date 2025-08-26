@@ -1,0 +1,9 @@
+Policy Network $\pi(a \vert s; \theta)$
+
+Policy network: Use a neural net to approximate $\pi(a \vert s)$.
+
+• Use policy network $\pi(a \vert s; \theta)$ to approximate $\pi(a \vert s)$.
+
+• $\theta$: trainable parameters of the neural net.
+
+[THIS IS DIAGRAM: A neural network diagram showing a game state image (Mario Bros style) going through Conv layers, then Dense layer, then Softmax layer, outputting probabilities for "left" 0.2, "right" 0.1, and "up" 0.7. The input is labeled "state $s_t$" and there's a "feature" arrow pointing to the network.]

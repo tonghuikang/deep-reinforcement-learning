@@ -1,0 +1,7 @@
+Updating the policy network
+
+Approximate policy gradient:
+$$\frac{\partial V_\pi(s_t)}{\partial \boldsymbol{\theta}} \approx \frac{\partial \ln \pi(a_t \vert s_t; \boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot \left(u_t - v(s_t; \boldsymbol{w})\right).$$
+
+• Update policy network by policy gradient ascent:
+$$\boldsymbol{\theta} \leftarrow \boldsymbol{\theta} - \beta \cdot \delta_t \cdot \frac{\partial \ln \pi(a_t \vert s_t; \boldsymbol{\theta})}{\partial \boldsymbol{\theta}}.$$

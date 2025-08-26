@@ -1,0 +1,6 @@
+Fully Centralized
+
+• All the policy and value networks are in the central controller.
+• Agents send everything to the controller.
+• The controller makes decisions based on all the agents' observations. Agents do not make decisions.
+• The controller tells every agent what to do.

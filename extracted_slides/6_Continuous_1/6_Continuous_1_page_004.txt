@@ -1,0 +1,7 @@
+DQN for Discrete Action Space
+
+$Q(s, \text{"left"}; \mathbf{w}) = 2000$
+
+$Q(s, \text{"right"}; \mathbf{w}) = 1000$
+
+$Q(s, \text{"up"}; \mathbf{w}) = 3000$

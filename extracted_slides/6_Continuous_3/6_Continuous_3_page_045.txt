@@ -1,0 +1,11 @@
+Continuous Control
+
+• The number of actions is infinite.
+
+• Approaches to continuous control:
+
+    1. Discretize the action space and use standard DQN or policy network.
+    
+    2. Deterministic policy network (previous lecture).
+    
+    3. Stochastic policy network (this lecture).

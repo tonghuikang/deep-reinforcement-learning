@@ -1,0 +1,5 @@
+Approximating State-Value Function
+
+• Approximate $V^*(s)$ by a neural network, $V(s; \mathbf{w}^V)$.
+
+state $s$ → Conv → feature → Dense → $V(s; \mathbf{w}^V)$

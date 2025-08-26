@@ -1,0 +1,10 @@
+Select actions by look-ahead search
+
+[Diagram shows a tree structure with game states and actions]
+
+Main idea
+
+• Randomly select an action $a$.
+• Look ahead and see whether $a$ leads to win or lose.
+• Repeat this procedure many times.
+• Choose the action $a$ that has the highest score.

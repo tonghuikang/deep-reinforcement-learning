@@ -1,0 +1,7 @@
+Advantage Actor-Critic (A2C)
+
+Action a
+
+Policy Network (Actor) ← Environment
+
+State s

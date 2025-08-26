@@ -1,0 +1,5 @@
+Return
+
+Definition: Return (aka cumulative future reward).
+
+• $U_t = R_t + R_{t+1} + R_{t+2} + R_{t+3} + \cdots$

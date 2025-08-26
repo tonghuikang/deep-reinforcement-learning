@@ -1,0 +1,5 @@
+Policy Gradient
+
+Reference
+
+• Sutton and others: Policy gradient methods for reinforcement learning with function approximation. In NIPS, 2000.

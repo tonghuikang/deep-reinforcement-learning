@@ -1,0 +1,10 @@
+Computing TD Targets
+
+                          Selection        Evaluation
+
+Naïve Update             DQN             DQN
+
+Using Target             Target Network   Target Network
+Network
+
+Double DQN               DQN             Target Network

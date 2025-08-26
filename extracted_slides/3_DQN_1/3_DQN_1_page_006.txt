@@ -1,0 +1,11 @@
+Temporal Difference (TD) Learning
+
+• Observe state $s_t$ and perform action $a_t$.
+
+• Environment provides new state $s_{t+1}$ and reward $r_t$.
+
+• TD target: $y_t = r_t + \gamma \cdot \max_a Q(s_{t+1}, a; \mathbf{w})$.
+
+• TD error: $\delta_t = q_t - y_t$, where $q_t = Q(s_t, a_t; \mathbf{w})$.
+
+• Goal: Make $q_t$ close to $y_t$, for all $t$. (Equivalently, make $\delta_t^2$ small.)

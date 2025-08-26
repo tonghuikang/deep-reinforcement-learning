@@ -1,0 +1,5 @@
+Benefits of Experience Replay
+
+1. Make the updates uncorrelated.
+
+2. Reuse collected experience many times.

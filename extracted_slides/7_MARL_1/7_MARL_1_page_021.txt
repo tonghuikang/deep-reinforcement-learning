@@ -1,0 +1,8 @@
+Single-Agent Policy Learning
+
+• Policy network: $\pi(a \vert s; \boldsymbol{\theta})$.
+• State-value function: $V(s; \boldsymbol{\theta})$.
+• $J(\boldsymbol{\theta}) = \mathbb{E}_S[V(S; \boldsymbol{\theta})]$ evaluates how good the policy is.
+• Learn the policy network's parameter, $\boldsymbol{\theta}$, by
+$$\max_{\boldsymbol{\theta}} J(\boldsymbol{\theta}).$$
+• **Convergence**: $J(\boldsymbol{\theta})$ stops increasing.

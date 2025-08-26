@@ -1,0 +1,14 @@
+Experience Replay
+
+• A transition: $(s_t, a_t, r_t, s_{t+1})$.
+
+• Store recent $n$ transitions in a replay buffer.
+
+Replay Buffer
+(n transitions)
+
+$\vdots$
+$(s_t, a_t, r_t, s_{t+1})$
+$(s_{t+1}, a_{t+1}, r_{t+1}, s_{t+2})$
+$(s_{t+2}, a_{t+2}, r_{t+2}, s_{t+3})$
+$\vdots$

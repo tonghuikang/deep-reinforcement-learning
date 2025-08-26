@@ -1,0 +1,9 @@
+Policy Network $\pi(a \vert s; \theta)$
+
+• $\sum_{a \in \mathcal{A}} \pi(a \vert s; \theta) = 1$.
+
+• Here, $\mathcal{A} = \{\text{"left"}, \text{"right"}, \text{"up"}\}$ is the set all actions.
+
+• That is why we use softmax activation.
+
+[THIS IS DIAGRAM: A neural network diagram showing a game state image (Mario Bros style) going through Conv layers, then Dense layer, then Softmax layer, outputting probabilities for "left" 0.2, "right" 0.1, and "up" 0.7. The input is labeled "state $s_t$" and there's a "feature" arrow pointing to the network.]

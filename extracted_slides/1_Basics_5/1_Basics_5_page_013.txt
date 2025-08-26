@@ -1,0 +1,5 @@
+Learning from human's record
+
+• Initially, the network's parameters are random.
+  • If two policy networks play against each other, they would do random actions.
+  • It would take very long before they make reasonable actions.

@@ -1,0 +1,3 @@
+OpenAI Gym
+
+[Large screenshot showing a humanoid figure in a checkered pattern simulation environment labeled "Iteration 0"]

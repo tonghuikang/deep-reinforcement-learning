@@ -1,0 +1,5 @@
+Importance Sampling
+
+• Use importance sampling instead of uniform sampling.
+
+• Option 1: Sampling probability $p_t \propto |\delta_t| + \epsilon$.

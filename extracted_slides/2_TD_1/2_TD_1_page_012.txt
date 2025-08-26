@@ -1,0 +1,3 @@
+Derive TD Target
+
+Identity: $Q_\pi(s_t, a_t) = \mathbb{E}[R_t + \gamma \cdot Q_\pi(S_{t+1}, A_{t+1})]$, for all $\pi$.

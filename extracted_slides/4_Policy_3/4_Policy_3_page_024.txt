@@ -1,0 +1,9 @@
+Approximation to Action-Value
+
+Theorem 1: $Q_\pi(S_t, a_t) = \mathbb{E}_{S_{t+1}}[R_t + \gamma \cdot V_\pi(S_{t+1})]$.
+
+• Suppose we know $(s_t, a_t, r_t, s_{t+1})$.
+
+• Unbiased estimation:
+
+                $Q_\pi(s_t, a_t) \approx r_t + \gamma \cdot V_\pi(s_{t+1})$.

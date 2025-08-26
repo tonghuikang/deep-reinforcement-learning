@@ -1,0 +1,11 @@
+Why does TD learning work?
+
+• Model's estimates:
+  • NYC to Atlanta: 1000 minutes.
+  • DC to Atlanta: 600 minutes.
+  • → NYC to DC: 400 minutes.
+
+• Ground truth:
+  • NYC to DC: 300 minutes.
+
+• TD error: $\delta = 400 - 300 = 100$

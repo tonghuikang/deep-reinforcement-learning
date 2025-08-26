@@ -1,0 +1,7 @@
+Scaling Learning Rate
+
+• SGD: $\mathbf{w} \leftarrow \mathbf{w} - \alpha \cdot \mathbf{g}$, where $\alpha$ is the learning rate.
+
+• If uniform sampling is used, $\alpha$ is the same for all transitions.
+
+• If importance sampling is used, $\alpha$ shall be adjusted according to the importance.

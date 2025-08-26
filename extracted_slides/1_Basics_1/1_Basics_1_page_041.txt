@@ -1,0 +1,6 @@
+Agent-Environment Interaction
+
+[Diagram showing interaction between Agent and Environment]
+- Agent (shown with Mario character icon) receives State $s_t$ from Environment
+- Agent sends Action $a_t$ to Environment
+- Arrows show the cyclical nature of this interaction

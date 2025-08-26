@@ -1,0 +1,15 @@
+Algorithm
+
+Compute $q_t \approx Q_\pi(s_t, a_t)$ (some estimate). How?
+
+Option 1: REINFORCE.
+
+• Play the game to the end and generate the trajectory:
+
+$s_1, a_1, r_1, s_2, a_2, r_2, \cdots, s_T, a_T, r_T$.
+
+• Compute the discounted return $u_t = \sum_{k=t}^T \gamma^{k-t} r_k$, for all $t$.
+
+• Since $Q_\pi(s_t, a_t) = \mathbb{E}[U_t]$, we can use $u_t$ to approximate $Q_\pi(s_t, a_t)$.
+
+• $\Rightarrow$ Use $q_t = u_t$.

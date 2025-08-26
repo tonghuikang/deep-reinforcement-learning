@@ -1,0 +1,7 @@
+Tabular Version
+
+• We want to learn $Q_\pi(s, a)$.
+• Suppose the numbers of states and actions are finite.
+• Draw a table and learn the entries.
+
+[THIS IS TABLE: A Q-table with rows for State s1, State s2, State s3, and columns for Action a1, Action a2, Action a3, Action a4, etc. The table shows empty cells with one highlighted cell at the intersection of State s2 and Action a3.]

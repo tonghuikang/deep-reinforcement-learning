@@ -1,0 +1,10 @@
+Behavior Cloning
+
+Behavior cloning is not reinforcement learning!
+
+• Reinforcement learning: Supervision is from rewards given 
+  by the environment.
+• Imitation learning: Supervision is from experts' actions.
+
+• Behavior cloning is one of the imitation learning methods.
+• Behavior cloning is simply classification or regression.

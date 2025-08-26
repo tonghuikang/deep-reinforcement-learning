@@ -1,0 +1,6 @@
+Multi-Step TD Targets
+
+Identity: $U_t = \sum_{i=0}^{m-1} \gamma^i \cdot R_{t+i} + \gamma^m \cdot U_{t+m}$.
+
+• $m$-step TD target for Q-learning:
+  $y_t = \sum_{i=0}^{m-1} \gamma^i \cdot r_{t+i} + \gamma^m \cdot \max_a Q^*(s_{t+m}, a)$.

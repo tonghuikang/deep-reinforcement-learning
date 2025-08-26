@@ -1,0 +1,12 @@
+Deep Q Network (DQN)
+
+• Input shape: size of the screenshot.
+• Output shape: dimension of action space.
+
+[The image shows a neural network diagram with:
+- Input: A game screenshot (state $s$) showing what appears to be a Mario-style game
+- Processing: Conv layer followed by Dense layer (labeled as "feature")
+- Output: Three Q-values:
+  - $Q(s, \text{"left"}; \mathbf{w})$
+  - $Q(s, \text{"right"}; \mathbf{w})$
+  - $Q(s, \text{"up"}; \mathbf{w})$]

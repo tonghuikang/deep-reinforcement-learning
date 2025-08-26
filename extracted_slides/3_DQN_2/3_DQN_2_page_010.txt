@@ -1,0 +1,7 @@
+Reason 1: Maximization
+
+• We conclude that $q_{t+1} = \max_a Q(s_{t+1}, a; \mathbf{w})$ is an overestimation of the true action-value at time $t + 1$.
+
+• The TD target, $y_t = r_t + \gamma \cdot q_{t+1}$, is thereby an overestimation.
+
+• TD learning pushes $Q(s_t, a_t; \mathbf{w})$ towards $y_t$ which overestimates the true action-value.

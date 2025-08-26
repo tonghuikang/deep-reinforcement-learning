@@ -1,0 +1,4 @@
+Using One Reward
+
+$s_t \rightarrow a_t \rightarrow s_{t+1} \rightarrow a_{t+1} \rightarrow s_{t+2} \rightarrow a_{t+2} \rightarrow s_{t+3} \cdots$
+         $\searrow r_t$         $\searrow r_{t+1}$         $\searrow r_{t+2}$

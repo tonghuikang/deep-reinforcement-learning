@@ -1,0 +1,13 @@
+After behavior cloning...
+
+• Suppose the current state $s_t$ has appeared in training data.
+• The policy network imitates expert's action $a_t$. (Which is a good action!)
+
+Question: Why bother doing RL after behavior cloning?
+
+• What if the current state $s_t$ has not appeared in training data?
+• Then the policy network' action $a_t$ can be bad.
+• Number of possible states is too big.
+• There is a big chance that $s_t$ has not appeared in training data.
+
+Behavior cloning + RL beats behavior cloning with 80% chance.

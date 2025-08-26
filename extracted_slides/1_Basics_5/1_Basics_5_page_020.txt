@@ -1,0 +1,8 @@
+Behavior Cloning
+
+• Observe this state $s_t$.
+• Policy network makes a prediction:
+  $\mathbf{p}_t = [\pi(1\vert s_t, \boldsymbol{\theta}), \cdots, \pi(361\vert s_t, \boldsymbol{\theta})] \in (0,1)^{361}$.
+• The expert's action is $a_t^* = 281$.
+• Let $\mathbf{y}_t \in \{0,1\}^{361}$ be the one-hot 
+  encode of $a_t^* = 281$.

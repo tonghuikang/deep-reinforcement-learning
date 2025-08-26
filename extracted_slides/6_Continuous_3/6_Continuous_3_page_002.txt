@@ -1,0 +1,13 @@
+Continuous Action Space
+
+$a_1 \in [0^{\circ}, 360^{\circ}]$
+
+• The action space $\mathcal{A}$ is a subset of $\mathbb{R}^2$.
+
+• The action space $\mathcal{A}$ is continuous:
+
+    $\mathcal{A} = [0^{\circ}, 360^{\circ}] \times [0^{\circ}, 180^{\circ}]$.
+
+• Actions are 2-dim vectors.
+
+$a_2 \in [0^{\circ}, 180^{\circ}]$

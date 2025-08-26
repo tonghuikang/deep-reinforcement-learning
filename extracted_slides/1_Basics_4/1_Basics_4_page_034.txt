@@ -1,0 +1,12 @@
+Training
+
+Update the policy network (actor) by policy gradient.
+• Seek to increase state-value: $V(s; \boldsymbol{\theta}, \mathbf{w}) = \sum_a \pi(a\vert s; \boldsymbol{\theta}) \cdot q(s, a; \mathbf{w})$.
+• Compute policy gradient: $\frac{\partial V(s;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}} = \mathbb{E}_A \left[\frac{\partial \log \pi(A\vert s,\boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot q(s, A; \mathbf{w})\right]$.
+• Perform gradient ascent.
+
+Update the value network (critic) by TD learning.
+• Predicted action-value: $q_t = q(s_t, a_t; \mathbf{w})$.
+• TD target: $y_t = r_t + \gamma \cdot q(s_{t+1}, a_{t+1}; \mathbf{w})$
+• Gradient: $\frac{\partial(q_t-y_t)^2/2}{\partial \mathbf{w}} = (q_t - y_t) \cdot \frac{\partial q(s_t,a_t;\mathbf{w})}{\partial \mathbf{w}}$.
+• Perform gradient descent.

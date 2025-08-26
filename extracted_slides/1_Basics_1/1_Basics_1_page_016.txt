@@ -1,0 +1,12 @@
+Terminology: state and action
+
+state s (this frame)                Action $a \in \{$left, right, up$\}$
+
+[Game screenshot showing Mario platformer level with coins, enemies, and platforms]
+
+                                    up
+                                    ↑
+                                    
+                    left ←-------> right
+                                    
+                                  Agent

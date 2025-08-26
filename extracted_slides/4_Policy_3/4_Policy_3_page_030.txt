@@ -1,0 +1,7 @@
+Policy Gradient with Baseline
+
+Stochastic policy gradient:
+
+g(a_t) = \frac{\partial \ln \pi(a_t \vert s_t; \theta)}{\partial \theta} \cdot (Q_\pi(s_t, a_t) - V_\pi(s_t))
+
+Advantage function

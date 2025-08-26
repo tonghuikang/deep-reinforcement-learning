@@ -1,0 +1,8 @@
+Parameter Sharing?
+
+• Policy networks: π(a^i \vert o^i; θ^i), for i = 1, 2, \cdots, n.
+• Value networks: q(o, a; w^i), for i = 1, 2, \cdots, n.
+• Trainable parameters: {θ^i, w^i}_{i=1}^n
+• Parameter sharing: θ^i = θ^j and w^i = w^j, for some i and j.
+
+Question: Shall the networks share parameters?

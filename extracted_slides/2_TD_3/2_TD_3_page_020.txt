@@ -1,0 +1,11 @@
+One-Step versus Multi-Step
+
+• One-step TD target uses only one reward: $r_t$.
+
+• $m$-step TD target uses $m$ rewards: $r_t, r_{t+1}, r_{t+2}, \cdots, r_{t+m-1}$.
+
+• If $m$ is suitably tuned, $m$-step target works better than one-step target [1].
+
+Reference:
+
+1. Hessel et al. Rainbow: combining improvements in deep reinforcement learning. In AAAI, 2018.

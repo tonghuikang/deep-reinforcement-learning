@@ -1,0 +1,5 @@
+Updating Policy Network by DPG
+
+• Goal: Increasing $q(s, a; \mathbf{w})$, where $a = \pi(s; \boldsymbol{\theta})$.
+
+state s → Policy Network (Parameter: θ) → action a = π(s; θ) → Value Network (Parameter: w) → value q(s,a; w)

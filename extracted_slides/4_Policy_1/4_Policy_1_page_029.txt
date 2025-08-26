@@ -1,0 +1,6 @@
+Stochastic Policy Gradient
+
+**Stochastic policy gradient:**
+$\mathbf{g}(a_t) = \frac{\partial \ln \pi(a_t\vert s_t;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot (Q_\pi(s_t, a_t) - b)$.
+
+• Whatever $b$ (independent of $A_t$) we use, the policy gradient $\mathbb{E}_{A_t \sim \pi}[\mathbf{g}(A_t)]$ remains the same.

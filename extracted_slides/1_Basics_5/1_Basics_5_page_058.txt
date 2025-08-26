@@ -1,0 +1,9 @@
+Step 4: Backup
+
+[Diagram shows tree with root $s_t$ and three red child nodes labeled $Q(a^{(1)})$, $Q(a^{(2)})$, $Q(a^{(3)})$]
+
+• MCTS repeats such a simulation many times.
+• Each child of $a_t$ has multiple recorded $V(s_{t+1})$.
+• Update action-value:
+    $$Q(a_t) = \text{mean}(\text{the recorded } V\text{'s}).$$
+• The $Q$ values will be used in Step 1 (selection).

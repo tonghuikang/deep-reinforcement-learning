@@ -1,0 +1,3 @@
+Updating Value Network
+
+TD learning: Encourage v(s_t; \mathbf{w}) to approach y_t

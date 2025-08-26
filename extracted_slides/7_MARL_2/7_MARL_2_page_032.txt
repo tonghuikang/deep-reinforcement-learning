@@ -1,0 +1,5 @@
+Centralized Training, Decentralized Execution
+
+• Each agent has its own policy network.
+• The central controller has all the value networks.
+• The central controller helps with the training; it is disabled during execution.

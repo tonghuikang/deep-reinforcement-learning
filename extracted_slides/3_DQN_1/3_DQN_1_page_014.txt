@@ -1,0 +1,15 @@
+Experience Replay
+
+• A transition: $(s_t, a_t, r_t, s_{t+1})$.
+
+• Store recent $n$ transitions in a replay buffer.
+
+• Remove old transitions so that the buffer has at most $n$ transitions.
+
+• Buffer capacity $n$ is a tuning hyper-parameter [1, 2].
+  • $n$ is typically large, e.g., $10^5 \sim 10^6$.
+  • The setting of $n$ is application-specific.
+
+Reference:
+1. Zhang & Sutton. A deeper look at experience replay. In NIPS workshop, 2017.
+2. Fedus et al. Revisiting fundamentals of experience replay. In ICML, 2019.

@@ -1,0 +1,11 @@
+Problem of Overestimation
+
+• TD learning makes DQN overestimate action-values. (Why?)
+
+• Reason 1: The maximization.
+
+  • TD target: $y_t = r_t + \gamma \cdot \max_a Q(s_{t+1}, a; \mathbf{w})$.
+  
+  • TD target is bigger than the real action-value.
+
+• Reason 2: Bootstrapping propagates the overestimation.

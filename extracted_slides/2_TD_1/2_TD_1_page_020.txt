@@ -1,0 +1,7 @@
+Sarsa (tabular version)
+
+• Observe a transition $(s_t, a_t, r_t, s_{t+1})$.
+• Sample $a_{t+1} \sim \pi(\cdot \vert s_{t+1})$, where $\pi$ is the policy function.
+• TD target: $y_t = r_t + \gamma \cdot Q_\pi(s_{t+1}, a_{t+1})$.
+
+[THIS IS TABLE: A Q-table with rows for State s1, State s2, State s3, and columns for Action a1, Action a2, Action a3, Action a4, etc. The table shows empty cells with one highlighted cell at the intersection of State s2 and Action a3.]

@@ -1,0 +1,11 @@
+Summary
+
+Terminologies                          Return and Value
+
+• Agent [Mario character icon]          • Return:
+• Environment                            $U_t = R_t + \gamma R_{t+1} + \gamma^2 R_{t+2} + \cdots$
+• State $s$                            • Action-value function:
+• Action $a$                             $Q_\pi(s_t, a_t) = \mathbb{E} [U_t \vert s_t, a_t]$.
+• Reward $r$                           • State-value function:
+• Policy $\pi(a \vert s)$                $V_\pi(s_t) = \mathbb{E}_{A \sim \pi}[Q_\pi(s_t, A)]$.
+• State transition $p(s' \vert s, a)$

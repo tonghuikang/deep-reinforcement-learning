@@ -1,0 +1,5 @@
+Function Approximation to State-Value
+
+Approximate stochastic policy gradient:
+
+g(a_t) \approx \frac{\partial \ln \pi(a_t \vert s_t; \theta)}{\partial \theta} \cdot (r_t + \gamma \cdot v(s_{t+1}; \mathbf{w}) - v(s_t; \mathbf{w}))

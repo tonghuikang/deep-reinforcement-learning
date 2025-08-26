@@ -1,0 +1,9 @@
+Terminology: state transition
+
+                                  state transition
+
+[Game screenshot showing Mario platformer level with "up" action highlighted]
+
+old state ────action───→ new state
+
+• E.g., “up” action leads to a new state.

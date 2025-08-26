@@ -1,0 +1,7 @@
+Updating Policy Network by DPG
+
+• The critic $q(s, a; \mathbf{w})$ evaluates how good the action $a$ is.
+• Improve $\boldsymbol{\theta}$ so that the critic believes $a = \pi(s; \boldsymbol{\theta})$ is better.
+• Update $\boldsymbol{\theta}$ so that $q(s, a; \mathbf{w}) = q(s, \pi(s; \boldsymbol{\theta}); \mathbf{w})$ increases.
+
+state s → Policy Network (Parameter: θ) → action a = π(s; θ) → Value Network (Parameter: w) → value q(s,a; w)

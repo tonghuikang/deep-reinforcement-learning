@@ -1,0 +1,11 @@
+Dueling Network: Formulation
+
+Theorem 2: $Q^*(s, a) = V^*(s) + A^*(s, a) - \max_a A^*(s, a)$.
+
+• Approximate $V^*(s)$ by a neural network, $V(s; \mathbf{w}^V)$.
+
+• Approximate $A^*(s, a)$ by a neural network, $A(s, a; \mathbf{w}^A)$.
+
+• Thus, approximate $Q^*(s, a)$ by the dueling network:
+
+    $Q(s, a; \mathbf{w}^A, \mathbf{w}^V) = V(s; \mathbf{w}^V) + A(s, a; \mathbf{w}^A) - \max_a A(s, a; \mathbf{w}^A)$.

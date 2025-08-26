@@ -1,0 +1,4 @@
+Policy and Value Networks
+
+state s -> Conv -> feature -> Dense1 -> Softmax -> π(a|s; θ)
+                            \-> Dense2 -> v(s; w)

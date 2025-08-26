@@ -1,0 +1,3 @@
+Deterministic Actor-Critic
+
+state s → Policy Network (Parameter: θ) → action a = π(s; θ) → Value Network (Parameter: w) → value q(s,a; w)

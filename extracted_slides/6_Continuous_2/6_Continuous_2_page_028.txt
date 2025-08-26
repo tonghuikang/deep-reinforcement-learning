@@ -1,0 +1,13 @@
+Updating policy and value networks
+
+• Policy network makes a decision: $a = \pi(s; \boldsymbol{\theta})$.
+
+• Update policy network by DPG: $\boldsymbol{\theta} \leftarrow \boldsymbol{\theta} + \beta \cdot \frac{\partial a}{\partial \boldsymbol{\theta}} \cdot \frac{\partial q(s,a;\mathbf{w})}{\partial a}$.
+
+• Value network computes $q_t = q(s, a; \mathbf{w})$.
+
+• Target networks, $\pi(s; \boldsymbol{\theta}^-)$ and $q(s, a; \mathbf{w}^-)$, compute $q_{t+1}$.
+
+• TD error: $\delta_t = q_t - (r_t + \gamma \cdot q_{t+1})$.
+
+• Update value network by TD: $\mathbf{w} \leftarrow \mathbf{w} - \alpha \cdot \delta_t \cdot \frac{\partial q(s,a;\mathbf{w})}{\partial \mathbf{w}}$.

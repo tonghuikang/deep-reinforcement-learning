@@ -1,0 +1,5 @@
+Summary
+
+• Dueling network:
+
+    $Q(s, a; \mathbf{w}) = V(s; \mathbf{w}^V) + A(s, a; \mathbf{w}^A) - \text{mean}_a A(s, a; \mathbf{w}^A)$.

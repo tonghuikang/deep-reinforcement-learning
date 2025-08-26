@@ -1,0 +1,10 @@
+Two Sources of Randomness
+
+• The randomness in action is from the policy function:
+
+    A ~ π(· | s).
+
+
+• The randomness in state is from the state-transition function:
+
+    S' ~ p(· | s, a).

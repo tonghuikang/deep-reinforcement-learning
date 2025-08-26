@@ -1,0 +1,14 @@
+Random Sampling
+
+• Sample red ball w.p. 0.2, green ball w.p. 0.5, and blue ball w.p. 0.3.
+
+from numpy.random import choice
+samples = choice(['R', 'G', 'B'], size=100, p=[0.2, 0.5, 0.3])
+print(samples)
+
+['R' 'G' 'R' 'R' 'R' 'R' 'B' 'B' 'B' 'G' 'G' 'B' 'G' 'B' 'B' 'G' 'B' 'G'
+ 'B' 'B' 'G' 'B' 'G' 'B' 'B' 'G' 'B' 'B' 'G' 'B' 'G' 'B' 'G' 'G' 'G' 'G'
+ 'B' 'B' 'B' 'B' 'B' 'G' 'G' 'B' 'R' 'R' 'B' 'R' 'B' 'G' 'R' 'G' 'R' 'G'
+ 'R' 'R' 'B' 'G' 'G' 'G' 'B' 'R' 'G' 'B' 'G' 'R' 'G' 'G' 'G' 'B' 'B' 'R'
+ 'G' 'G' 'B' 'B' 'R' 'B' 'B' 'B' 'R' 'B' 'G' 'B' 'R' 'B' 'R' 'G' 'B' 'R'
+ 'B' 'B' 'G' 'G' 'G' 'R' 'R' 'B' 'R' 'G']

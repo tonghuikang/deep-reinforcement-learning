@@ -1,0 +1,13 @@
+Using Target Network
+
+• Selection using target network:
+                    $a^* = \text{argmax}_a Q(s_{t+1}, a; \mathbf{w}^-)$.
+
+• Evaluation using target network:
+                    $y_t = r_t + \gamma \cdot Q(s_{t+1}, a^*; \mathbf{w}^-)$.
+
+• It works better, but overestimation is still serious.
+
+Reference:
+
+1. Mnih et al. Human-level control through deep reinforcement learning. Nature, 2015.

@@ -1,0 +1,7 @@
+Play game using AI
+
+[Timeline diagram showing:]
+$\cdots \longrightarrow s_{t-1} \longrightarrow a_{t-1} \longrightarrow s_t \longrightarrow a_t \longrightarrow s_{t+1} \longrightarrow \cdots$
+             $\searrow r_{t-2}$              $\searrow r_{t-1}$                   $\searrow r_t$
+
+                    Time t                              Time t+1

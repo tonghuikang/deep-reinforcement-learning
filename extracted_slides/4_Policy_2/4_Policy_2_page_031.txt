@@ -1,0 +1,6 @@
+Summary of Algorithm
+
+• Play a game to the end and observe the trajectory:
+    $s_1, a_1, r_1, s_2, a_2, r_2, \cdots, s_n, a_n, r_n$.
+
+• Compute $u_t = \sum_{i=t}^n \gamma^{i-t} \cdot r_i$ and $\delta_t = v(s_t; \boldsymbol{w}) - u_t$.

@@ -1,0 +1,7 @@
+Problem of Non-identifiability
+
+• Equation 1: $Q^*(s, a) = V^*(s) + A^*(s, a)$.
+
+• Equation 1 has the problem of non-identifiability.
+
+  • Let $V' = V^* + 10$ and $A' = A^* - 10$.

@@ -1,0 +1,9 @@
+Policy Gradient
+
+Definition: Approximate state-value function.
+
+• $V(s; \boldsymbol{\theta}) = \sum_a \pi(a \vert s; \boldsymbol{\theta}) \cdot Q_\pi(s, a)$.
+
+Policy gradient: Derivative of $V(s; \boldsymbol{\theta})$ w.r.t. $\boldsymbol{\theta}$.
+
+• $\frac{\partial V(s;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}}$

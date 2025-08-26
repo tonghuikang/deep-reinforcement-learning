@@ -1,0 +1,4 @@
+Policy Gradient
+
+Policy gradient:
+$$\frac{\partial V_\pi(s_t)}{\partial \boldsymbol{\theta}} = \mathbb{E}_{A_t \sim \pi}\left[\frac{\partial \ln \pi(A_t \vert s_t; \boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot \left(Q_\pi(s_t, A_t) - V_\pi(s_t)\right)\right].$$

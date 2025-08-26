@@ -1,0 +1,4 @@
+Using target networks
+
+• Value network makes a prediction for time $t$:
+    $q_t = q(s_t, a_t; \mathbf{w})$.

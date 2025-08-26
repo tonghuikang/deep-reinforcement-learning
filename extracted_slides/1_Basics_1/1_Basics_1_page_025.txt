@@ -1,0 +1,8 @@
+Terminology: reward
+
+                                  reward R
+
+[Game screenshot showing Mario platformer level]
+
+• Collect a coin:    R = +1
+• Win the game:     R = +10000

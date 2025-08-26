@@ -1,0 +1,7 @@
+Monte Carlo Approximation
+
+Policy gradient: $\frac{\partial V_\pi(s)}{\partial \theta} = \mathbb{E}_A \left[\frac{\partial f(s,A;\theta)}{\partial \theta} \cdot Q_\pi(s, A)\right]$.
+
+• Randomly sample action $a$ by:
+
+    $a_i \sim N(\hat{\mu}_i, \hat{\sigma}_i^2)$, for all $i = 1, \cdots, d$.

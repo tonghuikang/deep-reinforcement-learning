@@ -1,0 +1,3 @@
+Approximation to State-Value
+
+Theorem 2: $V_\pi(s_t) = \mathbb{E}_{A_t,S_{t+1}}[R_t + \gamma \cdot V_\pi(S_{t+1})]$.

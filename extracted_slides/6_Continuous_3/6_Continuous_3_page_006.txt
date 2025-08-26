@@ -1,0 +1,13 @@
+Multivariate Normal Distribution
+
+• Let the degree of freedom be $d$, i.e., action $\mathbf{a}$ is $d$-dim.
+
+• Let $\boldsymbol{\mu}, \boldsymbol{\sigma}: \mathcal{S} \mapsto \mathbb{R}^d$ be functions of $s$.
+
+• Let $\mu_i$ and $\sigma_i$ be the $i$-th elements of $\boldsymbol{\mu}(s)$ and $\boldsymbol{\sigma}(s)$, respectively.
+
+• Let policy function be the PDF of multivariate normal:
+
+    $\pi(\mathbf{a} \vert s) = \prod_{i=1}^{d} \frac{1}{\sqrt{6.28} \sigma_i} \cdot \exp \left( -\frac{(a_i-\mu_i)^2}{2\sigma_i^2} \right)$.
+
+Problem: $\boldsymbol{\mu}$ and $\boldsymbol{\sigma}$ (which are functions of $s$) are unknown.

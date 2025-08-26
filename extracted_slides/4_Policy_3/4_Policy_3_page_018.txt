@@ -1,0 +1,3 @@
+Property of Action-Value Function
+
+**Theorem 1**: $Q_\pi(s_t, a_t) = \mathbb{E}_{s_{t+1}}[R_t + \gamma \cdot V_\pi(s_{t+1})]$.

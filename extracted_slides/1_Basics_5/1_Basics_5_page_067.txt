@@ -1,0 +1,7 @@
+Is behavior cloning useless?
+
+• AlphaGo Zero does not use human experience. (No behavior cloning.)
+• For the Go game, human experience is harmful.
+
+• In general, is behavior cloning useless?
+• What if a surgery robot (randomly initialized) is learned purely by performing surgery? (Human experience is not used.)

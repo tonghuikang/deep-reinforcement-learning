@@ -1,0 +1,9 @@
+Behavior Cloning
+
+Behavior cloning is not reinforcement learning!
+
+• Reinforcement learning: Supervision is from rewards given 
+  by the environment.
+• Imitation learning: Supervision is from experts' actions.
+  • Agent does not see rewards.
+  • Agent simply imitates experts' actions.

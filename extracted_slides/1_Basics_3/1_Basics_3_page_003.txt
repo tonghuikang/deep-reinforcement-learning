@@ -1,0 +1,15 @@
+Policy Function $\pi(a \vert s)$
+
+• Policy function $\pi(a \vert s)$ is a probability density function (PDF).
+
+• It takes state $s$ as input.
+
+• It output the probabilities for all the actions, e.g.,
+
+$\pi(\text{left} \vert s) = 0.2,$
+
+$\pi(\text{right} \vert s) = 0.1,$
+
+$\pi(\text{up} \vert s) = 0.7.$
+
+• Randomly sample action $a$ random drawn from the distribution.

@@ -1,0 +1,9 @@
+Partial Observations
+
+• An agent may or may not have full knowledge of the state, $s$.
+
+• Let $o^i$ be the $i$-th agent's observation.
+
+• Partial observation: $o^i \neq s$.
+
+• Full observation: $o^1 = \cdots = o^n = s$.

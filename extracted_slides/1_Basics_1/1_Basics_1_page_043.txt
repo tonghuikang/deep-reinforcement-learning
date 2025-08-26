@@ -1,0 +1,4 @@
+Play game using AI
+
+• Observe state $s_t$, select action $a_t \sim \pi( \cdot \vert s_t )$, and execute $a_t$.
+• The environment gives new state $s_{t+1}$ and reward $r_t$.

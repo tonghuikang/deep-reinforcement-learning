@@ -1,0 +1,13 @@
+Training
+
+• Dueling network, $Q(s, a; \mathbf{w})$, is an approximation to $Q^*(s, a)$.
+
+• Learn the parameter, $\mathbf{w} = (\mathbf{w}^A, \mathbf{w}^V)$, in the same way as the other DQNs.
+
+• Tricks can be used in the same way.
+
+  • Prioritized experience replay.
+
+  • Double DQN.
+
+  • Multi-step TD target.

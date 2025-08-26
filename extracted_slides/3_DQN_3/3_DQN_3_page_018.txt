@@ -1,0 +1,7 @@
+Approximating Advantage Function
+
+• Approximate $A^*(s, a)$ by a neural network, $A(s, a; \mathbf{w}^A)$.
+
+state $s$ → Conv → feature → Dense → $A(s, \text{"left"}; \mathbf{w}^A)$
+                                    $A(s, \text{"right"}; \mathbf{w}^A)$
+                                    $A(s, \text{"up"}; \mathbf{w}^A)$

@@ -1,0 +1,4 @@
+Approximations
+
+Approximate policy gradient:
+$$\frac{\partial V_\pi(s_t)}{\partial \boldsymbol{\theta}} \approx \boldsymbol{g}(a_t) \approx \frac{\partial \ln \pi(a_t \vert s_t; \boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \cdot \left(u_t - v(s_t; \boldsymbol{w})\right).$$

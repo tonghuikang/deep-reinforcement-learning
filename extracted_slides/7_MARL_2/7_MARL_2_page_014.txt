@@ -1,0 +1,11 @@
+Centralized Actor-Critic Method
+
+• Let $\mathbf{a} = [a^1, a^2, \ldots, a^n]$ contain all the agents' actions.
+
+• Let $\mathbf{o} = [o^1, o^2, \ldots, o^n]$ contain all the agents' observations.
+
+• The central controller knows $\mathbf{a}$, $\mathbf{o}$, and all the rewards.
+
+• The controller has $n$ policy networks and $n$ value networks:
+  • Policy network (actor) for the $i$-th agent: $\pi(a^i \vert \mathbf{o}; \boldsymbol{\theta}^i)$.
+  • Value network (critic) for the $i$-th agent: $q(\mathbf{o}, \mathbf{a}; \mathbf{w}^i)$.

@@ -1,0 +1,5 @@
+MC Approximation to Action-Value
+
+Approximate stochastic policy gradient:
+
+g(a_t) \approx \frac{\partial \ln \pi(a_t \vert s_t; \theta)}{\partial \theta} \cdot (r_t + \gamma \cdot V_\pi(s_{t+1}) - V_\pi(s_t))

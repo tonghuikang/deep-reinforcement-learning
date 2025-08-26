@@ -1,0 +1,14 @@
+Solutions
+
+• Problem: DQN trained by TD overestimates action-values.
+
+• Solution 1: Use a target network [1] to compute TD targets.
+  (Address the problem caused by bootstrapping.)
+
+• Solution 2: Use double DQN [2] to alleviate the overestimation
+  caused by maximization.
+
+Reference:
+
+1. Mnih et al. Human-level control through deep reinforcement learning. Nature, 2015.
+2. Van Hasselt, Guez, & Silver. Deep reinforcement learning with double Q-learning. In AAAI, 2016.

@@ -1,0 +1,3 @@
+TD Target versus Return
+
+A2C with $m$-step TD target: $y_t = \sum_{i=0}^{m-1} \gamma^i \cdot r_{t+i} + \gamma^m \cdot v(s_{t+m}; \mathbf{w})$.

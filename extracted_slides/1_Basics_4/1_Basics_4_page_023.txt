@@ -1,0 +1,5 @@
+Actor-Critic Method: Update Actor
+
+[Diagram showing:
+- Policy Network (Actor) with "Action a" arrow going up (highlighted in red) to Environment and "State s" arrow coming from Environment
+- Value Network (Critic) (shown grayed out) providing "Value q" to Policy Network (Actor)]

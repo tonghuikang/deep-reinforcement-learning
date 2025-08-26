@@ -1,0 +1,9 @@
+Settings
+
+1. Fully cooperative.
+
+2. Fully competitive.
+
+3. Mixed Cooperative & competitive.
+
+4. Self-interested.

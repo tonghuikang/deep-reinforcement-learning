@@ -1,0 +1,9 @@
+Property of State-Value Function
+
+Theorem 1: $Q_\pi(S_t, a_t) = \mathbb{E}_{S_{t+1}}[R_t + \gamma \cdot V_\pi(S_{t+1})]$.
+
+• By definition, $V_\pi(s_t) = \mathbb{E}_{A_t}[Q_\pi(s_t, A_t)]$
+
+                = $\mathbb{E}_{A_t}[\mathbb{E}_{S_{t+1}}[R_t + \gamma \cdot V_\pi(S_{t+1})]]$
+
+Theorem 2: $V_\pi(s_t) = \mathbb{E}_{A_t,S_{t+1}}[R_t + \gamma \cdot V_\pi(S_{t+1})]$.

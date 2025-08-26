@@ -1,0 +1,8 @@
+Policy Network (Actor): $\pi(a\vert s; \boldsymbol{\theta})$
+
+• Input: state $s$, e.g., a screenshot of Super Mario.
+• Output: probability distribution over the actions.
+• Let $\mathcal{A}$ be the set all actions, e.g., $\mathcal{A} = \{"left", "right", "up"\}$.
+• $\sum_{a \in \mathcal{A}} \pi(a\vert s; \boldsymbol{\theta}) = 1$. (That is why we use softmax activation.)
+
+[Image shows a Super Mario game screenshot labeled "state s" going through Conv → Dense → Softmax layers, outputting "left", 0.2; "right", 0.1; "up", 0.7]

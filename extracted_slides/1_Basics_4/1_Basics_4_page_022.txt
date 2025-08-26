@@ -1,0 +1,5 @@
+Actor-Critic Method
+
+[Diagram showing:
+- Policy Network (Actor) connected to Environment with "Action a" arrow going to Environment and "State s" arrow coming from Environment
+- Value Network (Critic) receiving "Action a" from the system and "Reward r" from Environment, and providing "Value q" to Policy Network (Actor)]

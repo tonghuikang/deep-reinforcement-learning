@@ -1,0 +1,12 @@
+History
+
+• Experience replay was proposed by Long-Ji Lin [1].
+
+• The DQN paper [2] popularized experience replay.
+
+• There are many improvements, e.g., [3].
+
+Reference:
+1. Lin. Reinforcement Learning for Robots Using Neural Networks. PhD Dissertation, 1993.
+2. Mnih et al. Human-level control through deep reinforcement learning. Nature, 2015.
+3. Schaul et al. Prioritized experience replay. In ICLR, 2016.

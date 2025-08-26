@@ -1,0 +1,15 @@
+Step 3: Evaluation
+
+[Diagram shows tree with state $s_{t+1}$ highlighted in pink]
+
+Run a rollout to the end of the game (step $T$).
+
+• Player's action: $a_k \sim \pi(\cdot \vert s_k; \boldsymbol{\theta})$.
+• Opponent's action: $a_k' \sim \pi(\cdot \vert s_k'; \boldsymbol{\theta})$.
+• Receive reward $r_T$ at the end.
+  • Win: $r_T = +1$.
+  • Lose: $r_T = -1$.
+
+Evaluate the state $s_{t+1}$.
+
+• $v(s_{t+1}; \mathbf{w})$: output of the value network.

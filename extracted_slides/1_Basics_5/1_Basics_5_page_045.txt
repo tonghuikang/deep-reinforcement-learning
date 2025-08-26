@@ -1,0 +1,5 @@
+Step 1: Selection
+
+[Diagram shows tree with root node $s_t$ and three red child nodes labeled "valid actions"]
+
+Question: Observing $s_t$, which action shall we explore?

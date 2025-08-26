@@ -1,0 +1,5 @@
+Sarsa (tabular version)
+
+• Observe a transition $(s_t, a_t, r_t, s_{t+1})$.
+• Sample $a_{t+1} \sim \pi(\cdot \vert s_{t+1})$, where $\pi$ is the policy function.
+• TD target: $y_t = r_t + \gamma \cdot Q_\pi(s_{t+1}, a_{t+1})$.

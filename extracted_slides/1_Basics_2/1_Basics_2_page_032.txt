@@ -1,0 +1,8 @@
+Why does TD learning work?
+
+• Model's estimates:
+  • NYC to Atlanta: 1000 minutes.
+  • DC to Atlanta: 600 minutes.
+  • → NYC to DC: 400 minutes.
+
+[The image shows a diagram with NYC, DC, and Atlanta connected by arrows. There are red boxes highlighting "1000 minutes (estimate)" and "600 minutes (estimate)."]

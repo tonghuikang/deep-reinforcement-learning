@@ -1,0 +1,9 @@
+Rewards
+
+• Let $R^i$ be the reward received by the $i$-th agent.
+
+• Fully cooperative: $R^1 = R^2 = \cdots = R^n$.
+
+• Fully competitive: $R^1 \propto -R^2$.
+
+• $R^i$ depends on $A^i$ as well as all the other agents' actions $\{A^j\}_{j \neq i}$.

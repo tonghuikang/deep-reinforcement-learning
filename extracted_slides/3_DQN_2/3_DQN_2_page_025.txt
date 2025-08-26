@@ -1,0 +1,7 @@
+Update Target Network
+
+• Periodically update $\mathbf{w}^-$.
+
+• Option 1: $\mathbf{w}^- \leftarrow \mathbf{w}$.
+
+• Option 2: $\mathbf{w}^- \leftarrow \tau \cdot \mathbf{w} + (1 - \tau) \cdot \mathbf{w}^-$.

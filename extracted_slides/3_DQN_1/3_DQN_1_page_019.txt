@@ -1,0 +1,7 @@
+Basic Idea
+
+• Not all transitions are equally important.
+
+• Which kind of transition is more important, left or right?
+
+[Two game screenshots showing different scenarios - left shows a simple Mario level, right shows a more complex castle scene with enemies]

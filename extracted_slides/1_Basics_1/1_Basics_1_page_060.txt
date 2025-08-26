@@ -1,0 +1,9 @@
+Randomness in Returns
+
+[Timeline diagram showing:]
+                 $R_t$          $R_{t+1}$          $R_{t+2}$          $\cdots$          $R_n$
+
+[Mario character icon]                 $U_t$ is a random variable
+
+Time t                                                                                                                        End
+                                                                                                                    Time

@@ -1,0 +1,6 @@
+Deterministic Policy Gradient (DPG)
+
+Reference:
+
+• Silver et al. Deterministic policy gradient algorithms. In ICML, 2014.
+• Lillicrap et al. Continuous control with deep reinforcement learning. In ICLR, 2016.

@@ -1,0 +1,13 @@
+TD Learning for DQN
+
+• In RL, bootstrapping means "using an estimated value in the update step for the same kind of estimated value".
+
+• Use a transition, $(s_t, a_t, r_t, s_{t+1})$, to update $\mathbf{w}$.
+
+  • TD target:  $y_t = r_t + \gamma \cdot \max_a Q(s_{t+1}, a; \mathbf{w})$.
+
+TD target $y_t$ is partly an estimate made by the DQN $Q$.
+
+  • SGD:  $\mathbf{w} \leftarrow \mathbf{w} - \alpha \cdot (Q(s_t, a_t; \mathbf{w}) - y_t) \cdot \frac{\partial Q(s_t,a_t;\mathbf{w})}{\partial \mathbf{w}}$.
+
+We use $y_t$, which is partly based on $Q$, to update $Q$ itself.

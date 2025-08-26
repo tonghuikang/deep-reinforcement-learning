@@ -1,0 +1,9 @@
+Approximations to Action-Value
+
+Stochastic policy gradient: $g(a) = \frac{\partial f(s,a;\theta)}{\partial \theta} \cdot Q_\pi(s, a)$
+
+• Actor-critic approximates $Q_\pi$ by the value network, $q(s, a; w)$.
+
+• Update policy network by: $\theta \leftarrow \theta + \beta \cdot \frac{\partial f(s,a;\theta)}{\partial \theta} \cdot q(s, a; w)$
+
+• Update value network by TD learning.

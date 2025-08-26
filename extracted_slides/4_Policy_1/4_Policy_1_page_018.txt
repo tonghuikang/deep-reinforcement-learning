@@ -1,0 +1,3 @@
+Policy Gradient with Baseline
+
+If $b$ is independent of $A$, then $\mathbb{E}_{A \sim \pi} \left[b \cdot \frac{\partial \ln \pi(A \vert s; \boldsymbol{\theta})}{\partial \boldsymbol{\theta}}\right] = 0$.

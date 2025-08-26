@@ -1,0 +1,11 @@
+Discounted Returns
+
+Definition: Return (aka cumulative future reward).
+
+• $U_t = R_t + R_{t+1} + R_{t+2} + R_{t+3} + \cdots$
+
+Definition: Discounted return (aka cumulative discounted future reward).
+
+• $\gamma$: discount factor (tuning hyper-parameter).
+
+• $U_t = R_t + \gamma R_{t+1} + \gamma^2 R_{t+2} + \gamma^3 R_{t+3} + \cdots$

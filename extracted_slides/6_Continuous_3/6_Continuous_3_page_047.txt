@@ -1,0 +1,5 @@
+Training
+
+• Build auxiliary network, $f(s, a; \theta)$, for computing policy gradient.
+
+• Policy gradient algorithms: actor-critic and REINFORCE.

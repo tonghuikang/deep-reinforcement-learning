@@ -1,0 +1,4 @@
+Actor-Critic Method
+
+[Diagram showing:
+- Policy Network (Actor) connected to Environment with "Action a" arrow going to Environment and "State s" arrow coming from Environment]

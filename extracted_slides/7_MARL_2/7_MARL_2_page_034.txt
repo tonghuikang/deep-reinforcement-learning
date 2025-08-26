@@ -1,0 +1,5 @@
+                   Policy (Actor)    Value (Critic)
+
+Fully Decentralized      π(a^i \vert o^i; θ^i)     q(o^i, a^i; w^i)
+
+Fully Centralized        π(a^i \vert o; θ^i)       q(o, a; w^i)

@@ -1,0 +1,11 @@
+Policy Network
+
+• Each agent has its own policy network: $\pi(a^i \vert s; \theta^i)$.
+
+• Policy networks can be exchangeable: $\theta^1 = \theta^2 = \cdots = \theta^n$.
+
+  • Self-driving cars can have the same policy.
+
+• Policy networks can be nonexchangeable: $\theta^i \neq \theta^j$.
+
+  • Soccer players have different roles, e.g., striker, defender, goalkeeper.

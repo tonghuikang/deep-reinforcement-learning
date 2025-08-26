@@ -1,0 +1,15 @@
+Reason 2: Bootstrapping
+
+• TD learning performs bootstrapping.
+
+  • TD target in part uses $q_{t+1} = \max_a Q(s_{t+1}, a; \mathbf{w})$.
+  
+  • Use the TD target for updating $Q(s_t, a_t; \mathbf{w})$.
+
+• Suppose DQN overestimates the action-value.
+
+• Then $Q(s_{t+1}, a; \mathbf{w})$ is an overestimation.
+
+• The maximization further pushes $q_{t+1}$ up.
+
+• When $q_{t+1}$ is used for updating $Q(s_t, a_t; \mathbf{w})$, the overestimation is propagated back to DQN.

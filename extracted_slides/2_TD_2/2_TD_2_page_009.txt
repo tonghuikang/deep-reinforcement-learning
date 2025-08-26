@@ -1,0 +1,9 @@
+Derive TD Target
+
+Identity: $Q^*(s_t, a_t) = \mathbb{E}[R_t + \gamma \cdot Q^*(S_{t+1}, A_{t+1})]$.
+
+• The action $A_{t+1}$ is computed by
+
+$$A_{t+1} = \arg\max_a Q^*(S_{t+1}, a)$$.
+
+• Thus $Q^*(S_{t+1}, A_{t+1}) = \max_a Q^*(S_{t+1}, a)$.

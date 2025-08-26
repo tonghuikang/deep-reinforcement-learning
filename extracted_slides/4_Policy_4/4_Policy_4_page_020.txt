@@ -1,0 +1,7 @@
+A2C versus REINFORCE
+
+• A2C uses m-step TD target (with bootstrapping):
+$$y_t = \sum_{i=0}^{m-1} \gamma^i \cdot r_{t+i} + \gamma^m \cdot v(s_{t+m}; \mathbf{w}).$$
+
+• REINFORCE uses observed return (without bootstrapping):
+$$u_t = \sum_{i=0}^{n-t} \gamma^i \cdot r_{t+i}.$$

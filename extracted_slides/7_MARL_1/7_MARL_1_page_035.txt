@@ -1,0 +1,6 @@
+Stationary VS Non-stationary
+
+• Consider **multi-agent** setting.
+• **Stationary environment** requires state transition be fixed throughout.
+  • State transition: $p(s' \vert s, a^1, \ldots, a^n)$.
+  • Given $s$ and $a^1, \ldots, a^n$, the probability distribution of the next state $s'$ is always the same.

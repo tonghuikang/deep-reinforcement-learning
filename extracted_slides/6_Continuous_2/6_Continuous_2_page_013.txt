@@ -1,0 +1,5 @@
+Updating Policy Network by DPG
+
+• The critic $q(s, a; \mathbf{w})$ evaluates how good the action $a$ is.
+
+state s → Policy Network (Parameter: θ) → action a = π(s; θ) → Value Network (Parameter: w) → value q(s,a; w)

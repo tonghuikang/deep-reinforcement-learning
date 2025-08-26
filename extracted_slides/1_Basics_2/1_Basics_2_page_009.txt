@@ -1,0 +1,12 @@
+Approximate the Q Function
+
+Goal: Win the game ($\approx$ maximize the total reward.)
+
+Question: If we know $Q^*(s, a)$, what is the best action?
+
+• Obviously, the best action is $a^* = \arg\max_a Q^*(s, a)$.
+
+Challenge: We do not know $Q^*(s, a)$.
+
+• Solution: Deep Q Network (DQN)
+• Use neural network $Q(s, a; \mathbf{w})$ to approximate $Q^*(s, a)$.

@@ -1,0 +1,7 @@
+Multi-Agent Reinforcement Learning (MARL)
+
+• There are $n > 1$ agents in the system.
+• The agents are usually not independent.
+  • Every agent's action can affect the next state.
+  • Thus, every agent can affect all the other agents.
+• Unless the agents are independent of each other, single-agent RL methods do not work well for MARL.

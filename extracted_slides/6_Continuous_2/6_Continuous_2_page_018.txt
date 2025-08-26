@@ -1,0 +1,7 @@
+Updating Policy Network by DPG
+
+• Goal: Increasing $q(s, a; \mathbf{w})$, where $a = \pi(s; \boldsymbol{\theta})$.
+• DPG: $\mathbf{g} = \frac{\partial q(s,\pi(s;\boldsymbol{\theta});\mathbf{w})}{\partial \boldsymbol{\theta}} = \frac{\partial a}{\partial \boldsymbol{\theta}} \cdot \frac{\partial q(s,a;\mathbf{w})}{\partial a}$.
+• Gradient ascent: $\boldsymbol{\theta} \leftarrow \boldsymbol{\theta} + \beta \cdot \mathbf{g}$.
+
+state s → Policy Network (Parameter: θ) → action a = π(s; θ) → Value Network (Parameter: w) → value q(s,a; w)

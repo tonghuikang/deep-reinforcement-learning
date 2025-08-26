@@ -1,0 +1,9 @@
+Play CartPole Game
+
+import gym
+env = gym.make('CartPole-v0')
+
+• Get the environment of CartPole from Gym.
+• "env" provides states and reward.
+
+[Illustration of CartPole: a pole balanced on a cart]

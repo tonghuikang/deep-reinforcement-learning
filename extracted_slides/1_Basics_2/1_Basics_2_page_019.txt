@@ -1,0 +1,8 @@
+Example
+
+• I want to drive from NYC to Atlanta.
+• Model $Q(\mathbf{w})$ estimates the time cost, e.g., 1000 minutes.
+
+Question: How do I update the model?
+
+[The image shows a diagram with NYC at the top connected by an arrow to Atlanta at the bottom, with "1000 minutes (estimate)." labeled on the arrow]

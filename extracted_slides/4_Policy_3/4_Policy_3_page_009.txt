@@ -1,0 +1,7 @@
+Outline
+
+1. Value functions and Monte Carlo approximations.
+
+2. Updating policy network.
+
+3. Updating value network.

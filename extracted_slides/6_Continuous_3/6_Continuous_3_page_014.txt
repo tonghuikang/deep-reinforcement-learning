@@ -1,0 +1,7 @@
+Training Policy Network
+
+1. Auxiliary network (for computing policy gradient).
+
+2. Policy gradient.
+
+3. Algorithms: actor-critic and REINFORCE.

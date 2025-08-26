@@ -1,0 +1,5 @@
+Shortcoming 2: Correlated Updates
+
+• Previously, we use $(s_t, a_t, r_t, s_{t+1})$ sequentially, for $t = 1, 2, \cdots$, to update $\mathbf{w}$.
+
+• Consecutive states, $s_t$ and $s_{t+1}$, are strongly correlated (which is bad.)

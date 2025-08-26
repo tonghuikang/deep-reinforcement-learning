@@ -1,0 +1,9 @@
+Algorithm
+
+1. Observe the state $s_t$.
+
+2. Randomly sample action $a_t$ according to $\pi(\cdot \vert s_t; \boldsymbol{\theta}_t)$.
+
+3. Compute $q_t \approx Q_\pi(s_t, a_t)$ (some estimate).
+
+4. Differentiate policy network: $\mathbf{d}_{g,t} = \frac{\partial \log \pi(a_t \vert s_t,\boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \vert_{\boldsymbol{\theta}=\boldsymbol{\theta}_t}$.

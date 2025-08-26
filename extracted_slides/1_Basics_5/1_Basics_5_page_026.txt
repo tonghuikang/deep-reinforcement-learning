@@ -1,0 +1,10 @@
+Reinforcement learning of policy network
+
+• Player's parameters are the latest parameters of the policy network.
+• Opponent's parameters are randomly selected from previous iterations.
+
+
+Player                    v.s.          Opponent
+(Agent)                                (Environment)
+policy network with                     policy network with
+latest param                           old param

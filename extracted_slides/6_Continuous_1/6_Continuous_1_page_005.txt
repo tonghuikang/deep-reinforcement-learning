@@ -1,0 +1,7 @@
+Policy Network for Discrete Action Space
+
+"left", 0.2
+
+"right", 0.1
+
+"up", 0.7

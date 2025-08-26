@@ -1,0 +1,7 @@
+Properties of PDF/PMF
+
+• Random variable $X$ is in the domain $\mathcal{X}$.
+• For continuous distributions,
+    $\int_{\mathcal{X}} p(x) dx = 1$.
+• For discrete distributions,
+    $\sum_{x \in \mathcal{X}} p(x) = 1$.

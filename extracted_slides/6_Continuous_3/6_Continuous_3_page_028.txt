@@ -1,0 +1,8 @@
+Recap
+
+We have built three neural networks:
+
+$\mu(s; \theta^\mu)$, $\rho(s; \theta^\rho)$, and $f(s, a; \theta)$.
+
+• $\mu(s; \theta^\mu)$ computes the mean. } for controlling the agent
+• $\rho(s; \theta^\rho)$ computes the log variance.

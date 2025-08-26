@@ -1,0 +1,7 @@
+Single-Agent Policy Gradient for MARL
+
+• The $i$-th agent's policy network: $\pi(a^i \vert s; \boldsymbol{\theta}^i)$.
+• The $i$-th agent's state-value function: $V^i(s; \boldsymbol{\theta}^1, \ldots, \boldsymbol{\theta}^n)$.
+• Objective function: $J^i(\boldsymbol{\theta}^1, \ldots, \boldsymbol{\theta}^n) = \mathbb{E}_S[V^i(S; \boldsymbol{\theta}^1, \ldots, \boldsymbol{\theta}^n)]$.
+• Learn the policy network's parameter, $\boldsymbol{\theta}^i$, by
+$$\max_{\boldsymbol{\theta}^i} J^i(\boldsymbol{\theta}^1, \ldots, \boldsymbol{\theta}^n).$$

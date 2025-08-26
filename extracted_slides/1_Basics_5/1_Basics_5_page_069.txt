@@ -1,0 +1,15 @@
+Training of policy network
+
+AlphaGo Zero uses MCTS in training. (AlphaGo does not.)
+
+1. Observe state $s_t$.
+
+2. Predictions made by policy network:
+   $\mathbf{p} = [\pi(a = 1\vert s_t; \boldsymbol{\theta}), \cdots, \pi(a = 361\vert s_t; \boldsymbol{\theta})] \in \mathbb{R}^{361}$.
+
+3. Predictions made by MCTS:
+   $\mathbf{n} = \text{normalize}[N(a = 1), N(a = 2), \cdots, N(a = 361)] \in \mathbb{R}^{361}$.
+
+4. Loss: $L = \text{CrossEntropy}(\mathbf{n}, \mathbf{p})$.
+
+5. Use $\frac{\partial L}{\partial \boldsymbol{\theta}}$ to update $\boldsymbol{\theta}$.

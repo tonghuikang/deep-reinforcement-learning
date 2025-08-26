@@ -1,0 +1,5 @@
+Parameter Sharing?
+
+Do not share parameters if the agents are non-exchangeable.
+
+[Image shows robots playing soccer on a field]

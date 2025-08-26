@@ -1,0 +1,7 @@
+Derive TD Target
+
+Approximation: v(s_t; \mathbf{w}) \approx r_t + \gamma \cdot v(s_{t+1}; \mathbf{w})
+
+TD target y_t
+
+TD learning: Encourage v(s_t; \mathbf{w}) to approach y_t

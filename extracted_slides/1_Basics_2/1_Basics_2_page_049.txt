@@ -1,0 +1,7 @@
+Temporal Difference (TD) Learning
+
+Algorithm: One iteration of TD learning.
+
+1. Observe state $S_t = s_t$ and perform action $A_t = a_t$.
+2. Predict the value: $q_t = Q(s_t, a_t; \mathbf{w}_t)$.
+3. Differentiate the value network: $\mathbf{d}_t = \frac{\partial Q(s_t,a_t;\mathbf{w})}{\partial \mathbf{w}} \big\vert_{\mathbf{w}=\mathbf{w}_t}$.

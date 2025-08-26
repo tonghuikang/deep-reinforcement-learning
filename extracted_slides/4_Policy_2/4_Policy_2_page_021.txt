@@ -1,0 +1,5 @@
+Value Network
+
+Approximate state-value, $V_\pi(s)$, by value network, $v(s; \boldsymbol{w})$.
+
+[THIS IS FIGURE: A diagram showing a Mario game scene as input "state s", connected through "Conv" (convolutional layer) and "Dense" layer to output a scalar value "v(s; w)". The layers are connected with arrows showing "feature" extraction.]

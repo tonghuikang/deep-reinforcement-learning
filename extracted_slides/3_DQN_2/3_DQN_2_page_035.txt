@@ -1,0 +1,9 @@
+Overestimation & Solutions
+
+• Because of the maximization, the TD target overestimates the true action-value.
+
+• By creating a "positive feedback loop", bootstrapping further exacerbates the overestimation.
+
+• Target network can partly avoid bootstrapping. (Not completely, because $\mathbf{w}^-$ depends on $\mathbf{w}$.)
+
+• Double DQN alleviates the overestimation caused by the maximization.

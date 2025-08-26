@@ -1,0 +1,5 @@
+Policy Gradient
+
+Policy gradient: $\frac{\partial V_\pi(s)}{\partial \theta} = \mathbb{E}_A \left[\frac{\partial \ln \pi(A \vert s;\theta)}{\partial \theta} Q_\pi(s, A)\right]$.
+
+• Recall that $f(s, a; \theta) = \ln \pi(a \vert s; \theta) + \text{const}$.

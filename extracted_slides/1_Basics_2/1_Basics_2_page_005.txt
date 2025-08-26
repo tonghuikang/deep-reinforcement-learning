@@ -1,0 +1,15 @@
+Action-Value Functions $Q(s, a)$
+
+Definition: Discounted return (aka cumulative discounted future reward).
+
+• $U_t = R_t + \gamma R_{t+1} + \gamma^2 R_{t+2} + \gamma^3 R_{t+3} + \cdots$
+
+Definition: Action-value function for policy $\pi$.
+
+• $Q_\pi(s_t, a_t) = \mathbb{E} [U_t \vert S_t = s_t, A_t = a_t]$.
+
+Definition: Optimal action-value function.
+
+• $Q^*(s_t, a_t) = \max_\pi Q_\pi(s_t, a_t)$.
+
+• Whatever policy function $\pi$ is used, the result of taking $a_t$ at state $s_t$ cannot be better than $Q^*(s_t, a_t)$.

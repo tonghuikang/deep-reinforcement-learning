@@ -1,0 +1,5 @@
+Updating policy and value networks
+
+• Policy network makes a decision: $a = \pi(s; \boldsymbol{\theta})$.
+
+• Update policy network by DPG: $\boldsymbol{\theta} \leftarrow \boldsymbol{\theta} + \beta \cdot \frac{\partial a}{\partial \boldsymbol{\theta}} \cdot \frac{\partial q(s,a;\mathbf{w})}{\partial a}$.

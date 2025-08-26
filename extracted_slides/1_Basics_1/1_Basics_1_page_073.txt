@@ -1,0 +1,15 @@
+State-Value Function $V_\pi(s)$
+
+Definition: Discounted return.
+
+• $U_t = R_t + \gamma R_{t+1} + \gamma^2 R_{t+2} + \cdots + \gamma^{n-t} R_n$.
+
+Definition: Action-value function.
+
+• $Q_\pi(s_t, a_t) = \mathbb{E} [ U_t \vert S_t = s_t, A_t = a_t ]$.
+
+Definition: State-value function.
+
+• $V_\pi(s_t) = \mathbb{E}_A [Q_\pi(s_t, A)]$
+
+Taken w.r.t. the action $A \sim \pi( \cdot \vert s_t )$.

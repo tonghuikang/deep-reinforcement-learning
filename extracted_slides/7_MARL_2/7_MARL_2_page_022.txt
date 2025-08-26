@@ -1,0 +1,9 @@
+Centralized Training
+
+Critic 1        Central Controller        Critic n
+                    {a^i, o^i, r^i}_{i=1}^n
+    ↓                                         ↓
+    
+q^1 = q(o, a; w^1)                          q^n = q(o, a; w^n)
+
+Actor 1              ...                   Actor n

@@ -1,0 +1,16 @@
+State (of AlphaGo Zero)
+
+[The image shows a 3D diagram of stacked layers representing the state structure of AlphaGo Zero. It shows a $19 \times 19 \times 17$ stack with labels indicating:
+- Current position of black's stones
+- ...and for the previous 7 time periods
+- Current position of white's stones
+- ...and for the previous 7 time periods
+- All 1 if black to play / All 0 if white to play
+
+On the right side is a small $3 \times 3$ grid showing:
+1 if black stone here
+0 if black stone not here
+
+1 1 1
+1 0 0
+0 0 1]

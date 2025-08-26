@@ -1,0 +1,7 @@
+Sarsa VS Q-Learning
+
+• Q-learning is for training the optimal action-value function, $Q^*(s, a)$.
+
+• TD target: $y_t = r_t + \gamma \cdot \max_a Q^*(s_{t+1}, a)$.
+
+• We used Q-learning for updating DQN.

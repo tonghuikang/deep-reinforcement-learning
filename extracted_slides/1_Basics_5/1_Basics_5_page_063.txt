@@ -1,0 +1,7 @@
+Training and Execution
+
+Training in 3 steps:
+
+1. Train a policy network using behavior cloning.
+2. Train the policy network using policy gradient algorithm.
+3. Train a value network.

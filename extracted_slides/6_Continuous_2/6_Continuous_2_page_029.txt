@@ -1,0 +1,8 @@
+Updating target networks
+
+• Set a hyper-parameter $\tau \in (0, 1)$.
+
+• Update the target networks by weighted averaging:
+    $\mathbf{w}^- \leftarrow \tau \cdot \mathbf{w} + (1 - \tau) \cdot \mathbf{w}^-$.
+    
+    $\boldsymbol{\theta}^- \leftarrow \tau \cdot \boldsymbol{\theta} + (1 - \tau) \cdot \boldsymbol{\theta}^-$.

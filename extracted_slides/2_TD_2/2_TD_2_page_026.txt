@@ -1,0 +1,11 @@
+Summary
+
+• Goal: Learn the optimal action-value function $Q^*$.
+
+• Tabular version (directly learn $Q^*$).
+  • There are finite states and actions.
+  • Draw a table, and update the table by Q-learning.
+
+• DQN version (function approximation).
+  • Approximate $Q^*$ by the DQN, $Q(s, a; \mathbf{w})$.
+  • Update the parameter, $\mathbf{w}$, by Q-learning.

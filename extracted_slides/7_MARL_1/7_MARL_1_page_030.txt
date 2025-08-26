@@ -1,0 +1,6 @@
+Settings of MARL
+
+1. **Fully cooperative**, e.g., industrial robots.
+2. **Fully competitive**, e.g., predator and prey.
+3. **Mixed cooperative & competitive**, e.g., robotic soccer.
+4. **Self-interested**, e.g., automated trading systems.

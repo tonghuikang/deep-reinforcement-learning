@@ -1,0 +1,11 @@
+Fully Decentralized Actor-Critic Method
+
+• The $i$-th agent has a policy network (actor): $\pi(a^i \vert o^i; \boldsymbol{\theta}^i)$.
+
+• The $i$-th agent has a value network (critic): $q(o^i, a^i; \mathbf{w}^i)$.
+
+• Agents do not share observations and actions.
+
+• Train the policy and value networks in the same way as the single-agent setting.
+
+• This does not work well.

@@ -1,0 +1,9 @@
+Shortcoming 1: Waste of Experience
+
+• A transition: $(s_t, a_t, r_t, s_{t+1})$.
+
+• Experience: all the transitions, for $t = 1, 2, \cdots$.
+
+• Previously, we discard $(s_t, a_t, r_t, s_{t+1})$ after using it.
+
+• It is a waste...

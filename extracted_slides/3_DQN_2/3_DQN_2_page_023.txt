@@ -1,0 +1,13 @@
+Target Network
+
+• Target network: $Q(s, a; \mathbf{w}^-)$
+
+  • The same network structure as the DQN, $Q(s, a; \mathbf{w})$.
+  
+  • Different parameters: $\mathbf{w}^- \neq \mathbf{w}$.
+
+• Use $Q(s, a; \mathbf{w})$ to control the agent and collect experience:
+                           $\{(s_t, a_t, r_t, s_{t+1})\}$.
+
+• Use $Q(s, a; \mathbf{w}^-)$ to compute TD target:
+                           $y_t = r_t + \gamma \cdot \max_a Q(s_{t+1}, a; \mathbf{w}^-)$.

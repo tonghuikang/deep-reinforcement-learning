@@ -1,0 +1,9 @@
+OpenAI Gym
+
+• Gym is a toolkit for developing and comparing reinforcement learning algorithms.
+• https://gym.openai.com/
+
+Atari Games
+
+[Three game screenshots showing:]
+Pong                    Space Invader                    Breakout

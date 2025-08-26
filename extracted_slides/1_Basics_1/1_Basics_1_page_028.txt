@@ -1,0 +1,7 @@
+Terminology: state transition
+
+                                  state transition
+
+[Game screenshot showing Mario platformer level]
+
+old state ────action───→ new state

@@ -1,0 +1,4 @@
+Prioritized Experience Replay
+
+Reference:
+1. Schaul, Quan, Antonoglou, & Silver. Prioritized experience replay. In ICLR, 2016.

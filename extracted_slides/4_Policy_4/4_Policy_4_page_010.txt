@@ -1,0 +1,13 @@
+A2C with Multi-Step TD Target
+
+• Observing a trajectory from time $t$ to $t + m - 1$.
+
+• TD target: $y_t = \sum_{i=0}^{m-1} \gamma^i \cdot r_{t+i} + \gamma^m \cdot v(s_{t+m}; \mathbf{w})$.
+
+• TD error: $\delta_t = v(s_t; \mathbf{w}) - y_t$.
+
+• Update the policy network (actor) by:
+$$\boldsymbol{\theta} \leftarrow \boldsymbol{\theta} - \beta \cdot \delta_t \cdot \frac{\partial \ln \pi(a_t \vert s_t;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}}.$$
+
+• Update the value network (critic) by:
+$$\mathbf{w} \leftarrow \mathbf{w} - \alpha \cdot \delta_t \cdot \frac{\partial v(s_t;\mathbf{w})}{\partial \mathbf{w}}.$$

@@ -1,0 +1,7 @@
+Updating Value Network
+
+TD learning: Encourage v(s_t; \mathbf{w}) to approach y_t
+
+• TD error: \delta_t = v(s_t; \mathbf{w}) - y_t
+
+• Gradient: \frac{\partial \delta_t^2 / 2}{\partial \mathbf{w}}

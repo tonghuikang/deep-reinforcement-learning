@@ -1,0 +1,8 @@
+Step 3: Evaluation
+
+[Diagram shows tree with rollout path from $s_{t+1}$ continuing with player's action $a_{t+1}$, opponent's action, player's action continuing to $s_T$ with "Fast Rollout" label]
+
+Run a rollout to the end of the game (step $T$).
+
+• Player's action: $a_k \sim \pi(\cdot \vert s_k; \boldsymbol{\theta})$.
+• Opponent's action: $a_k' \sim \pi(\cdot \vert s_k'; \boldsymbol{\theta})$.

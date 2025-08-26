@@ -1,0 +1,7 @@
+Problem of Non-identifiability
+
+• Equation 1: $Q^*(s, a) = V^*(s) + A^*(s, a)$.
+
+• Equation 2: $Q^*(s, a) = V^*(s) + A^*(s, a) - \max_a A^*(s, a)$
+
+Question: Why is the zero term necessary?

@@ -1,0 +1,9 @@
+Summary
+
+Terminologies
+
+• Agent [Mario character icon]
+• Environment
+• State $s$
+• Action $a$
+• Reward $r$

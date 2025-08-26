@@ -1,0 +1,13 @@
+State-Value Function
+
+• One agent's state-value, $V^i(s; \theta^1, \cdots, \theta^n)$, depends on all the agents' policies.
+
+• If any agent changes its policy, then all of $V^1, \cdots, V^n$ can change.
+
+• Example: soccer game.
+
+  • A striker improves his policy, while everyone else's policies are fixed.
+
+  • His teammates' state-values all increase.
+
+  • The opposing players' state-values all decrease.

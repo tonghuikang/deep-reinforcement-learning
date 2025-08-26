@@ -1,0 +1,7 @@
+Can we directly learn a policy function $\pi(a \vert s)$?
+
+• If there are only a few states and actions, then yes, we can.
+
+• Draw a table (matrix) and learn the entries.
+
+[THIS IS TABLE: A matrix showing states (State s₁, State s₂, State s₃, ...) in rows and actions (Action a₁, Action a₂, Action a₃, Action a₄, ...) in columns, with empty cells to be filled]

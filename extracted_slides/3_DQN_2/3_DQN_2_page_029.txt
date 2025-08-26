@@ -1,0 +1,13 @@
+Naïve Update
+
+• Selection using DQN:
+                    $a^* = \text{argmax}_a Q(s_{t+1}, a; \mathbf{w})$.
+
+• Evaluation using DQN:
+                    $y_t = r_t + \gamma \cdot Q(s_{t+1}, a^*; \mathbf{w})$.
+
+• Serious overestimation.
+
+Reference:
+
+1. Mnih et al. Playing Atari with deep reinforcement learning. In NIPS Workshop, 2013.

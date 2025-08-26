@@ -1,0 +1,9 @@
+Comparisons
+
+• TD learning with naïve update:
+           TD Target: $y_t = r_t + \gamma \cdot \max_a Q(s_{t+1}, a; \mathbf{w})$.
+
+• TD learning with target network:
+           TD Target: $y_t = r_t + \gamma \cdot \max_a Q(s_{t+1}, a; \mathbf{w}^-)$.
+
+• Though better than the naïve update, TD learning with target network nevertheless overestimates action-values.

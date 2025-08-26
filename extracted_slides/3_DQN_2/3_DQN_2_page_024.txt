@@ -1,0 +1,9 @@
+TD Learning with Target Network
+
+• Use a transition, $(s_t, a_t, r_t, s_{t+1})$, to update $\mathbf{w}$.
+
+  • TD target: $y_t = r_t + \gamma \cdot \max_a Q(s_{t+1}, a; \mathbf{w}^-)$.
+  
+  • TD error:  $\delta_t = Q(s_t, a_t; \mathbf{w}) - y_t$.
+  
+  • SGD: $\mathbf{w} \leftarrow \mathbf{w} - \alpha \cdot \delta_t \cdot \frac{\partial Q(s_t,a_t;\mathbf{w})}{\partial \mathbf{w}}$.

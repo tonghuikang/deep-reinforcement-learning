@@ -1,0 +1,11 @@
+Centralized Training
+
+                Central Controller
+              ↑                   ↑
+       $a^1, o^1, r^1$      $a^n, o^n, r^n$
+
+    Actor 1      ...        Actor n
+      ↓   ↑                  ↓   ↑
+    $a^1$ $o^1, r^1$       $a^n$ $o^n, r^n$
+
+              Environment

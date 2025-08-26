@@ -1,0 +1,9 @@
+Terminology: policy
+
+                                  policy $\pi$
+
+[Game screenshot showing Mario platformer level with labeled actions: up arrow, left arrow, right arrow indicating possible actions]
+
+• Policy function $\pi$: (s, a) ↦ [0,1]:
+
+    $\pi(a \vert s) = \mathbb{P}(A = a \vert S = s)$.

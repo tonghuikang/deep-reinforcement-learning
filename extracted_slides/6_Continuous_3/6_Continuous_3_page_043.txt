@@ -1,0 +1,9 @@
+Approximations to Action-Value
+
+Stochastic policy gradient: $g(a) = \frac{\partial f(s,a;\theta)}{\partial \theta} \cdot Q_\pi(s, a)$
+
+• REINFORCE approximates $Q_\pi(S_t, A_t)$ by the observed return:
+
+$u_t = r_t + \gamma \cdot r_{t+1} + \gamma^2 \cdot r_{t+2} + \gamma^3 \cdot r_{t+3} + \cdots$
+
+• Update policy network by: $\theta \leftarrow \theta + \beta \cdot \frac{\partial f(s,a;\theta)}{\partial \theta} \cdot u_t$.

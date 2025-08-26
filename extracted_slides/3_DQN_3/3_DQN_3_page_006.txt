@@ -1,0 +1,4 @@
+Optimal Value Functions
+
+Definition: Optimal action-value function.
+• $Q^*(s, a) = \max_\pi Q_\pi(s, a)$.

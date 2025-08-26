@@ -1,0 +1,3 @@
+AlphaGo
+
+[The image shows a screenshot of AlphaGo playing against Lee Sedol, with a Go board in the center showing black and white stones. On the left is the AlphaGo interface showing "ALPHAGO 00:08:32" and on the right is "LEE SEDOL 00:00:27".]

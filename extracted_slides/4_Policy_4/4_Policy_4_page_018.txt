@@ -1,0 +1,11 @@
+TD Target versus Return
+
+A2C with one-step TD target: $y_t = r_t + \gamma \cdot v(s_{t+1}; \mathbf{w})$.
+
+Use only one reward $(m = 1)$
+
+A2C with $m$-step TD target: $y_t = \sum_{i=0}^{m-1} \gamma^i \cdot r_{t+i} + \gamma^m \cdot v(s_{t+m}; \mathbf{w})$.
+
+Use all the rewards
+
+REINFORCE: $y_t$ becomes $u_t = \sum_{i=t}^{n} \gamma^{i-t} \cdot r_i$.

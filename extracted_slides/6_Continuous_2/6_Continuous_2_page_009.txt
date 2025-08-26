@@ -1,0 +1,5 @@
+Updating Value Network by TD
+
+• Transition: $(s_t, a_t, r_t, s_{t+1})$.
+• Value network makes prediction for time $t$:
+    $q_t = q(s_t, a_t; \mathbf{w})$.

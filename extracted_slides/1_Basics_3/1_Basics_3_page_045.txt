@@ -1,0 +1,9 @@
+Policy-Based Learning
+
+• If a good policy function $\pi$ is known, the agent can be controlled by the policy: randomly sample $a_t \sim \pi(\cdot \vert s_t)$.
+
+• Approximate policy function $\pi(a \vert s)$ by policy network $\pi(a \vert s; \boldsymbol{\theta})$.
+
+• Learn the policy network by policy gradient algorithm.
+
+• Policy gradient algorithm learn $\boldsymbol{\theta}$ that maximizes $\mathbb{E}_S[V(S; \boldsymbol{\theta})]$.

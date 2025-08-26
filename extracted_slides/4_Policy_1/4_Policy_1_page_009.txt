@@ -1,0 +1,6 @@
+Baseline
+
+• Let the baseline, $b$, be anything independent of $A$.
+• $\mathbb{E}_{A \sim \pi} \left[b \cdot \frac{\partial \ln \pi(A \vert s;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}}\right] = b \cdot \mathbb{E}_{A \sim \pi} \left[\frac{\partial \ln \pi(A \vert s;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}}\right]$
+
+    $= b \cdot \sum_a \pi(a \vert s; \boldsymbol{\theta}) \cdot \frac{\partial \ln \pi(a \vert s;\boldsymbol{\theta})}{\partial \boldsymbol{\theta}}$

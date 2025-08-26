@@ -1,0 +1,13 @@
+Probability Mass Function (PMF)
+
+• PMF is a function that gives the probability that a discrete random variable is exactly equal to some value.
+
+Example
+
+• Discrete random variable: $X \in \{1, 3, 7\}$.
+• PDF:
+    $p(1) = 0.2$,
+    $p(3) = 0.5$,
+    $p(7) = 0.3$.
+
+[Diagram shows a probability mass function with vertical lines at x = 1 (height 0.2), x = 3 (height 0.5), and x = 7 (height 0.3), with red boxes highlighting each probability value]

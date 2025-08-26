@@ -1,0 +1,5 @@
+Training of A2C
+
+• Observe a transition $(s_t, a_t, r_t, s_{t+1})$.
+
+• TD target: $y_t = r_t + \gamma \cdot v(s_{t+1}; \mathbf{w})$.

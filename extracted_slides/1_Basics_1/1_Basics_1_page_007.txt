@@ -1,0 +1,3 @@
+Probability Mass Function (PMF)
+
+• PMF is a function that gives the probability that a discrete random variable is exactly equal to some value.

@@ -1,0 +1,9 @@
+MCTS: Summary
+
+• MCTS has 4 steps: selection, expansion, evaluation, and backup.
+
+• To perform one action, AlphaGo repeats the 4 steps for many times to calculate $Q(a)$ and $N(a)$ (for every action $a$.)
+
+• AlphaGo executes the action $a$ with the highest $N(a)$ value.
+
+• To perform the next action, AlphaGo do MCTS all over again. (Initialize $Q(a)$ and $N(a)$ to zeros.)

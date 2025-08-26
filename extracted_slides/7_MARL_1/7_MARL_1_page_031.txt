@@ -1,0 +1,5 @@
+Convergence
+
+• **Convergence**: No agent can get better expected return by improving its own policy.
+• If there is only one agent, convergence means the objective function does not increase any more.
+• If there are multiple agents, Nash equilibrium means convergence.

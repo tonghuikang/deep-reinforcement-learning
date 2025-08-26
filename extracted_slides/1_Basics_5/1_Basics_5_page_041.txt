@@ -1,0 +1,12 @@
+How do human play Go?
+
+Players must look ahead two or more steps.
+
+• Suppose I choose action $a_t$.
+• What will be my opponent's action? (His action leads to state $s_{t+1}$.)
+• What will I be my action $a_{t+1}$ upon observing $s_{t+1}$?
+• What will be my opponent's action? (His action leads to state $s_{t+2}$.)
+• What will I be my action $a_{t+2}$ upon observing $s_{t+3}$?
+⋮
+
+• If you can exhaustively foresee all the possibilities, you will win.

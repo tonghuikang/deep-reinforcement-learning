@@ -1,0 +1,11 @@
+Value-Based Reinforcement Learning
+
+Definition: Optimal action-value function.
+
+• $Q^*(s_t, a_t) = \max_\pi \mathbb{E} [U_t \vert S_t = s_t, A_t = a_t]$.
+
+DQN: Approximate $Q^*(s, a)$ using a neural network (DQN).
+
+• $Q(s, a; \mathbf{w})$ is a neural network parameterized by $\mathbf{w}$.
+• Input: observed state $s$.
+• Output: scores for all the action $a \in \mathcal{A}$.

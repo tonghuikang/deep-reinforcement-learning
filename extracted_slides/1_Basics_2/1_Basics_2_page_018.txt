@@ -1,0 +1,7 @@
+Temporal Difference (TD) Learning
+
+Reference
+
+1. Sutton and others: A convergent O(n) algorithm for off-policy temporal-difference learning with linear function approximation. In NIPS, 2008.
+
+2. Sutton and others: Fast gradient-descent methods for temporal-difference learning with linear function approximation. In ICML, 2009.

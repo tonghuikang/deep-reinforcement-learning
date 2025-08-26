@@ -1,0 +1,11 @@
+Temporal Difference (TD) Learning
+
+• Model's estimate: $Q(\mathbf{w}) = 1000$ minutes.
+• Updated estimate: $300 + 600 = 900$ minutes.
+                    TD target.
+
+• TD target $y = 900$ is a more reliable estimate than $1000$.
+• Loss: $L = \frac{1}{2}(Q(\mathbf{w}) - y)^2$.
+• Gradient: $\frac{\partial L}{\partial \mathbf{w}} = (1000 - 900) \cdot \frac{\partial Q(\mathbf{w})}{\partial \mathbf{w}}$.
+                        TD error
+• Gradient descent: $\mathbf{w}_{t+1} = \mathbf{w}_t - \alpha \cdot \frac{\partial L}{\partial \mathbf{w}} \big\vert_{\mathbf{w}=\mathbf{w}_t}$.

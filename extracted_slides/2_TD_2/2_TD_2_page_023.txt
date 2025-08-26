@@ -1,0 +1,7 @@
+DQN Version
+
+• Approximate $Q^*(s, a)$ by DQN, $Q(s, a; \mathbf{w})$.
+
+• DQN controls the agent by: $a_t = \arg\max_a Q(s_t, a; \mathbf{w})$.
+
+• We seek to learn the parameter, $\mathbf{w}$.

@@ -1,0 +1,12 @@
+State, Action, State Transition
+
+• There are $n$ agents.
+
+• Let $S$ be the state.
+
+• Let $A^i$ be the $i$-th agent's action.
+
+• State transition:
+    $p(s' \vert s, a^1, \cdots, a^n) = \mathbb{P}(S' = s' \vert S = s, A^1 = a^1, \cdots, A^n = a^n)$.
+
+• The next state, $S'$, depends on all the agents' actions.

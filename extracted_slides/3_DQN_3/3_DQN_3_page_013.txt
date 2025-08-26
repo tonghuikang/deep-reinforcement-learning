@@ -1,0 +1,7 @@
+Properties of Advantage Function
+
+Definition of advantage: $A^*(s, a) = Q^*(s, a) - V^*(s)$.
+
+↓
+
+$Q^*(s, a) = V^*(s) + A^*(s, a)$

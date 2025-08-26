@@ -1,0 +1,11 @@
+Monte Carlo Tree Search (MCTS)
+
+Every simulation of Monte Carlo Tree Search (MCTS) has 4 steps:
+
+1. Selection: The player makes an action $a$. (Imaginary action; not actual move.)
+
+2. Expansion: The opponent makes an action; the state updates. (Also imaginary action; made by the policy network.)
+
+3. Evaluation: Evaluate the state-value and get score $v$. Play the game to the end to receive reward $r$. Assign score $\frac{v+r}{2}$ to action $a$.
+
+4. Backup: Use the score $\frac{v+r}{2}$ to update action-values.

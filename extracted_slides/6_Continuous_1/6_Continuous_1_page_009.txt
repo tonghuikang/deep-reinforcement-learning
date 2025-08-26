@@ -1,0 +1,5 @@
+Better Approaches to Continuous Control
+
+1. Deterministic policy network (the 2nd lecture).
+
+2. Stochastic policy network (the 3rd lecture).

@@ -1,0 +1,12 @@
+Train the networks
+
+Definition: State-value function approximated using neural networks.
+• $V(s; \boldsymbol{\theta}, \mathbf{w}) = \sum_a \pi(a\vert s; \boldsymbol{\theta}) \cdot q(s, a; \mathbf{w})$.
+
+Training: Update the parameters $\boldsymbol{\theta}$ and $\mathbf{w}$.
+
+1. Observe the state $s_t$.
+2. Randomly sample action $a_t$ according to $\pi(\cdot \vert s_t; \boldsymbol{\theta}_t)$.
+3. Perform $a_t$ and observe new state $s_{t+1}$ and reward $r_t$.
+4. Update $\mathbf{w}$ (in value network) using temporal difference (TD).
+5. Update $\boldsymbol{\theta}$ (in policy network) using policy gradient.

@@ -1,0 +1,10 @@
+Example
+
+• I want to drive from NYC to Atlanta.
+• Model $Q(\mathbf{w})$ estimates the time cost, e.g., 1000 minutes.
+
+Question: How do I update the model?
+
+• Can I update the model before finishing the trip?
+
+[The image shows the same diagram with NYC at the top and Atlanta at the bottom]

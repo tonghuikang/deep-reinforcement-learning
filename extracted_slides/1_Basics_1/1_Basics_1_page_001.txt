@@ -1,0 +1,6 @@
+Reinforcement Learning Basics
+
+Shusen Wang
+Stevens Institute of Technology
+
+http://wangshusen.github.io/

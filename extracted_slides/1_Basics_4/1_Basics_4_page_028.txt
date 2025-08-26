@@ -1,0 +1,11 @@
+Summary of Algorithm
+
+1. Observe state $s_t$ and randomly sample $a_t \sim \pi(\cdot \vert s_t; \boldsymbol{\theta}_t)$.
+2. Perform $a_t$; then environment gives new state $s_{t+1}$ and reward $r_t$.
+3. Randomly sample $\tilde{a}_{t+1} \sim \pi(\cdot \vert s_{t+1}; \boldsymbol{\theta}_t)$. (Do not perform $\tilde{a}_{t+1}$!)
+4. Evaluate value network: $q_t = q(s_t, a_t; \mathbf{w}_t)$ and $q_{t+1} = q(s_{t+1}, \tilde{a}_{t+1}; \mathbf{w}_t)$.
+5. Compute TD error: $\delta_t = q_t - (r_t + \gamma \cdot q_{t+1})$.
+6. Differentiate value network: $\mathbf{d}_{w,t} = \frac{\partial q(s_t, a_t; \mathbf{w})}{\partial \mathbf{w}} \big\vert_{\mathbf{w}=\mathbf{w}_t}$.
+7. Update value network: $\mathbf{w}_{t+1} = \mathbf{w}_t - \alpha \cdot \delta_t \cdot \mathbf{d}_{w,t}$.
+8. Differentiate policy network: $\mathbf{d}_{\theta,t} = \frac{\partial \log \pi(a_t\vert s_t, \boldsymbol{\theta})}{\partial \boldsymbol{\theta}} \big\vert_{\boldsymbol{\theta}=\boldsymbol{\theta}_t}$.
+9. Update policy network: $\boldsymbol{\theta}_{t+1} = \boldsymbol{\theta}_t + \beta \cdot q_t \cdot \mathbf{d}_{\theta,t}$.

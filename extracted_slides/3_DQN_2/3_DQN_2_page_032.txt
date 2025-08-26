@@ -1,0 +1,7 @@
+Why does double DQN work better?
+
+• Double DQN decouples selection from evaluation.
+
+• Selection using DQN: $a^* = \text{argmax}_a Q(s_{t+1}, a; \mathbf{w})$.
+
+• Evaluation using target network: $y_t = r_t + \gamma \cdot Q(s_{t+1}, a^*; \mathbf{w}^-)$.

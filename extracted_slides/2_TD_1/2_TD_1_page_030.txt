@@ -1,0 +1,12 @@
+Summary
+
+• Goal: Learn the action-value function $Q_\pi$.
+
+• Tabular version (directly learn $Q_\pi$).
+  • There are finite states and actions.
+  • Draw a table, and update the table using Sarsa.
+
+• Value network version (function approximation).
+  • Approximate $Q_\pi$ by the value network $q(s, a; \mathbf{w})$.
+  • Update the parameter, $\mathbf{w}$, using Sarsa.
+  • Application: actor-critic method.

@@ -1,0 +1,9 @@
+Univariate Normal Distribution
+
+• Assume the degree of freedom is one, i.e., $\mathcal{A} \subset \mathbb{R}$.
+
+• Let $\mu$ (mean) and $\sigma$ (std) be functions of $s$.
+
+• Let policy function be the PDF of normal distribution:
+
+    $\pi(a \vert s) = \frac{1}{\sqrt{6.28} \sigma} \cdot \exp \left( -\frac{(a-\mu)^2}{2\sigma^2} \right)$.

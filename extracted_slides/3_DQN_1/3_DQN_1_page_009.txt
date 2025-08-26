@@ -1,0 +1,9 @@
+Temporal Difference (TD) Learning
+
+• TD error: $\delta_t = q_t - y_t$, where $q_t = Q(s_t, a_t; \mathbf{w})$.
+
+• TD learning: Find $\mathbf{w}$ by minimizing $L(\mathbf{w}) = \frac{1}{T} \sum_{t=1}^T \frac{\delta_t^2}{2}$.
+
+• Online gradient descent.
+
+• Discard $(s_t, a_t, r_t, s_{t+1})$ after using it.

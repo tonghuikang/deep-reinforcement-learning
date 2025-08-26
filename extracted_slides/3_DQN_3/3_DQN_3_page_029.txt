@@ -1,0 +1,7 @@
+Dueling Network
+
+$Q(s, a; \mathbf{w}) = V(s; \mathbf{w}^V) + A(s, a; \mathbf{w}^A) - \max_a A(s, a; \mathbf{w}^A)$.
+
+state $s$ → Conv → feature → Dense1 → $Q(s, \text{"left"}; \mathbf{w})$
+                           → Dense2 → $Q(s, \text{"right"}; \mathbf{w})$
+                                    $Q(s, \text{"up"}; \mathbf{w})$
